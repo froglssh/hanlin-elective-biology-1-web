@@ -1,0 +1,440 @@
+{
+  "checks": 32,
+  "failures": [],
+  "details": [
+    {
+      "name": "1240 computed type 0",
+      "ok": true,
+      "data": {
+        "prompt": 20,
+        "choices": [
+          18,
+          18,
+          18,
+          18,
+          18,
+          18,
+          18,
+          18,
+          18,
+          18,
+          18,
+          18
+        ]
+      }
+    },
+    {
+      "name": "1240 computed type 1",
+      "ok": true,
+      "data": {
+        "prompt": 20,
+        "choices": [
+          18,
+          18,
+          18,
+          18,
+          18,
+          18,
+          18,
+          18,
+          18
+        ]
+      }
+    },
+    {
+      "name": "1240 computed type 2",
+      "ok": true,
+      "data": {
+        "prompt": 20,
+        "choices": [
+          18,
+          18,
+          18
+        ]
+      }
+    },
+    {
+      "name": "1240 computed type 3",
+      "ok": true,
+      "data": {
+        "prompt": 20,
+        "choices": [
+          18,
+          18,
+          18
+        ]
+      }
+    },
+    {
+      "name": "1240 computed type 4",
+      "ok": true,
+      "data": {
+        "prompt": 20,
+        "choices": [
+          18,
+          18,
+          18,
+          18,
+          18,
+          18,
+          18
+        ]
+      }
+    },
+    {
+      "name": "1240 computed type 5",
+      "ok": true,
+      "data": {
+        "prompt": 20,
+        "choices": [
+          18,
+          18,
+          18,
+          18,
+          18,
+          18,
+          18,
+          18,
+          18
+        ]
+      }
+    },
+    {
+      "name": "1240 computed type 6",
+      "ok": true,
+      "data": {
+        "prompt": 20,
+        "choices": [
+          18,
+          18,
+          18,
+          18,
+          18
+        ]
+      }
+    },
+    {
+      "name": "1240 computed type 7",
+      "ok": true,
+      "data": {
+        "prompt": 20,
+        "choices": [
+          18,
+          18,
+          18,
+          18,
+          18
+        ]
+      }
+    },
+    {
+      "name": "1240 computed type 8",
+      "ok": true,
+      "data": {
+        "prompt": 20,
+        "choices": [
+          18,
+          18,
+          18,
+          18
+        ]
+      }
+    },
+    {
+      "name": "1240 large reading text",
+      "ok": true
+    },
+    {
+      "name": "1366 computed type 0",
+      "ok": true,
+      "data": {
+        "prompt": 24,
+        "choices": [
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      }
+    },
+    {
+      "name": "1366 computed type 1",
+      "ok": true,
+      "data": {
+        "prompt": 24,
+        "choices": [
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      }
+    },
+    {
+      "name": "1366 computed type 2",
+      "ok": true,
+      "data": {
+        "prompt": 24,
+        "choices": [
+          20,
+          20,
+          20
+        ]
+      }
+    },
+    {
+      "name": "1366 computed type 3",
+      "ok": true,
+      "data": {
+        "prompt": 24,
+        "choices": [
+          20,
+          20,
+          20
+        ]
+      }
+    },
+    {
+      "name": "1366 computed type 4",
+      "ok": true,
+      "data": {
+        "prompt": 24,
+        "choices": [
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      }
+    },
+    {
+      "name": "1366 computed type 5",
+      "ok": true,
+      "data": {
+        "prompt": 24,
+        "choices": [
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      }
+    },
+    {
+      "name": "1366 computed type 6",
+      "ok": true,
+      "data": {
+        "prompt": 24,
+        "choices": [
+          18,
+          18,
+          18,
+          18,
+          18
+        ]
+      }
+    },
+    {
+      "name": "1366 computed type 7",
+      "ok": true,
+      "data": {
+        "prompt": 24,
+        "choices": [
+          18,
+          18,
+          18,
+          18,
+          18
+        ]
+      }
+    },
+    {
+      "name": "1366 computed type 8",
+      "ok": true,
+      "data": {
+        "prompt": 24,
+        "choices": [
+          20,
+          20,
+          20,
+          20
+        ]
+      }
+    },
+    {
+      "name": "1366 large reading text",
+      "ok": true
+    },
+    {
+      "name": "1920 computed type 0",
+      "ok": true,
+      "data": {
+        "prompt": 24,
+        "choices": [
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      }
+    },
+    {
+      "name": "1920 computed type 1",
+      "ok": true,
+      "data": {
+        "prompt": 24,
+        "choices": [
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      }
+    },
+    {
+      "name": "1920 computed type 2",
+      "ok": true,
+      "data": {
+        "prompt": 24,
+        "choices": [
+          20,
+          20,
+          20
+        ]
+      }
+    },
+    {
+      "name": "1920 computed type 3",
+      "ok": true,
+      "data": {
+        "prompt": 24,
+        "choices": [
+          20,
+          20,
+          20
+        ]
+      }
+    },
+    {
+      "name": "1920 computed type 4",
+      "ok": true,
+      "data": {
+        "prompt": 24,
+        "choices": [
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      }
+    },
+    {
+      "name": "1920 computed type 5",
+      "ok": true,
+      "data": {
+        "prompt": 24,
+        "choices": [
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20,
+          20
+        ]
+      }
+    },
+    {
+      "name": "1920 computed type 6",
+      "ok": true,
+      "data": {
+        "prompt": 24,
+        "choices": [
+          18,
+          18,
+          18,
+          18,
+          18
+        ]
+      }
+    },
+    {
+      "name": "1920 computed type 7",
+      "ok": true,
+      "data": {
+        "prompt": 24,
+        "choices": [
+          18,
+          18,
+          18,
+          18,
+          18
+        ]
+      }
+    },
+    {
+      "name": "1920 computed type 8",
+      "ok": true,
+      "data": {
+        "prompt": 24,
+        "choices": [
+          20,
+          20,
+          20,
+          20
+        ]
+      }
+    },
+    {
+      "name": "1920 large reading text",
+      "ok": true
+    },
+    {
+      "name": "touch placement",
+      "ok": true
+    },
+    {
+      "name": "touch draft reload",
+      "ok": true
+    }
+  ]
+}

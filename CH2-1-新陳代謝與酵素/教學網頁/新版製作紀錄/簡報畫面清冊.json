@@ -1,0 +1,498 @@
+{
+  "frames": [
+    {
+      "id": "ppt01-01",
+      "pptPage": 1,
+      "step": 1,
+      "time": 0.7
+    },
+    {
+      "id": "ppt01-02",
+      "pptPage": 1,
+      "step": 2,
+      "time": 2
+    },
+    {
+      "id": "ppt01-03",
+      "pptPage": 1,
+      "step": 3,
+      "time": 4.4
+    },
+    {
+      "id": "ppt02-01",
+      "pptPage": 2,
+      "step": 1,
+      "time": 5.6
+    },
+    {
+      "id": "ppt02-02",
+      "pptPage": 2,
+      "step": 2,
+      "time": 7
+    },
+    {
+      "id": "ppt02-03",
+      "pptPage": 2,
+      "step": 3,
+      "time": 9.4
+    },
+    {
+      "id": "ppt03-01",
+      "pptPage": 3,
+      "step": 1,
+      "time": 10.6
+    },
+    {
+      "id": "ppt03-02",
+      "pptPage": 3,
+      "step": 2,
+      "time": 12
+    },
+    {
+      "id": "ppt03-03",
+      "pptPage": 3,
+      "step": 3,
+      "time": 14.4
+    },
+    {
+      "id": "ppt04-01",
+      "pptPage": 4,
+      "step": 1,
+      "time": 15.6
+    },
+    {
+      "id": "ppt04-02",
+      "pptPage": 4,
+      "step": 2,
+      "time": 17
+    },
+    {
+      "id": "ppt04-03",
+      "pptPage": 4,
+      "step": 3,
+      "time": 19.4
+    },
+    {
+      "id": "ppt05-01",
+      "pptPage": 5,
+      "step": 1,
+      "time": 20.6
+    },
+    {
+      "id": "ppt05-02",
+      "pptPage": 5,
+      "step": 2,
+      "time": 22.5
+    },
+    {
+      "id": "ppt05-03",
+      "pptPage": 5,
+      "step": 3,
+      "time": 24.4
+    },
+    {
+      "id": "ppt06-01",
+      "pptPage": 6,
+      "step": 1,
+      "time": 25.6
+    },
+    {
+      "id": "ppt06-02",
+      "pptPage": 6,
+      "step": 2,
+      "time": 27
+    },
+    {
+      "id": "ppt06-03",
+      "pptPage": 6,
+      "step": 3,
+      "time": 29.4
+    },
+    {
+      "id": "ppt07-01",
+      "pptPage": 7,
+      "step": 1,
+      "time": 30.6
+    },
+    {
+      "id": "ppt07-02",
+      "pptPage": 7,
+      "step": 2,
+      "time": 32
+    },
+    {
+      "id": "ppt07-03",
+      "pptPage": 7,
+      "step": 3,
+      "time": 34.4
+    },
+    {
+      "id": "ppt08-01",
+      "pptPage": 8,
+      "step": 1,
+      "time": 35.6
+    },
+    {
+      "id": "ppt08-02",
+      "pptPage": 8,
+      "step": 2,
+      "time": 37
+    },
+    {
+      "id": "ppt08-03",
+      "pptPage": 8,
+      "step": 3,
+      "time": 39.4
+    },
+    {
+      "id": "ppt09-01",
+      "pptPage": 9,
+      "step": 1,
+      "time": 40.6
+    },
+    {
+      "id": "ppt09-02",
+      "pptPage": 9,
+      "step": 2,
+      "time": 42
+    },
+    {
+      "id": "ppt09-03",
+      "pptPage": 9,
+      "step": 3,
+      "time": 44.4
+    },
+    {
+      "id": "ppt10-01",
+      "pptPage": 10,
+      "step": 1,
+      "time": 45.6
+    },
+    {
+      "id": "ppt10-02",
+      "pptPage": 10,
+      "step": 2,
+      "time": 47
+    },
+    {
+      "id": "ppt10-03",
+      "pptPage": 10,
+      "step": 3,
+      "time": 49.4
+    },
+    {
+      "id": "ppt11-01",
+      "pptPage": 11,
+      "step": 1,
+      "time": 50.5
+    },
+    {
+      "id": "ppt11-02",
+      "pptPage": 11,
+      "step": 2,
+      "time": 51.6
+    },
+    {
+      "id": "ppt11-03",
+      "pptPage": 11,
+      "step": 3,
+      "time": 53.8
+    },
+    {
+      "id": "ppt11-04",
+      "pptPage": 11,
+      "step": 4,
+      "time": 55.4
+    },
+    {
+      "id": "ppt11-05",
+      "pptPage": 11,
+      "step": 5,
+      "time": 58
+    },
+    {
+      "id": "ppt12-01",
+      "pptPage": 12,
+      "step": 1,
+      "time": 59.5
+    },
+    {
+      "id": "ppt12-02",
+      "pptPage": 12,
+      "step": 2,
+      "time": 61
+    },
+    {
+      "id": "ppt12-03",
+      "pptPage": 12,
+      "step": 3,
+      "time": 63
+    },
+    {
+      "id": "ppt12-04",
+      "pptPage": 12,
+      "step": 4,
+      "time": 65
+    },
+    {
+      "id": "ppt12-05",
+      "pptPage": 12,
+      "step": 5,
+      "time": 68
+    },
+    {
+      "id": "ppt13-01",
+      "pptPage": 13,
+      "step": 1,
+      "time": 69.5
+    },
+    {
+      "id": "ppt13-02",
+      "pptPage": 13,
+      "step": 2,
+      "time": 71
+    },
+    {
+      "id": "ppt13-03",
+      "pptPage": 13,
+      "step": 3,
+      "time": 73
+    },
+    {
+      "id": "ppt13-04",
+      "pptPage": 13,
+      "step": 4,
+      "time": 75
+    },
+    {
+      "id": "ppt13-05",
+      "pptPage": 13,
+      "step": 5,
+      "time": 77
+    },
+    {
+      "id": "ppt13-06",
+      "pptPage": 13,
+      "step": 6,
+      "time": 79
+    },
+    {
+      "id": "ppt14-01",
+      "pptPage": 14,
+      "step": 1,
+      "time": 80.6
+    },
+    {
+      "id": "ppt14-02",
+      "pptPage": 14,
+      "step": 2,
+      "time": 82
+    },
+    {
+      "id": "ppt14-03",
+      "pptPage": 14,
+      "step": 3,
+      "time": 84.4
+    },
+    {
+      "id": "ppt15-01",
+      "pptPage": 15,
+      "step": 1,
+      "time": 85.5
+    },
+    {
+      "id": "ppt15-02",
+      "pptPage": 15,
+      "step": 2,
+      "time": 86.7
+    },
+    {
+      "id": "ppt15-03",
+      "pptPage": 15,
+      "step": 3,
+      "time": 88
+    },
+    {
+      "id": "ppt15-04",
+      "pptPage": 15,
+      "step": 4,
+      "time": 89.6
+    },
+    {
+      "id": "ppt16-01",
+      "pptPage": 16,
+      "step": 1,
+      "time": 90.5
+    },
+    {
+      "id": "ppt16-02",
+      "pptPage": 16,
+      "step": 2,
+      "time": 92
+    },
+    {
+      "id": "ppt16-03",
+      "pptPage": 16,
+      "step": 3,
+      "time": 94.4
+    },
+    {
+      "id": "ppt17-01",
+      "pptPage": 17,
+      "step": 1,
+      "time": 95.5
+    },
+    {
+      "id": "ppt17-02",
+      "pptPage": 17,
+      "step": 2,
+      "time": 97
+    },
+    {
+      "id": "ppt17-03",
+      "pptPage": 17,
+      "step": 3,
+      "time": 99.4
+    },
+    {
+      "id": "ppt18-01",
+      "pptPage": 18,
+      "step": 1,
+      "time": 100.5
+    },
+    {
+      "id": "ppt18-02",
+      "pptPage": 18,
+      "step": 2,
+      "time": 102
+    },
+    {
+      "id": "ppt18-03",
+      "pptPage": 18,
+      "step": 3,
+      "time": 104
+    },
+    {
+      "id": "ppt18-04",
+      "pptPage": 18,
+      "step": 4,
+      "time": 106
+    },
+    {
+      "id": "ppt18-05",
+      "pptPage": 18,
+      "step": 5,
+      "time": 108
+    },
+    {
+      "id": "ppt19-01",
+      "pptPage": 19,
+      "step": 1,
+      "time": 109.5
+    },
+    {
+      "id": "ppt19-02",
+      "pptPage": 19,
+      "step": 2,
+      "time": 111
+    },
+    {
+      "id": "ppt19-03",
+      "pptPage": 19,
+      "step": 3,
+      "time": 113.4
+    },
+    {
+      "id": "ppt20-01",
+      "pptPage": 20,
+      "step": 1,
+      "time": 114.5
+    },
+    {
+      "id": "ppt20-02",
+      "pptPage": 20,
+      "step": 2,
+      "time": 116
+    },
+    {
+      "id": "ppt20-03",
+      "pptPage": 20,
+      "step": 3,
+      "time": 118.4
+    },
+    {
+      "id": "ppt21-01",
+      "pptPage": 21,
+      "step": 1,
+      "time": 119.5
+    },
+    {
+      "id": "ppt21-02",
+      "pptPage": 21,
+      "step": 2,
+      "time": 123.4
+    },
+    {
+      "id": "ppt22-01",
+      "pptPage": 22,
+      "step": 1,
+      "time": 124.5
+    },
+    {
+      "id": "ppt22-02",
+      "pptPage": 22,
+      "step": 2,
+      "time": 126
+    },
+    {
+      "id": "ppt22-03",
+      "pptPage": 22,
+      "step": 3,
+      "time": 128.4
+    },
+    {
+      "id": "ppt23-01",
+      "pptPage": 23,
+      "step": 1,
+      "time": 129.5
+    },
+    {
+      "id": "ppt23-02",
+      "pptPage": 23,
+      "step": 2,
+      "time": 133.4
+    },
+    {
+      "id": "ppt24-01",
+      "pptPage": 24,
+      "step": 1,
+      "time": 134.5
+    },
+    {
+      "id": "ppt24-02",
+      "pptPage": 24,
+      "step": 2,
+      "time": 138.4
+    },
+    {
+      "id": "ppt25-01",
+      "pptPage": 25,
+      "step": 1,
+      "time": 139.5
+    },
+    {
+      "id": "ppt25-02",
+      "pptPage": 25,
+      "step": 2,
+      "time": 141
+    },
+    {
+      "id": "ppt25-03",
+      "pptPage": 25,
+      "step": 3,
+      "time": 143.4
+    }
+  ],
+  "method": "原片頁碼OCR及接觸表人工覆核，擷取原1280×720代表畫面；保留原始連續動畫。OCR第12頁誤讀為1，第一頁及第7頁辨識不足，以實際畫面頁碼覆核。",
+  "notes": "代表畫面並非每個PPT點擊事件；所有25頁可查看完整XML原文。"
+}

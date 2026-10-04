@@ -1,0 +1,1070 @@
+[
+  {
+    "id": "BOOK1",
+    "pixels": [
+      1214,
+      1611
+    ],
+    "source": "CH2-1-新陳代謝與酵素.pdf",
+    "pdfPage": 1,
+    "printedPage": 70,
+    "crop": [
+      0.0,
+      0.0,
+      606.614013671875,
+      805.0390014648438
+    ]
+  },
+  {
+    "id": "BOOK2",
+    "pixels": [
+      1214,
+      1611
+    ],
+    "source": "CH2-1-新陳代謝與酵素.pdf",
+    "pdfPage": 2,
+    "printedPage": 71,
+    "crop": [
+      0.0,
+      0.0,
+      606.614013671875,
+      805.0390014648438
+    ]
+  },
+  {
+    "id": "BOOK3",
+    "pixels": [
+      1214,
+      1611
+    ],
+    "source": "CH2-1-新陳代謝與酵素.pdf",
+    "pdfPage": 3,
+    "printedPage": 72,
+    "crop": [
+      0.0,
+      0.0,
+      606.614013671875,
+      805.0390014648438
+    ]
+  },
+  {
+    "id": "BOOK4",
+    "pixels": [
+      1214,
+      1611
+    ],
+    "source": "CH2-1-新陳代謝與酵素.pdf",
+    "pdfPage": 4,
+    "printedPage": 73,
+    "crop": [
+      0.0,
+      0.0,
+      606.614013671875,
+      805.0390014648438
+    ]
+  },
+  {
+    "id": "BOOK5",
+    "pixels": [
+      1214,
+      1611
+    ],
+    "source": "CH2-1-新陳代謝與酵素.pdf",
+    "pdfPage": 5,
+    "printedPage": 74,
+    "crop": [
+      0.0,
+      0.0,
+      606.614013671875,
+      805.0390014648438
+    ]
+  },
+  {
+    "id": "energy",
+    "pixels": [
+      1908,
+      896
+    ],
+    "source": "CH2-1-新陳代謝與酵素.pdf",
+    "pdfPage": 2,
+    "printedPage": 71,
+    "crop": [
+      58,
+      350,
+      535,
+      574
+    ],
+    "dpi": 288
+  },
+  {
+    "id": "cycle",
+    "pixels": [
+      1908,
+      468
+    ],
+    "source": "CH2-1-新陳代謝與酵素.pdf",
+    "pdfPage": 2,
+    "printedPage": 71,
+    "crop": [
+      58,
+      575,
+      535,
+      692
+    ],
+    "dpi": 288
+  },
+  {
+    "id": "models",
+    "pixels": [
+      1404,
+      800
+    ],
+    "source": "CH2-1-新陳代謝與酵素.pdf",
+    "pdfPage": 3,
+    "printedPage": 72,
+    "crop": [
+      74,
+      310,
+      425,
+      510
+    ],
+    "dpi": 288
+  },
+  {
+    "id": "competition",
+    "pixels": [
+      1888,
+      804
+    ],
+    "source": "CH2-1-新陳代謝與酵素.pdf",
+    "pdfPage": 3,
+    "printedPage": 72,
+    "crop": [
+      74,
+      518,
+      546,
+      719
+    ],
+    "dpi": 288
+  },
+  {
+    "id": "temperature",
+    "pixels": [
+      832,
+      564
+    ],
+    "source": "CH2-1-新陳代謝與酵素.pdf",
+    "pdfPage": 4,
+    "printedPage": 73,
+    "crop": [
+      71,
+      445,
+      279,
+      586
+    ],
+    "dpi": 288
+  },
+  {
+    "id": "ph",
+    "pixels": [
+      856,
+      564
+    ],
+    "source": "CH2-1-新陳代謝與酵素.pdf",
+    "pdfPage": 4,
+    "printedPage": 73,
+    "crop": [
+      307,
+      445,
+      521,
+      586
+    ],
+    "dpi": 288
+  },
+  {
+    "id": "environment",
+    "pixels": [
+      1820,
+      568
+    ],
+    "source": "CH2-1-新陳代謝與酵素.pdf",
+    "pdfPage": 4,
+    "printedPage": 73,
+    "crop": [
+      70,
+      444,
+      525,
+      586
+    ],
+    "dpi": 288
+  },
+  {
+    "id": "cofactor",
+    "pixels": [
+      1896,
+      1456
+    ],
+    "source": "CH2-1-新陳代謝與酵素.pdf",
+    "pdfPage": 5,
+    "printedPage": 74,
+    "crop": [
+      69,
+      355,
+      543,
+      719
+    ],
+    "dpi": 288
+  },
+  {
+    "id": "ppt01-01",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 0.7,
+    "pptPage": 1
+  },
+  {
+    "id": "ppt01-02",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 2,
+    "pptPage": 1
+  },
+  {
+    "id": "ppt01-03",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 4.4,
+    "pptPage": 1
+  },
+  {
+    "id": "ppt02-01",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 5.6,
+    "pptPage": 2
+  },
+  {
+    "id": "ppt02-02",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 7,
+    "pptPage": 2
+  },
+  {
+    "id": "ppt02-03",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 9.4,
+    "pptPage": 2
+  },
+  {
+    "id": "ppt03-01",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 10.6,
+    "pptPage": 3
+  },
+  {
+    "id": "ppt03-02",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 12,
+    "pptPage": 3
+  },
+  {
+    "id": "ppt03-03",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 14.4,
+    "pptPage": 3
+  },
+  {
+    "id": "ppt04-01",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 15.6,
+    "pptPage": 4
+  },
+  {
+    "id": "ppt04-02",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 17,
+    "pptPage": 4
+  },
+  {
+    "id": "ppt04-03",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 19.4,
+    "pptPage": 4
+  },
+  {
+    "id": "ppt05-01",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 20.6,
+    "pptPage": 5
+  },
+  {
+    "id": "ppt05-02",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 22.5,
+    "pptPage": 5
+  },
+  {
+    "id": "ppt05-03",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 24.4,
+    "pptPage": 5
+  },
+  {
+    "id": "ppt06-01",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 25.6,
+    "pptPage": 6
+  },
+  {
+    "id": "ppt06-02",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 27,
+    "pptPage": 6
+  },
+  {
+    "id": "ppt06-03",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 29.4,
+    "pptPage": 6
+  },
+  {
+    "id": "ppt07-01",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 30.6,
+    "pptPage": 7
+  },
+  {
+    "id": "ppt07-02",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 32,
+    "pptPage": 7
+  },
+  {
+    "id": "ppt07-03",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 34.4,
+    "pptPage": 7
+  },
+  {
+    "id": "ppt08-01",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 35.6,
+    "pptPage": 8
+  },
+  {
+    "id": "ppt08-02",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 37,
+    "pptPage": 8
+  },
+  {
+    "id": "ppt08-03",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 39.4,
+    "pptPage": 8
+  },
+  {
+    "id": "ppt09-01",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 40.6,
+    "pptPage": 9
+  },
+  {
+    "id": "ppt09-02",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 42,
+    "pptPage": 9
+  },
+  {
+    "id": "ppt09-03",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 44.4,
+    "pptPage": 9
+  },
+  {
+    "id": "ppt10-01",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 45.6,
+    "pptPage": 10
+  },
+  {
+    "id": "ppt10-02",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 47,
+    "pptPage": 10
+  },
+  {
+    "id": "ppt10-03",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 49.4,
+    "pptPage": 10
+  },
+  {
+    "id": "ppt11-01",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 50.5,
+    "pptPage": 11
+  },
+  {
+    "id": "ppt11-02",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 51.6,
+    "pptPage": 11
+  },
+  {
+    "id": "ppt11-03",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 53.8,
+    "pptPage": 11
+  },
+  {
+    "id": "ppt11-04",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 55.4,
+    "pptPage": 11
+  },
+  {
+    "id": "ppt11-05",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 58,
+    "pptPage": 11
+  },
+  {
+    "id": "ppt12-01",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 59.5,
+    "pptPage": 12
+  },
+  {
+    "id": "ppt12-02",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 61,
+    "pptPage": 12
+  },
+  {
+    "id": "ppt12-03",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 63,
+    "pptPage": 12
+  },
+  {
+    "id": "ppt12-04",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 65,
+    "pptPage": 12
+  },
+  {
+    "id": "ppt12-05",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 68,
+    "pptPage": 12
+  },
+  {
+    "id": "ppt13-01",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 69.5,
+    "pptPage": 13
+  },
+  {
+    "id": "ppt13-02",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 71,
+    "pptPage": 13
+  },
+  {
+    "id": "ppt13-03",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 73,
+    "pptPage": 13
+  },
+  {
+    "id": "ppt13-04",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 75,
+    "pptPage": 13
+  },
+  {
+    "id": "ppt13-05",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 77,
+    "pptPage": 13
+  },
+  {
+    "id": "ppt13-06",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 79,
+    "pptPage": 13
+  },
+  {
+    "id": "ppt14-01",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 80.6,
+    "pptPage": 14
+  },
+  {
+    "id": "ppt14-02",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 82,
+    "pptPage": 14
+  },
+  {
+    "id": "ppt14-03",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 84.4,
+    "pptPage": 14
+  },
+  {
+    "id": "ppt15-01",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 85.5,
+    "pptPage": 15
+  },
+  {
+    "id": "ppt15-02",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 86.7,
+    "pptPage": 15
+  },
+  {
+    "id": "ppt15-03",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 88,
+    "pptPage": 15
+  },
+  {
+    "id": "ppt15-04",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 89.6,
+    "pptPage": 15
+  },
+  {
+    "id": "ppt16-01",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 90.5,
+    "pptPage": 16
+  },
+  {
+    "id": "ppt16-02",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 92,
+    "pptPage": 16
+  },
+  {
+    "id": "ppt16-03",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 94.4,
+    "pptPage": 16
+  },
+  {
+    "id": "ppt17-01",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 95.5,
+    "pptPage": 17
+  },
+  {
+    "id": "ppt17-02",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 97,
+    "pptPage": 17
+  },
+  {
+    "id": "ppt17-03",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 99.4,
+    "pptPage": 17
+  },
+  {
+    "id": "ppt18-01",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 100.5,
+    "pptPage": 18
+  },
+  {
+    "id": "ppt18-02",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 102,
+    "pptPage": 18
+  },
+  {
+    "id": "ppt18-03",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 104,
+    "pptPage": 18
+  },
+  {
+    "id": "ppt18-04",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 106,
+    "pptPage": 18
+  },
+  {
+    "id": "ppt18-05",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 108,
+    "pptPage": 18
+  },
+  {
+    "id": "ppt19-01",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 109.5,
+    "pptPage": 19
+  },
+  {
+    "id": "ppt19-02",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 111,
+    "pptPage": 19
+  },
+  {
+    "id": "ppt19-03",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 113.4,
+    "pptPage": 19
+  },
+  {
+    "id": "ppt20-01",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 114.5,
+    "pptPage": 20
+  },
+  {
+    "id": "ppt20-02",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 116,
+    "pptPage": 20
+  },
+  {
+    "id": "ppt20-03",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 118.4,
+    "pptPage": 20
+  },
+  {
+    "id": "ppt21-01",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 119.5,
+    "pptPage": 21
+  },
+  {
+    "id": "ppt21-02",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 123.4,
+    "pptPage": 21
+  },
+  {
+    "id": "ppt22-01",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 124.5,
+    "pptPage": 22
+  },
+  {
+    "id": "ppt22-02",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 126,
+    "pptPage": 22
+  },
+  {
+    "id": "ppt22-03",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 128.4,
+    "pptPage": 22
+  },
+  {
+    "id": "ppt23-01",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 129.5,
+    "pptPage": 23
+  },
+  {
+    "id": "ppt23-02",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 133.4,
+    "pptPage": 23
+  },
+  {
+    "id": "ppt24-01",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 134.5,
+    "pptPage": 24
+  },
+  {
+    "id": "ppt24-02",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 138.4,
+    "pptPage": 24
+  },
+  {
+    "id": "ppt25-01",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 139.5,
+    "pptPage": 25
+  },
+  {
+    "id": "ppt25-02",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 141,
+    "pptPage": 25
+  },
+  {
+    "id": "ppt25-03",
+    "pixels": [
+      1280,
+      720
+    ],
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "time": 143.4,
+    "pptPage": 25
+  },
+  {
+    "id": "question21",
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "pptPage": 21,
+    "crop": [
+      627,
+      215,
+      1226,
+      517
+    ],
+    "pixels": [
+      599,
+      302
+    ],
+    "time": 123.4
+  },
+  {
+    "id": "question23",
+    "source": "選修生物(Ｉ)圖解PPT_CH2-1_新陳代謝與酵素.mp4",
+    "pptPage": 23,
+    "crop": [
+      196,
+      317,
+      1102,
+      599
+    ],
+    "pixels": [
+      906,
+      282
+    ],
+    "time": 133.4
+  }
+]

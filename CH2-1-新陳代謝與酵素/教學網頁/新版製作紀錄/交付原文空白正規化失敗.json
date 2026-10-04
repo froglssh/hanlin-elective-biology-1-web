@@ -1,0 +1,274 @@
+{
+  "at": "2026-10-04T16:57:11.716Z",
+  "htmlSHA256": "3fdf57c84d7d2326d03c6c9bbd97fe988a4921a4cae4e7ab4c47ed7331062333",
+  "checks": 41,
+  "failures": [
+    {
+      "name": "PPT1 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT2 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT3 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT4 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT5 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT6 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT7 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT8 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT9 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT10 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT11 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT12 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT13 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT14 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT15 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT16 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT17 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT18 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT19 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT20 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT21 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT22 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT23 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT24 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT25 full original",
+      "ok": false
+    }
+  ],
+  "details": [
+    {
+      "name": "q0 original zoom 0",
+      "ok": true
+    },
+    {
+      "name": "q1 original zoom 0",
+      "ok": true
+    },
+    {
+      "name": "q2 original zoom 0",
+      "ok": true
+    },
+    {
+      "name": "q3 original zoom 0",
+      "ok": true
+    },
+    {
+      "name": "q4 original zoom 0",
+      "ok": true
+    },
+    {
+      "name": "q5 original zoom 0",
+      "ok": true
+    },
+    {
+      "name": "q6 original zoom 0",
+      "ok": true
+    },
+    {
+      "name": "q6 original zoom 1",
+      "ok": true
+    },
+    {
+      "name": "q7 original zoom 0",
+      "ok": true
+    },
+    {
+      "name": "q7 original zoom 1",
+      "ok": true
+    },
+    {
+      "name": "q8 original zoom 0",
+      "ok": true
+    },
+    {
+      "name": "lesson 2 zoom",
+      "ok": true
+    },
+    {
+      "name": "lesson 5 zoom",
+      "ok": true
+    },
+    {
+      "name": "lesson 6 zoom",
+      "ok": true
+    },
+    {
+      "name": "lesson 8 zoom",
+      "ok": true
+    },
+    {
+      "name": "PPT1 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT2 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT3 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT4 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT5 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT6 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT7 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT8 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT9 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT10 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT11 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT12 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT13 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT14 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT15 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT16 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT17 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT18 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT19 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT20 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT21 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT22 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT23 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT24 full original",
+      "ok": false
+    },
+    {
+      "name": "PPT25 full original",
+      "ok": false
+    },
+    {
+      "name": "no page errors",
+      "ok": true,
+      "data": []
+    }
+  ]
+}

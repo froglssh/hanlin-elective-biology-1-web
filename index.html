@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>高中選修生物(Ⅰ) 全單元互動教學網頁總覽站 | 翰林版</title>
+<style>
+  :root {
+    --primary: #354f87;
+    --primary-dark: #202e4d;
+    --primary-light: #5271b4;
+    --accent: #2e7d32;
+    --bg: #f4f6fa;
+    --card-bg: #ffffff;
+    --text: #1d2939;
+    --text-muted: #667085;
+    --border: #e4e7ec;
+    --shadow: 0 4px 16px rgba(32, 46, 77, 0.08);
+    --shadow-hover: 0 8px 24px rgba(32, 46, 77, 0.15);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    padding-bottom: 60px;
+  }
+
+  header {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+    color: #fff;
+    padding: 48px 24px 40px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    position: relative;
+    overflow: hidden;
+  }
+  header::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #64b5f6, #81c784, #ffb74d);
+  }
+  header h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+  }
+  header p {
+    font-size: 1.05rem;
+    opacity: 0.92;
+    max-width: 760px;
+    margin: 0 auto 20px;
+  }
+
+  .stats-bar {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 24px;
+  }
+  .stat-item {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid rgba(255,255,255,0.2);
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 36px auto 0;
+    padding: 0 20px;
+  }
+
+  .search-box {
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+  }
+  .search-box input {
+    width: 100%;
+    max-width: 600px;
+    padding: 14px 22px;
+    font-size: 1.05rem;
+    border: 2px solid var(--border);
+    border-radius: 30px;
+    outline: none;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .search-box input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 4px 16px rgba(53, 79, 135, 0.2);
+  }
+
+  .chapter-group {
+    margin-bottom: 40px;
+  }
+  .chapter-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin-bottom: 20px;
+    padding-left: 14px;
+    border-left: 5px solid var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 24px;
+  }
+
+  .card {
+    background: var(--card-bg);
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--primary-light);
+  }
+  .card-tag {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--primary);
+    background: #eef2fa;
+    border-radius: 20px;
+    margin-bottom: 12px;
+  }
+  .card h3 {
+    font-size: 1.25rem;
+    color: var(--primary-dark);
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .card p {
+    font-size: 0.92rem;
+    color: var(--text-muted);
+    margin-bottom: 18px;
+    flex: 1;
+  }
+
+  .card-meta {
+    display: flex;
+    gap: 16px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+    margin-bottom: 16px;
+  }
+  .card-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .btn-group {
+    display: flex;
+    gap: 10px;
+  }
+  .btn {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+  }
+  .btn-primary {
+    background: var(--primary);
+    color: #fff;
+  }
+  .btn-primary:hover {
+    background: var(--primary-dark);
+  }
+  .btn-secondary {
+    background: #f2f4f7;
+    color: var(--text);
+    border: 1px solid var(--border);
+  }
+  .btn-secondary:hover {
+    background: #e4e7ec;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 24px;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+  }
+
+  @media (max-width: 600px) {
+    header h1 { font-size: 1.6rem; }
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>高中選修生物(Ⅰ) 全單元互動教學網頁</h1>
+  <p>翰林版選修生物(Ⅰ) 完整 17 個單元全功能線上學習平台 · 含高清圖解探索、動畫視覺化、三標籤讀解與多元練習題庫</p>
+  <div class="stats-bar">
+    <div class="stat-item">全 17 單元完整收錄</div>
+    <div class="stat-item">160+ 高清圖解與動畫</div>
+    <div class="stat-item">140+ 多元練習題庫（拖放/單選/多選）</div>
+    <div class="stat-item">100% 手機與電腦響應式適配</div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="搜尋單元名稱、關鍵字（如：細胞膜、呼吸作用、DNA複製、PCR...）" oninput="filterCards()">
+  </div>
+
+  <!-- 第 1 章 -->
+  <div class="chapter-group">
+    <div class="chapter-title">
+      <span>第 1 章 · 細胞的構造與功能</span>
+    </div>
+    <div class="grid">
+
+      <div class="card" data-keywords="1-1 1-1 細胞的分子組成 生命分子積木坊 水 無機鹽 醣類 蛋白質 脂質 核酸">
+        <div>
+          <span class="card-tag">CH1-1</span>
+          <h3>生命分子積木坊（細胞的分子組成）</h3>
+          <p>探討構成生命體的水、無機鹽、醣類、蛋白質、脂質與核酸之結構特徵與生理功能。</p>
+        </div>
+        <div>
+          <div class="card-meta">
+            <span>📊 圖解 25 組</span>
+            <span>📝 題庫 10 題</span>
+          </div>
+          <div class="btn-group">
+            <a href="ch1-1/index.html" class="btn btn-primary">進入網頁學習</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-keywords="1-2 1-2 生物膜的構造與功能 生物膜研究所 流體鑲嵌模型 磷脂質 膜蛋白 醣脂 醣蛋白">
+        <div>
+          <span class="card-tag">CH1-2</span>
+          <h3>生物膜研究所（生物膜的構造與功能）</h3>
+          <p>深入流體鑲嵌模型，解析磷脂雙層、膜蛋白、膽固醇與膜醣類之動態構造與功能。</p>
+        </div>
+        <div>
+          <div class="card-meta">
+            <span>📊 圖解 23 組</span>
+            <span>📝 題庫 10 題</span>
+          </div>
+          <div class="btn-group">
+            <a href="ch1-2/index.html" class="btn btn-primary">進入網頁學習</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-keywords="1-3 1-3 細胞膜運輸物質的方式 細胞膜運輸驛站 簡單擴散 促進性擴散 主動運輸 胞吞 胞吐 滲透">
+        <div>
+          <span class="card-tag">CH1-3</span>
+          <h3>細胞膜運輸驛站（物質跨膜運輸）</h3>
+          <p>解析小分子被動/主動運輸、滲透作用、質離現象與大分子胞吞胞吐作用機制。</p>
+        </div>
+        <div>
+          <div class="card-meta">
+            <span>📊 圖解 13 組</span>
+            <span>📝 題庫 8 題</span>
+          </div>
+          <div class="btn-group">
+            <a href="ch1-3/index.html" class="btn btn-primary">進入網頁學習</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-keywords="1-4 1-4 細胞的生命歷程 細胞生命驛站 細胞週期 有絲分裂 細胞分化 衰老 凋亡 幹細胞 癌變">
+        <div>
+          <span class="card-tag">CH1-4</span>
+          <h3>細胞生命驛站（細胞的生命歷程）</h3>
+          <p>涵蓋細胞週期、間期與分裂期變化、細胞分化、衰老、程式性凋亡與癌細胞調控失常。</p>
+        </div>
+        <div>
+          <div class="card-meta">
+            <span>📊 圖解 11 組</span>
+            <span>📝 題庫 8 題</span>
+          </div>
+          <div class="btn-group">
+            <a href="ch1-4/index.html" class="btn btn-primary">進入網頁學習</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 第 2 章 -->
+  <div class="chapter-group">
+    <div class="chapter-title">
+      <span>第 2 章 · 細胞的能量與代謝</span>
+    </div>
+    <div class="grid">
+
+      <div class="card" data-keywords="2-1 2-1 新陳代謝與酵素 代謝與酵素驛站 同化 異化 活化能 酵素專一性 影響酵素因子 競爭性抑制">
+        <div>
+          <span class="card-tag">CH2-1</span>
+          <h3>代謝與酵素驛站（新陳代謝與酵素）</h3>
+          <p>探討能量變化、活化能降低原理、酵素催化專一性與影響酵素活性的環境因子。</p>
+        </div>
+        <div>
+          <div class="card-meta">
+            <span>📊 圖解 11 組</span>
+            <span>📝 題庫 8 題</span>
+          </div>
+          <div class="btn-group">
+            <a href="ch2-1/index.html" class="btn btn-primary">進入網頁學習</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-keywords="2-2 2-2 呼吸作用 呼吸作用能量驛站 糖解作用 檸檬酸循環 電子傳遞鏈 酒精發酵 乳酸發酵 檸檬酸">
+        <div>
+          <span class="card-tag">CH2-2</span>
+          <h3>呼吸作用能量驛站（細胞呼吸）</h3>
+          <p>詳解有氧呼吸三大階段（糖解、檸檬酸循環、氧化磷酸化）與無氧發酵路徑。</p>
+        </div>
+        <div>
+          <div class="card-meta">
+            <span>📊 圖解 8 組</span>
+            <span>📝 題庫 8 題</span>
+          </div>
+          <div class="btn-group">
+            <a href="ch2-2/index.html" class="btn btn-primary">進入網頁學習</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-keywords="2-3 2-3 能量流轉與生命維持的關係 能量流轉驛站 光合作用 葉綠體 呼吸作用 能量偶聯 ATP 循環">
+        <div>
+          <span class="card-tag">CH2-3</span>
+          <h3>能量流轉驛站（能量流轉與生命維持）</h3>
+          <p>比較光合作用與呼吸作用之能量偶聯、ATP 與 ADP 循環及生態系能量流動。</p>
+        </div>
+        <div>
+          <div class="card-meta">
+            <span>📊 圖解 6 組</span>
+            <span>📝 題庫 8 題</span>
+          </div>
+          <div class="btn-group">
+            <a href="ch2-3/index.html" class="btn btn-primary">進入網頁學習</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 第 3 章 -->
+  <div class="chapter-group">
+    <div class="chapter-title">
+      <span>第 3 章 · 遺傳分子基礎與染色體</span>
+    </div>
+    <div class="grid">
+
+      <div class="card" data-keywords="3-1 3-1 遺傳的染色體學說 染色體學說驛站 薩頓 摩根 果蠅實驗 性聯遺傳 基因聯鎖 互換">
+        <div>
+          <span class="card-tag">CH3-1</span>
+          <h3>染色體學說驛站（遺傳的染色體學說）</h3>
+          <p>從薩頓假說到摩根果蠅實驗、性聯遺傳現象與基因聯鎖互換原理。</p>
+        </div>
+        <div>
+          <div class="card-meta">
+            <span>📊 圖解 6 組</span>
+            <span>📝 題庫 8 題</span>
+          </div>
+          <div class="btn-group">
+            <a href="ch3-1/index.html" class="btn btn-primary">進入網頁學習</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-keywords="3-2 3-2 確認遺傳物質為DNA的歷程 DNA探索歷程驛站 格里夫茲 艾佛里 赫雪 蔡加夫 DNA 結構 雙螺旋">
+        <div>
+          <span class="card-tag">CH3-2</span>
+          <h3>DNA探索歷程驛站（確認遺傳物質）</h3>
+          <p>重現格里夫茲轉化實驗、艾佛里證明實驗、赫雪-蔡斯噬菌體實驗與華生克里克結構。</p>
+        </div>
+        <div>
+          <div class="card-meta">
+            <span>📊 圖解 6 組</span>
+            <span>📝 題庫 8 題</span>
+          </div>
+          <div class="btn-group">
+            <a href="ch3-2/index.html" class="btn btn-primary">進入網頁學習</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 第 4 章 -->
+  <div class="chapter-group">
+    <div class="chapter-title">
+      <span>第 4 章 · 遺傳訊息的表現與調控</span>
+    </div>
+    <div class="grid">
+
+      <div class="card" data-keywords="4-1 4-1 遺傳訊息的複製 DNA複製驛站 半保留複製 岡崎片段 解旋酶 聚合酶 引導股 延遲股">
+        <div>
+          <span class="card-tag">CH4-1</span>
+          <h3>DNA複製驛站（遺傳訊息複製）</h3>
+          <p>解析梅瑟生-史達半保留複製實驗、複製分叉、引導股與延遲股岡崎片段合成機制。</p>
+        </div>
+        <div>
+          <div class="card-meta">
+            <span>📊 圖解 6 組</span>
+            <span>📝 題庫 8 題</span>
+          </div>
+          <div class="btn-group">
+            <a href="ch4-1/index.html" class="btn btn-primary">進入網頁學習</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-keywords="4-2 4-2 遺傳訊息的轉錄與轉譯 轉錄與轉譯驛站 中心法則 RNA 轉錄 密碼子 tRNA 密碼子轉譯 蛋白質">
+        <div>
+          <span class="card-tag">CH4-2</span>
+          <h3>轉錄與轉譯驛站（遺傳訊息轉錄與轉譯）</h3>
+          <p>探索分子生物學中心法則、mRNA 轉錄修飾、tRNA 密碼子配對與核糖體轉譯多肽鏈。</p>
+        </div>
+        <div>
+          <div class="card-meta">
+            <span>📊 圖解 6 組</span>
+            <span>📝 題庫 8 題</span>
+          </div>
+          <div class="btn-group">
+            <a href="ch4-2/index.html" class="btn btn-primary">進入網頁學習</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-keywords="4-3 4-3 基因表現的調控 基因調控驛站 原核生物 乳糖操縱組 抑制蛋白 促動子 真核生物 轉錄因子 剪接">
+        <div>
+          <span class="card-tag">CH4-3</span>
+          <h3>基因調控驛站（基因表現調控）</h3>
+          <p>比較原核生物乳糖操縱組（Operon）模式與真核生物多層次基因調控機制。</p>
+        </div>
+        <div>
+          <div class="card-meta">
+            <span>📊 圖解 6 組</span>
+            <span>📝 題庫 8 題</span>
+          </div>
+          <div class="btn-group">
+            <a href="ch4-3/index.html" class="btn btn-primary">進入網頁學習</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-keywords="4-4 4-4 遺傳變異 遺傳變異驛站 點突變 點置換 點插入 點缺失 染色體構造變異 染色體數目變異 唐氏症">
+        <div>
+          <span class="card-tag">CH4-4</span>
+          <h3>遺傳變異驛站（基因突變與變異）</h3>
+          <p>解析鹼基置換與移碼突變影響、染色體結構與數目變異（如非整倍體症候群）。</p>
+        </div>
+        <div>
+          <div class="card-meta">
+            <span>📊 圖解 6 組</span>
+            <span>📝 題庫 8 題</span>
+          </div>
+          <div class="btn-group">
+            <a href="ch4-4/index.html" class="btn btn-primary">進入網頁學習</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 第 5 章 -->
+  <div class="chapter-group">
+    <div class="chapter-title">
+      <span>第 5 章 · 生物科技與應用</span>
+    </div>
+    <div class="grid">
+
+      <div class="card" data-keywords="5-1 5-1 聚合酶連鎖反應 聚合酶連鎖反應驛站 PCR 變性 黏合 延伸 Taq 聚合酶 引子 DNA 擴增">
+        <div>
+          <span class="card-tag">CH5-1</span>
+          <h3>聚合酶連鎖反應驛站（PCR 技術）</h3>
+          <p>深入 PCR 熱循環三大步驟（變性、引子黏合、延伸）與 Taq 酵素高溫擴增 DNA 原理。</p>
+        </div>
+        <div>
+          <div class="card-meta">
+            <span>📊 圖解 6 組</span>
+            <span>📝 題庫 8 題</span>
+          </div>
+          <div class="btn-group">
+            <a href="ch5-1/index.html" class="btn btn-primary">進入網頁學習</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-keywords="5-2 5-2 重組DNA技術 重組DNA技術驛站 限制酵素 DNA 接合酵素 質體 載體 轉殖 篩選">
+        <div>
+          <span class="card-tag">CH5-2</span>
+          <h3>重組DNA技術驛站（基因重組）</h3>
+          <p>探討限制酵素切割黏性端、DNA 接合酶連接、質體載體構建與宿主轉化步驟。</p>
+        </div>
+        <div>
+          <div class="card-meta">
+            <span>📊 圖解 6 組</span>
+            <span>📝 題庫 8 題</span>
+          </div>
+          <div class="btn-group">
+            <a href="ch5-2/index.html" class="btn btn-primary">進入網頁學習</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-keywords="5-3 5-3 基因轉殖技術 基因轉殖技術驛站 轉殖植物 轉殖動物 胰島素 螢光魚 農桿菌 農作物">
+        <div>
+          <span class="card-tag">CH5-3</span>
+          <h3>基因轉殖技術驛站（基因轉殖生物）</h3>
+          <p>介紹農桿菌轉殖植物、顯微注射法產生轉殖動物及重組胰島素醫藥應用。</p>
+        </div>
+        <div>
+          <div class="card-meta">
+            <span>📊 圖解 6 組</span>
+            <span>📝 題庫 8 題</span>
+          </div>
+          <div class="btn-group">
+            <a href="ch5-3/index.html" class="btn btn-primary">進入網頁學習</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-keywords="5-4 5-4 基因體時代 基因體時代驛站 人類基因體計畫 基因定序 生物資訊學 基因編輯 CRISPR Cas9">
+        <div>
+          <span class="card-tag">CH5-4</span>
+          <h3>基因體時代驛站（基因體與基因編輯）</h3>
+          <p>涵蓋 HGP 人類基因體計畫、次世代定序、生物資訊巨量分析與 CRISPR-Cas9 基因編輯。</p>
+        </div>
+        <div>
+          <div class="card-meta">
+            <span>📊 圖解 6 組</span>
+            <span>📝 題庫 8 題</span>
+          </div>
+          <div class="btn-group">
+            <a href="ch5-4/index.html" class="btn btn-primary">進入網頁學習</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 高中生物教學網頁開發團隊 · 翰林版選修生物(Ⅰ) 全單元互動網頁課程系統</p>
+</footer>
+
+<script>
+  function filterCards() {
+    const query = document.getElementById('searchInput').value.toLowerCase().trim();
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+      const keywords = card.getAttribute('data-keywords').toLowerCase();
+      if (!query || keywords.includes(query)) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+</script>
+</body>
+</html>

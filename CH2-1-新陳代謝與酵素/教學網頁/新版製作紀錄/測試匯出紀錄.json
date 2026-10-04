@@ -1,0 +1,196 @@
+{
+  "chapter": {
+    "unit": "elective1.ch2-1",
+    "title": "新陳代謝與酵素",
+    "version": 1
+  },
+  "exportedAt": "2026-10-04T16:56:10.380Z",
+  "schema": 2,
+  "page": "done",
+  "lesson": "b1-21-l08",
+  "question": "b1-21-q08",
+  "read": {
+    "b1-21-l08": true
+  },
+  "notes": {
+    "b1-21-l08": "QA：最適環境因酵素而異。"
+  },
+  "drafts": {
+    "b1-21-q01": {
+      "place": {
+        "s0": "a0",
+        "s1": "a1",
+        "s2": "a2",
+        "s3": "a3",
+        "s4": "a4",
+        "s5": "a5"
+      },
+      "pick": [],
+      "fill": [],
+      "sub": 0
+    },
+    "b1-21-q02": {
+      "place": {
+        "s0": "a0",
+        "s1": "a1",
+        "s2": "a2",
+        "s3": "a3"
+      },
+      "pick": [],
+      "fill": [],
+      "sub": 0
+    },
+    "b1-21-q03": {
+      "place": {},
+      "pick": [],
+      "fill": [
+        "0",
+        "0",
+        "0"
+      ],
+      "sub": 2
+    },
+    "b1-21-q04": {
+      "place": {},
+      "pick": [],
+      "fill": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "sub": 3
+    },
+    "b1-21-q05": {
+      "place": {
+        "s0": "a0",
+        "s1": "a1",
+        "s2": "a2"
+      },
+      "pick": [],
+      "fill": [],
+      "sub": 0
+    },
+    "b1-21-q06": {
+      "place": {
+        "s0": "a0",
+        "s1": "a1",
+        "s2": "a2",
+        "s3": "a3"
+      },
+      "pick": [],
+      "fill": [],
+      "sub": 0
+    },
+    "b1-21-q07": {
+      "place": {},
+      "pick": [
+        1,
+        2
+      ],
+      "fill": [],
+      "sub": 0
+    },
+    "b1-21-q08": {
+      "place": {},
+      "pick": [
+        3
+      ],
+      "fill": [],
+      "sub": 0
+    },
+    "b1-21-q09": {
+      "place": {},
+      "pick": [
+        0
+      ],
+      "fill": [],
+      "sub": 0
+    }
+  },
+  "results": {
+    "b1-21-q01": {
+      "tries": 3,
+      "errors": 1,
+      "passed": true,
+      "revealed": false,
+      "tags": {
+        "metabolism": 1
+      }
+    },
+    "b1-21-q02": {
+      "tries": 3,
+      "errors": 1,
+      "passed": true,
+      "revealed": false,
+      "tags": {
+        "catalysis": 1
+      }
+    },
+    "b1-21-q03": {
+      "tries": 3,
+      "errors": 1,
+      "passed": true,
+      "revealed": false,
+      "tags": {
+        "activation": 1
+      }
+    },
+    "b1-21-q04": {
+      "tries": 3,
+      "errors": 1,
+      "passed": true,
+      "revealed": false,
+      "tags": {
+        "environment": 1
+      }
+    },
+    "b1-21-q05": {
+      "tries": 3,
+      "errors": 1,
+      "passed": true,
+      "revealed": false,
+      "tags": {
+        "inhibition": 1
+      }
+    },
+    "b1-21-q06": {
+      "tries": 3,
+      "errors": 1,
+      "passed": true,
+      "revealed": false,
+      "tags": {
+        "cofactor": 1
+      }
+    },
+    "b1-21-q07": {
+      "tries": 3,
+      "errors": 1,
+      "passed": true,
+      "revealed": false,
+      "tags": {
+        "activation": 1
+      }
+    },
+    "b1-21-q08": {
+      "tries": 3,
+      "errors": 1,
+      "passed": true,
+      "revealed": false,
+      "tags": {
+        "environment": 1
+      }
+    },
+    "b1-21-q09": {
+      "tries": 3,
+      "errors": 1,
+      "passed": true,
+      "revealed": false,
+      "tags": {
+        "cofactor": 1
+      }
+    }
+  },
+  "theme": "light",
+  "font": 0
+}

@@ -1,0 +1,448 @@
+[
+  {
+    "asset": "BOOK1",
+    "valid": true
+  },
+  {
+    "asset": "BOOK2",
+    "valid": true
+  },
+  {
+    "asset": "BOOK3",
+    "valid": true
+  },
+  {
+    "asset": "BOOK4",
+    "valid": true
+  },
+  {
+    "asset": "BOOK5",
+    "valid": true
+  },
+  {
+    "asset": "energy",
+    "valid": true
+  },
+  {
+    "asset": "cycle",
+    "valid": true
+  },
+  {
+    "asset": "models",
+    "valid": true
+  },
+  {
+    "asset": "competition",
+    "valid": true
+  },
+  {
+    "asset": "temperature",
+    "valid": true
+  },
+  {
+    "asset": "ph",
+    "valid": true
+  },
+  {
+    "asset": "environment",
+    "valid": true
+  },
+  {
+    "asset": "cofactor",
+    "valid": true
+  },
+  {
+    "asset": "ppt01-01",
+    "valid": true
+  },
+  {
+    "asset": "ppt01-02",
+    "valid": true
+  },
+  {
+    "asset": "ppt01-03",
+    "valid": true
+  },
+  {
+    "asset": "ppt02-01",
+    "valid": true
+  },
+  {
+    "asset": "ppt02-02",
+    "valid": true
+  },
+  {
+    "asset": "ppt02-03",
+    "valid": true
+  },
+  {
+    "asset": "ppt03-01",
+    "valid": true
+  },
+  {
+    "asset": "ppt03-02",
+    "valid": true
+  },
+  {
+    "asset": "ppt03-03",
+    "valid": true
+  },
+  {
+    "asset": "ppt04-01",
+    "valid": true
+  },
+  {
+    "asset": "ppt04-02",
+    "valid": true
+  },
+  {
+    "asset": "ppt04-03",
+    "valid": true
+  },
+  {
+    "asset": "ppt05-01",
+    "valid": true
+  },
+  {
+    "asset": "ppt05-02",
+    "valid": true
+  },
+  {
+    "asset": "ppt05-03",
+    "valid": true
+  },
+  {
+    "asset": "ppt06-01",
+    "valid": true
+  },
+  {
+    "asset": "ppt06-02",
+    "valid": true
+  },
+  {
+    "asset": "ppt06-03",
+    "valid": true
+  },
+  {
+    "asset": "ppt07-01",
+    "valid": true
+  },
+  {
+    "asset": "ppt07-02",
+    "valid": true
+  },
+  {
+    "asset": "ppt07-03",
+    "valid": true
+  },
+  {
+    "asset": "ppt08-01",
+    "valid": true
+  },
+  {
+    "asset": "ppt08-02",
+    "valid": true
+  },
+  {
+    "asset": "ppt08-03",
+    "valid": true
+  },
+  {
+    "asset": "ppt09-01",
+    "valid": true
+  },
+  {
+    "asset": "ppt09-02",
+    "valid": true
+  },
+  {
+    "asset": "ppt09-03",
+    "valid": true
+  },
+  {
+    "asset": "ppt10-01",
+    "valid": true
+  },
+  {
+    "asset": "ppt10-02",
+    "valid": true
+  },
+  {
+    "asset": "ppt10-03",
+    "valid": true
+  },
+  {
+    "asset": "ppt11-01",
+    "valid": true
+  },
+  {
+    "asset": "ppt11-02",
+    "valid": true
+  },
+  {
+    "asset": "ppt11-03",
+    "valid": true
+  },
+  {
+    "asset": "ppt11-04",
+    "valid": true
+  },
+  {
+    "asset": "ppt11-05",
+    "valid": true
+  },
+  {
+    "asset": "ppt12-01",
+    "valid": true
+  },
+  {
+    "asset": "ppt12-02",
+    "valid": true
+  },
+  {
+    "asset": "ppt12-03",
+    "valid": true
+  },
+  {
+    "asset": "ppt12-04",
+    "valid": true
+  },
+  {
+    "asset": "ppt12-05",
+    "valid": true
+  },
+  {
+    "asset": "ppt13-01",
+    "valid": true
+  },
+  {
+    "asset": "ppt13-02",
+    "valid": true
+  },
+  {
+    "asset": "ppt13-03",
+    "valid": true
+  },
+  {
+    "asset": "ppt13-04",
+    "valid": true
+  },
+  {
+    "asset": "ppt13-05",
+    "valid": true
+  },
+  {
+    "asset": "ppt13-06",
+    "valid": true
+  },
+  {
+    "asset": "ppt14-01",
+    "valid": true
+  },
+  {
+    "asset": "ppt14-02",
+    "valid": true
+  },
+  {
+    "asset": "ppt14-03",
+    "valid": true
+  },
+  {
+    "asset": "ppt15-01",
+    "valid": true
+  },
+  {
+    "asset": "ppt15-02",
+    "valid": true
+  },
+  {
+    "asset": "ppt15-03",
+    "valid": true
+  },
+  {
+    "asset": "ppt15-04",
+    "valid": true
+  },
+  {
+    "asset": "ppt16-01",
+    "valid": true
+  },
+  {
+    "asset": "ppt16-02",
+    "valid": true
+  },
+  {
+    "asset": "ppt16-03",
+    "valid": true
+  },
+  {
+    "asset": "ppt17-01",
+    "valid": true
+  },
+  {
+    "asset": "ppt17-02",
+    "valid": true
+  },
+  {
+    "asset": "ppt17-03",
+    "valid": true
+  },
+  {
+    "asset": "ppt18-01",
+    "valid": true
+  },
+  {
+    "asset": "ppt18-02",
+    "valid": true
+  },
+  {
+    "asset": "ppt18-03",
+    "valid": true
+  },
+  {
+    "asset": "ppt18-04",
+    "valid": true
+  },
+  {
+    "asset": "ppt18-05",
+    "valid": true
+  },
+  {
+    "asset": "ppt19-01",
+    "valid": true
+  },
+  {
+    "asset": "ppt19-02",
+    "valid": true
+  },
+  {
+    "asset": "ppt19-03",
+    "valid": true
+  },
+  {
+    "asset": "ppt20-01",
+    "valid": true
+  },
+  {
+    "asset": "ppt20-02",
+    "valid": true
+  },
+  {
+    "asset": "ppt20-03",
+    "valid": true
+  },
+  {
+    "asset": "ppt21-01",
+    "valid": true
+  },
+  {
+    "asset": "ppt21-02",
+    "valid": true
+  },
+  {
+    "asset": "ppt22-01",
+    "valid": true
+  },
+  {
+    "asset": "ppt22-02",
+    "valid": true
+  },
+  {
+    "asset": "ppt22-03",
+    "valid": true
+  },
+  {
+    "asset": "ppt23-01",
+    "valid": true
+  },
+  {
+    "asset": "ppt23-02",
+    "valid": true
+  },
+  {
+    "asset": "ppt24-01",
+    "valid": true
+  },
+  {
+    "asset": "ppt24-02",
+    "valid": true
+  },
+  {
+    "asset": "ppt25-01",
+    "valid": true
+  },
+  {
+    "asset": "ppt25-02",
+    "valid": true
+  },
+  {
+    "asset": "ppt25-03",
+    "valid": true
+  },
+  {
+    "asset": "ORIGINAL21",
+    "valid": true
+  },
+  {
+    "asset": "ORIGINAL22",
+    "valid": true
+  },
+  {
+    "asset": "ORIGINAL23",
+    "valid": true
+  },
+  {
+    "asset": "ORIGINAL24",
+    "valid": true
+  },
+  {
+    "asset": "ORIGINAL25",
+    "valid": true
+  },
+  {
+    "asset": "question21",
+    "valid": true
+  },
+  {
+    "asset": "question23",
+    "valid": true
+  },
+  {
+    "originalPage": 21,
+    "stemExact": true,
+    "optionsExact": true,
+    "answer": [
+      "B",
+      "C"
+    ]
+  },
+  {
+    "originalPage": 23,
+    "stemExact": true,
+    "optionsExact": true,
+    "answer": [
+      "D"
+    ]
+  },
+  {
+    "originalPage": 25,
+    "stemExact": true,
+    "optionsExact": true,
+    "answer": [
+      "A"
+    ]
+  },
+  {
+    "originalsUnchanged": true,
+    "originalCount": 9
+  },
+  {
+    "noCDN": true,
+    "localPaths": true,
+    "lessonCount": 11,
+    "questionCount": 9
+  },
+  {
+    "allReferencesValid": true
+  }
+]

@@ -1,0 +1,2 @@
+page.waitForFunction: Timeout 30000ms exceeded.
+    at /Users/froglssh/Library/CloudStorage/GoogleDrive-frog@lssh.tp.edu.tw/我的雲端硬碟/04教科書/0自編教材/翰林/PPT動畫/選修生物1/CH2-1-新陳代謝與酵素/教學網頁/新版製作紀錄/完整驗收.cjs:12:708
