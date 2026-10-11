@@ -352,7 +352,7 @@ h3.sec{font-size:12px;letter-spacing:.14em;color:var(--ink-3);margin:0 0 8px;pad
 .video-heading h1{font:600 clamp(26px,3.2vw,40px)/1.4 var(--serif);margin:8px 0}
 .video-heading p{color:var(--ink-2);margin:0 0 18px}
 .video-player{aspect-ratio:16/9;background:#0E1A2E;border:1px solid var(--line);border-radius:8px;overflow:hidden;position:relative}
-.video-player video{width:100%;height:100%;display:block;background:#000}
+.video-player video,.video-player iframe{width:100%;height:100%;display:block;background:#000;border:0}
 .video-msg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;color:#dfe6f2;padding:30px;font-size:15px;line-height:1.8}
 .video-actions{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:16px;font-size:12.5px;color:var(--ink-3);flex-wrap:wrap}
 /* 大字 */
@@ -594,7 +594,7 @@ body:has(#play:not(.hidden)) .tool-btn{height:34px;width:34px;font-size:15px}
 <section id="video" class="hidden" aria-labelledby="video-title">
  <div class="lhome"><div class="home-actions"><button class="homebtn" data-gohome>回首頁</button></div><span class="lhtitle">教學影片</span></div>
  <div class="video-heading"><span class="edition">TEACHING VIDEO</span><h1 id="video-title" tabindex="-1">生物膜的構造與功能</h1><p>42 頁圖解簡報搭配逐頁旁白：從細胞膜模型的發展，到內膜系統的分工。</p></div>
- <div class="video-player"><video id="teaching-video" controls preload="none" playsinline></video><div class="video-msg hidden" id="video-msg"></div></div>
+ <div class="video-player"><iframe id="teaching-video" allow="autoplay; encrypted-media" allowfullscreen></iframe><div class="video-msg hidden" id="video-msg"></div></div>
  <div class="video-actions"><span id="video-note">影片檔與本網頁放在同一個課程資料夾（教學影片／）。</span><span id="video-link"></span></div>
 </section>
 </main>
@@ -722,8 +722,8 @@ const TAGS = {"T1": "滲透作用與水勢平衡原理", "T2": "植物細胞質�
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const KEY='lab1-2.quiz.v1',PKEY='lab1-2.prefs.v1',REVEAL_N=5;
-const VIDEO_SRC='../教學影片/選修生物(Ｉ)圖解PPT_CH1-3_細胞膜運輸物質的方式_教學影片.mp4';
-const VIDEO_URL=''; // 若日後上傳雲端，可填入公開網址作為備援連結
+const VIDEO_SRC='https://drive.google.com/file/d/14hVQffC3DpnPj6TVG4e9W5uP3JZpoKGT/preview';
+const VIDEO_URL='https://drive.google.com/file/d/14hVQffC3DpnPj6TVG4e9W5uP3JZpoKGT/view?usp=drivesdk'; // 若日後上傳雲端，可填入公開網址作為備援連結
 const store={get(k){try{return JSON.parse(localStorage.getItem(k))}catch(e){return null}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
 function toast(m){let t=$('.toast');if(!t){t=document.createElement('div');t.className='toast';t.setAttribute('role','status');document.body.appendChild(t)}t.textContent=m;t.classList.remove('hidden');clearTimeout(toast.h);toast.h=setTimeout(()=>t.classList.add('hidden'),2600)}
 
@@ -894,10 +894,16 @@ document.addEventListener('keydown',e=>{
 });
 
 /* ---------- 影片 ---------- */
-function startVideo(){const v=$('#teaching-video'),m=$('#video-msg');m.classList.add('hidden');v.src=VIDEO_SRC;v.load();
- v.onerror=()=>{m.innerHTML='找不到影片檔。<br>請從課程資料夾開啟本網頁，並確認「教學影片」資料夾內有<br>《選修生物(Ｉ)圖解PPT_CH1-3_細胞膜運輸物質的方式_教學影片.mp4》。';m.classList.remove('hidden')};
- $('#video-link').innerHTML=VIDEO_URL?`<a class="btn ghost" href="${VIDEO_URL}" target="_blank" rel="noopener">另開影片 ↗</a>`:''}
-function stopVideo(){const v=$('#teaching-video');try{v.pause()}catch(e){}v.removeAttribute('src');v.load()}
+function startVideo(){
+ const v=$('#teaching-video'),m=$('#video-msg');
+ if(m)m.classList.add('hidden');
+ if(v&&VIDEO_SRC){v.src=VIDEO_SRC;}
+ if($('#video-link'))$('#video-link').innerHTML=VIDEO_URL?`<a class="btn ghost" href="${VIDEO_URL}" target="_blank" rel="noopener">在 Google 雲端硬碟開啟影片 ↗</a>`:'';
+}
+function stopVideo(){
+ const v=$('#teaching-video');
+ if(v){v.src='about:blank';}
+}
 
 /* ---------- 互動練習：狀態 ---------- */
 const N=QS.length;
