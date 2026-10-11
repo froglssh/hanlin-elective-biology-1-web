@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <filter id="dropshadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="600" height="360" rx="14" fill="#f0f9ff"/>
+  <rect x="12" y="12" width="576" height="336" rx="10" fill="#ffffff" stroke="#0284c7" stroke-width="1.5" opacity="0.95" filter="url(#dropshadow)"/>
+  
+  <!-- Subtle header banner -->
+  <rect x="12" y="12" width="576" height="44" rx="10" fill="#0284c7"/>
+  <rect x="12" y="44" width="576" height="12" fill="#0284c7"/>
+  <text x="32" y="38" fill="#ffffff" font-size="14" font-family="'Noto Serif TC', serif" font-weight="900" letter-spacing="1">圖 5-1　聚合酶連鎖反應 (PCR) 熱循環三步驟</text>
+  <circle cx="560" cy="34" r="8" fill="#ffffff" opacity="0.3"/>
+  <circle cx="538" cy="34" r="5" fill="#ffffff" opacity="0.3"/>
+
+  <!-- Content -->
+  
+        <!-- PCR 3 steps -->
+        <g transform="translate(60, 60)">
+          <g transform="translate(20, 20)">
+            <rect width="130" height="160" rx="12" fill="#fff" stroke="#38bdf8" stroke-width="2"/>
+            <text x="65" y="30" fill="#0284c7" font-size="14" font-weight="bold" text-anchor="middle">1. 高溫變性</text>
+            <circle cx="65" cy="70" r="28" fill="#fee2e2"/><text x="65" y="75" fill="#b91c1c" font-size="14" font-weight="900" text-anchor="middle">95°C</text>
+            <text x="65" y="125" fill="#555" font-size="11" text-anchor="middle">雙股DNA氫鍵斷裂</text>
+            <text x="65" y="145" fill="#555" font-size="11" text-anchor="middle">解開為兩條單股</text>
+          </g>
+          <g transform="translate(180, 20)">
+            <rect width="130" height="160" rx="12" fill="#fff" stroke="#38bdf8" stroke-width="2"/>
+            <text x="65" y="30" fill="#0284c7" font-size="14" font-weight="bold" text-anchor="middle">2. 低溫黏合</text>
+            <circle cx="65" cy="70" r="28" fill="#e0f2fe"/><text x="65" y="75" fill="#0369a1" font-size="14" font-weight="900" text-anchor="middle">55°C</text>
+            <text x="65" y="125" fill="#555" font-size="11" text-anchor="middle">引子專一性結合</text>
+            <text x="65" y="145" fill="#555" font-size="11" text-anchor="middle">至目標DNA片段</text>
+          </g>
+          <g transform="translate(340, 20)">
+            <rect width="130" height="160" rx="12" fill="#fff" stroke="#0284c7" stroke-width="3"/>
+            <text x="65" y="30" fill="#0284c7" font-size="14" font-weight="bold" text-anchor="middle">3. 適溫延伸</text>
+            <circle cx="65" cy="70" r="28" fill="#dcfce7"/><text x="65" y="75" fill="#15803d" font-size="14" font-weight="900" text-anchor="middle">72°C</text>
+            <text x="65" y="125" fill="#555" font-size="11" text-anchor="middle">Taq 耐熱聚合酶</text>
+            <text x="65" y="145" fill="#0284c7" font-size="11" font-weight="bold" text-anchor="middle">指數增幅 2^n</text>
+          </g>
+        </g>
+        
+</svg>

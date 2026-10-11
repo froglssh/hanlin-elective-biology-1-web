@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <filter id="dropshadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="600" height="360" rx="14" fill="#fdf2f8"/>
+  <rect x="12" y="12" width="576" height="336" rx="10" fill="#ffffff" stroke="#be185d" stroke-width="1.5" opacity="0.95" filter="url(#dropshadow)"/>
+  
+  <!-- Subtle header banner -->
+  <rect x="12" y="12" width="576" height="44" rx="10" fill="#be185d"/>
+  <rect x="12" y="44" width="576" height="12" fill="#be185d"/>
+  <text x="32" y="38" fill="#ffffff" font-size="14" font-family="'Noto Serif TC', serif" font-weight="900" letter-spacing="1">圖 4-4　基因突變與染色體結構變異</text>
+  <circle cx="560" cy="34" r="8" fill="#ffffff" opacity="0.3"/>
+  <circle cx="538" cy="34" r="5" fill="#ffffff" opacity="0.3"/>
+
+  <!-- Content -->
+  
+        <!-- Point mutations & chromosome aberrations -->
+        <g transform="translate(60, 60)">
+          <g transform="translate(30, 20)">
+            <rect width="200" height="150" rx="10" fill="#fff" stroke="#fbcfe8" stroke-width="2"/>
+            <text x="100" y="30" fill="#be185d" font-size="14" font-weight="bold" text-anchor="middle">點突變 (單一鹼基)</text>
+            <text x="100" y="65" fill="#555" font-size="12" text-anchor="middle">同義突變 (胺基酸不變)</text>
+            <text x="100" y="95" fill="#b91c1c" font-size="12" font-weight="bold" text-anchor="middle">錯義突變 (鐮刀型貧血)</text>
+            <text x="100" y="125" fill="#555" font-size="12" text-anchor="middle">無義突變 / 框架移位</text>
+          </g>
+          <g transform="translate(260, 20)">
+            <rect width="200" height="150" rx="10" fill="#fff" stroke="#fbcfe8" stroke-width="2"/>
+            <text x="100" y="30" fill="#be185d" font-size="14" font-weight="bold" text-anchor="middle">染色體結構與數目變異</text>
+            <text x="100" y="65" fill="#555" font-size="12" text-anchor="middle">缺失 · 重複 · 倒位 · 易位</text>
+            <text x="100" y="95" fill="#0284c7" font-size="12" font-weight="bold" text-anchor="middle">非整倍體 (唐氏症 21三體)</text>
+            <text x="100" y="125" fill="#555" font-size="12" text-anchor="middle">整倍體 (多倍體植物育種)</text>
+          </g>
+        </g>
+        
+</svg>

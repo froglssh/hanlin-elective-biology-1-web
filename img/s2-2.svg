@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <filter id="dropshadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="600" height="360" rx="14" fill="#fffbeb"/>
+  <rect x="12" y="12" width="576" height="336" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="1.5" opacity="0.95" filter="url(#dropshadow)"/>
+  
+  <!-- Subtle header banner -->
+  <rect x="12" y="12" width="576" height="44" rx="10" fill="#d97706"/>
+  <rect x="12" y="44" width="576" height="12" fill="#d97706"/>
+  <text x="32" y="38" fill="#ffffff" font-size="14" font-family="'Noto Serif TC', serif" font-weight="900" letter-spacing="1">圖 2-2　細胞呼吸作用三大歷程</text>
+  <circle cx="560" cy="34" r="8" fill="#ffffff" opacity="0.3"/>
+  <circle cx="538" cy="34" r="5" fill="#ffffff" opacity="0.3"/>
+
+  <!-- Content -->
+  
+        <!-- Glycolysis -> Krebs -> ETC -->
+        <g transform="translate(60, 80)">
+          <!-- Glycolysis Box -->
+          <g transform="translate(20, 20)">
+            <rect width="130" height="150" rx="12" fill="#fff" stroke="#f59e0b" stroke-width="2"/>
+            <text x="65" y="30" fill="#b45309" font-size="14" font-weight="bold" text-anchor="middle">糖解作用</text>
+            <text x="65" y="55" fill="#666" font-size="11" text-anchor="middle">場所：細胞質液</text>
+            <text x="65" y="90" fill="#0d9488" font-size="11" font-weight="bold" text-anchor="middle">葡萄糖 → 丙酮酸</text>
+            <text x="65" y="125" fill="#d97706" font-size="13" font-weight="900" text-anchor="middle">+ 2 ATP</text>
+          </g>
+          <!-- Arrow 1 -->
+          <path d="M160,95 L190,95" stroke="#d97706" stroke-width="4" marker-end="url(#arrow)"/>
+          <!-- Krebs Cycle Box -->
+          <g transform="translate(200, 20)">
+            <rect width="130" height="150" rx="12" fill="#fff" stroke="#f59e0b" stroke-width="2"/>
+            <text x="65" y="30" fill="#b45309" font-size="14" font-weight="bold" text-anchor="middle">檸檬酸循環</text>
+            <text x="65" y="55" fill="#666" font-size="11" text-anchor="middle">場所：粒線體基質</text>
+            <text x="65" y="90" fill="#0d9488" font-size="11" font-weight="bold" text-anchor="middle">乙醯輔酶A分解</text>
+            <text x="65" y="125" fill="#d97706" font-size="13" font-weight="900" text-anchor="middle">+ 2 ATP, CO2</text>
+          </g>
+          <!-- Arrow 2 -->
+          <path d="M340,95 L370,95" stroke="#d97706" stroke-width="4"/>
+          <!-- ETC Box -->
+          <g transform="translate(380, 20)">
+            <rect width="130" height="150" rx="12" fill="#fff" stroke="#b45309" stroke-width="3"/>
+            <text x="65" y="30" fill="#b45309" font-size="14" font-weight="bold" text-anchor="middle">電子傳遞鏈</text>
+            <text x="65" y="55" fill="#666" font-size="11" text-anchor="middle">場所：粒線體內膜</text>
+            <text x="65" y="90" fill="#b91c1c" font-size="11" font-weight="bold" text-anchor="middle">化學滲透合成</text>
+            <text x="65" y="125" fill="#b45309" font-size="14" font-weight="900" text-anchor="middle">+ 26~28 ATP</text>
+          </g>
+        </g>
+        
+</svg>

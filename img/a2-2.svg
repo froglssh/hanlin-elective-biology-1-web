@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <filter id="dropshadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="600" height="360" rx="14" fill="#fffbeb"/>
+  <rect x="12" y="12" width="576" height="336" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="1.5" opacity="0.95" filter="url(#dropshadow)"/>
+  
+  <!-- Subtle header banner -->
+  <rect x="12" y="12" width="576" height="44" rx="10" fill="#d97706"/>
+  <rect x="12" y="44" width="576" height="12" fill="#d97706"/>
+  <text x="32" y="38" fill="#ffffff" font-size="14" font-family="'Noto Serif TC', serif" font-weight="900" letter-spacing="1">探討活動 2-2　酵母菌發酵因子與杜氏發酵管</text>
+  <circle cx="560" cy="34" r="8" fill="#ffffff" opacity="0.3"/>
+  <circle cx="538" cy="34" r="5" fill="#ffffff" opacity="0.3"/>
+
+  <!-- Content -->
+  
+        <!-- Lab 2-2 Durham tube CO2 column -->
+        <g transform="translate(300, 170)">
+          <!-- Durham tube outer test tube -->
+          <rect x="-35" y="-90" width="70" height="160" rx="12" fill="#fff" stroke="#d97706" stroke-width="2.5"/>
+          <rect x="-32" y="-10" width="64" height="78" rx="6" fill="#fef3c7"/>
+          <!-- Inverted inner tube with CO2 bubble -->
+          <rect x="-15" y="-70" width="30" height="100" rx="6" fill="#fde68a" stroke="#b45309" stroke-width="2"/>
+          <rect x="-13" y="-70" width="26" height="35" fill="#fef08a"/>
+          <text x="0" y="-45" fill="#b45309" font-size="10" font-weight="bold" text-anchor="middle">CO2</text>
+          <text x="0" y="100" fill="#78350f" font-size="13" font-weight="bold" text-anchor="middle">測量盲端氣柱高度比對發酵速率</text>
+        </g>
+        
+</svg>

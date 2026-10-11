@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <filter id="dropshadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="600" height="360" rx="14" fill="#fffbeb"/>
+  <rect x="12" y="12" width="576" height="336" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="1.5" opacity="0.95" filter="url(#dropshadow)"/>
+  
+  <!-- Subtle header banner -->
+  <rect x="12" y="12" width="576" height="44" rx="10" fill="#d97706"/>
+  <rect x="12" y="44" width="576" height="12" fill="#d97706"/>
+  <text x="32" y="38" fill="#ffffff" font-size="14" font-family="'Noto Serif TC', serif" font-weight="900" letter-spacing="1">圖 2-1　新陳代謝與酵素催化活化能</text>
+  <circle cx="560" cy="34" r="8" fill="#ffffff" opacity="0.3"/>
+  <circle cx="538" cy="34" r="5" fill="#ffffff" opacity="0.3"/>
+
+  <!-- Content -->
+  
+        <!-- Activation Energy graph -->
+        <g transform="translate(100, 240)">
+          <!-- Axes -->
+          <line x1="0" y1="0" x2="400" y2="0" stroke="#78350f" stroke-width="2.5"/>
+          <line x1="0" y1="0" x2="0" y2="-170" stroke="#78350f" stroke-width="2.5"/>
+          <text x="390" y="20" fill="#78350f" font-size="12">反應進程 →</text>
+          <text x="-10" y="-175" fill="#78350f" font-size="12" text-anchor="end">自由能 ↑</text>
+          <!-- Curve without enzyme -->
+          <path d="M20,-40 C100,-40 140,-160 200,-160 C260,-160 280,-100 360,-100" fill="none" stroke="#ef4444" stroke-width="3" stroke-dasharray="6 4"/>
+          <text x="200" y="-170" fill="#b91c1c" font-size="12" font-weight="bold" text-anchor="middle">未加酵素活化能 (高)</text>
+          <!-- Curve with enzyme -->
+          <path d="M20,-40 C100,-40 140,-95 200,-95 C260,-95 280,-100 360,-100" fill="none" stroke="#d97706" stroke-width="4"/>
+          <text x="200" y="-105" fill="#b45309" font-size="12" font-weight="bold" text-anchor="middle">酵素催化活化能 (降低)</text>
+          <!-- Reactants & Products labels -->
+          <text x="30" y="-20" fill="#92400e" font-size="13" font-weight="bold">反應物</text>
+          <text x="360" y="-80" fill="#92400e" font-size="13" font-weight="bold">產物 (釋能反應)</text>
+        </g>
+        
+</svg>

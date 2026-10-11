@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <filter id="dropshadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="600" height="360" rx="14" fill="#fdf2f8"/>
+  <rect x="12" y="12" width="576" height="336" rx="10" fill="#ffffff" stroke="#be185d" stroke-width="1.5" opacity="0.95" filter="url(#dropshadow)"/>
+  
+  <!-- Subtle header banner -->
+  <rect x="12" y="12" width="576" height="44" rx="10" fill="#be185d"/>
+  <rect x="12" y="44" width="576" height="12" fill="#be185d"/>
+  <text x="32" y="38" fill="#ffffff" font-size="14" font-family="'Noto Serif TC', serif" font-weight="900" letter-spacing="1">圖 4-1　DNA半保留複製與複製叉</text>
+  <circle cx="560" cy="34" r="8" fill="#ffffff" opacity="0.3"/>
+  <circle cx="538" cy="34" r="5" fill="#ffffff" opacity="0.3"/>
+
+  <!-- Content -->
+  
+        <!-- Replication Fork -->
+        <g transform="translate(300, 180)">
+          <!-- Template strands -->
+          <path d="M-180,-70 L-20,-70 L140,-110" stroke="#be185d" stroke-width="5" fill="none"/>
+          <path d="M-180,70 L-20,70 L140,110" stroke="#be185d" stroke-width="5" fill="none"/>
+          <text x="-160" y="-85" fill="#be185d" font-size="12" font-weight="bold">3' 模版股</text>
+          <text x="-160" y="95" fill="#be185d" font-size="12" font-weight="bold">5' 模版股</text>
+          <!-- Leading strand -->
+          <path d="M-20,-50 L120,-85" stroke="#0284c7" stroke-width="4" fill="none"/>
+          <text x="40" y="-45" fill="#0369a1" font-size="12" font-weight="bold">前導股 (連續合成)</text>
+          <!-- Lagging strand / Okazaki fragments -->
+          <path d="M-10,50 L40,65" stroke="#0284c7" stroke-width="4" fill="none"/>
+          <path d="M55,70 L110,85" stroke="#0284c7" stroke-width="4" fill="none"/>
+          <text x="50" y="45" fill="#0369a1" font-size="12" font-weight="bold">岡崎片段 (不連續合成)</text>
+          <!-- Helicase wedge -->
+          <polygon points="-20,-25 15,0 -20,25" fill="#f59e0b" stroke="#fff" stroke-width="2"/>
+          <text x="-5" y="4" fill="#fff" font-size="9" font-weight="bold" text-anchor="middle">解旋</text>
+        </g>
+        
+</svg>

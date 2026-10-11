@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <filter id="dropshadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="600" height="360" rx="14" fill="#f0fdfa"/>
+  <rect x="12" y="12" width="576" height="336" rx="10" fill="#ffffff" stroke="#0d9488" stroke-width="1.5" opacity="0.95" filter="url(#dropshadow)"/>
+  
+  <!-- Subtle header banner -->
+  <rect x="12" y="12" width="576" height="44" rx="10" fill="#0d9488"/>
+  <rect x="12" y="44" width="576" height="12" fill="#0d9488"/>
+  <text x="32" y="38" fill="#ffffff" font-size="14" font-family="'Noto Serif TC', serif" font-weight="900" letter-spacing="1">探討活動 1-2　植物細胞膜的通透性測定</text>
+  <circle cx="560" cy="34" r="8" fill="#ffffff" opacity="0.3"/>
+  <circle cx="538" cy="34" r="5" fill="#ffffff" opacity="0.3"/>
+
+  <!-- Content -->
+  
+        <!-- Lab 1-2 Beetroot temperature & alcohol -->
+        <g transform="translate(300, 170)">
+          <!-- Test tubes with anthocyanin release -->
+          <g transform="translate(-120, -50)">
+            <rect x="-15" y="0" width="30" height="100" rx="6" fill="#fdf2f8" stroke="#be185d" stroke-width="2"/>
+            <rect x="-13" y="60" width="26" height="38" rx="4" fill="#f43f5e" opacity="0.4"/>
+            <text x="0" y="125" fill="#555" font-size="11" text-anchor="middle">25°C (對照)</text>
+          </g>
+          <g transform="translate(0, -50)">
+            <rect x="-15" y="0" width="30" height="100" rx="6" fill="#fdf2f8" stroke="#be185d" stroke-width="2"/>
+            <rect x="-13" y="30" width="26" height="68" rx="4" fill="#be185d" opacity="0.75"/>
+            <text x="0" y="125" fill="#b91c1c" font-size="11" font-weight="bold" text-anchor="middle">55°C (膜破壞)</text>
+          </g>
+          <g transform="translate(120, -50)">
+            <rect x="-15" y="0" width="30" height="100" rx="6" fill="#fdf2f8" stroke="#be185d" stroke-width="2"/>
+            <rect x="-13" y="10" width="26" height="88" rx="4" fill="#881337" opacity="0.95"/>
+            <text x="0" y="125" fill="#881337" font-size="11" font-weight="bold" text-anchor="middle">70°C (花青素大量溶出)</text>
+          </g>
+        </g>
+        
+</svg>

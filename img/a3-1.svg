@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <filter id="dropshadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="600" height="360" rx="14" fill="#eef2ff"/>
+  <rect x="12" y="12" width="576" height="336" rx="10" fill="#ffffff" stroke="#4f46e5" stroke-width="1.5" opacity="0.95" filter="url(#dropshadow)"/>
+  
+  <!-- Subtle header banner -->
+  <rect x="12" y="12" width="576" height="44" rx="10" fill="#4f46e5"/>
+  <rect x="12" y="44" width="576" height="12" fill="#4f46e5"/>
+  <text x="32" y="38" fill="#ffffff" font-size="14" font-family="'Noto Serif TC', serif" font-weight="900" letter-spacing="1">探討活動 3-1　DNA 雙股螺旋模型建構</text>
+  <circle cx="560" cy="34" r="8" fill="#ffffff" opacity="0.3"/>
+  <circle cx="538" cy="34" r="5" fill="#ffffff" opacity="0.3"/>
+
+  <!-- Content -->
+  
+        <!-- Lab 3-1 DNA Model maker -->
+        <g transform="translate(300, 180)">
+          <!-- Sugar-Phosphate Backbones -->
+          <path d="M-90,-120 C-30,-60 -30,60 -90,120" stroke="#4f46e5" stroke-width="8" fill="none"/>
+          <path d="M90,-120 C30,-60 30,60 90,120" stroke="#6366f1" stroke-width="8" fill="none"/>
+          <!-- Base pairs -->
+          <g transform="translate(0,-60)">
+            <rect x="-55" y="-8" width="55" height="16" fill="#ef4444"/><text x="-27" y="5" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle">A</text>
+            <rect x="0" y="-8" width="55" height="16" fill="#0284c7"/><text x="27" y="5" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle">T</text>
+          </g>
+          <g transform="translate(0,0)">
+            <rect x="-40" y="-8" width="40" height="16" fill="#16a34a"/><text x="-20" y="5" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle">G</text>
+            <rect x="0" y="-8" width="40" height="16" fill="#eab308"/><text x="20" y="5" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle">C</text>
+          </g>
+          <g transform="translate(0,60)">
+            <rect x="-55" y="-8" width="55" height="16" fill="#0284c7"/><text x="-27" y="5" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle">T</text>
+            <rect x="0" y="-8" width="55" height="16" fill="#ef4444"/><text x="27" y="5" fill="#fff" font-size="11" font-weight="bold" text-anchor="middle">A</text>
+          </g>
+          <text x="0" y="145" fill="#312e81" font-size="13" font-weight="bold" text-anchor="middle">反向平行 · 鹼基互補 A=T, G≡C · 大溝與小溝</text>
+        </g>
+        
+</svg>

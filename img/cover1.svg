@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bggrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d9488"/>
+      <stop offset="60%" stop-color="#14b8a6"/>
+      <stop offset="100%" stop-color="#0d9488"/>
+    </linearGradient>
+    <linearGradient id="pgrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2dd4bf"/>
+      <stop offset="100%" stop-color="#0d9488"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="400" height="480" rx="16" fill="url(#bggrad)"/>
+  
+  <!-- Subtle Scientific Grid / Hex Pattern -->
+  <g stroke="#ffffff" stroke-width="0.8" opacity="0.08" fill="none">
+    <circle cx="200" cy="240" r="180"/>
+    <circle cx="200" cy="240" r="140"/>
+    <circle cx="200" cy="240" r="100"/>
+    <line x1="20" y1="240" x2="380" y2="240"/>
+    <line x1="200" y1="60" x2="200" y2="420"/>
+    <line x1="72" y1="112" x2="328" y2="368"/>
+    <line x1="72" y1="368" x2="328" y2="112"/>
+  </g>
+
+  <!-- Top Spine Header -->
+  <rect x="0" y="0" width="400" height="56" fill="rgba(0,0,0,0.22)"/>
+  <text x="26" y="34" fill="#ffffff" font-size="12" font-family="'Noto Sans TC', sans-serif" letter-spacing="2.5" font-weight="700" opacity="0.95">普通型高級中等學校 · 自然科學領域</text>
+  <rect x="330" y="16" width="44" height="24" rx="12" fill="#2dd4bf"/>
+  <text x="352" y="32" fill="#ffffff" font-size="11" font-family="'Noto Sans TC', sans-serif" font-weight="900" text-anchor="middle">翰林</text>
+
+  <!-- Chapter Number & Tag -->
+  <g transform="translate(32, 90)">
+    <rect x="0" y="0" width="130" height="30" rx="15" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <text x="65" y="20" fill="#ffffff" font-size="13" font-family="'Noto Sans TC', sans-serif" font-weight="700" letter-spacing="2" text-anchor="middle">CHAPTER 01</text>
+  </g>
+
+  <!-- Main Illustration Art -->
+  
+        <!-- Cell Membrane & Molecule Concept -->
+        <g transform="translate(200, 260)">
+          <!-- Bilayer representation -->
+          <path d="M-140,-40 C-80,-60 80,-20 140,-40" stroke="#2dd4bf" stroke-width="6" fill="none" opacity="0.8"/>
+          <path d="M-140,40 C-80,20 80,60 140,40" stroke="#2dd4bf" stroke-width="6" fill="none" opacity="0.8"/>
+          <!-- Lipid heads and tails -->
+          <g fill="#5eead4" stroke="#0d9488" stroke-width="2">
+            <circle cx="-120" cy="-45" r="9"/><circle cx="-80" cy="-52" r="9"/><circle cx="-40" cy="-48" r="9"/>
+            <circle cx="0" cy="-38" r="9"/><circle cx="40" cy="-30" r="9"/><circle cx="80" cy="-28" r="9"/><circle cx="120" cy="-38" r="9"/>
+            <circle cx="-120" cy="45" r="9"/><circle cx="-80" cy="35" r="9"/><circle cx="-40" cy="32" r="9"/>
+            <circle cx="0" cy="42" r="9"/><circle cx="40" cy="52" r="9"/><circle cx="80" cy="58" r="9"/><circle cx="120" cy="45" r="9"/>
+          </g>
+          <!-- Transmembrane Protein -->
+          <rect x="-25" y="-70" width="50" height="140" rx="20" fill="url(#pgrad)" stroke="#fff" stroke-width="3" filter="drop-shadow(0 8px 16px rgba(0,0,0,0.3))"/>
+          <!-- Pore channel -->
+          <path d="M0,-60 L0,60" stroke="#fff" stroke-width="4" stroke-dasharray="8 6"/>
+          <!-- Sugar tree / glycoprotein -->
+          <path d="M15,-70 L25,-100 M25,-100 L15,-120 M25,-100 L40,-115" stroke="#fbbf24" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="15" cy="-120" r="6" fill="#fbbf24"/><circle cx="40" cy="-115" r="6" fill="#f59e0b"/>
+        </g>
+        
+
+  <!-- Title & Description Block -->
+  <g transform="translate(32, 380)">
+    <text x="0" y="0" fill="#2dd4bf" font-size="11" font-family="'Noto Sans TC', sans-serif" font-weight="700" letter-spacing="3.5" text-transform="uppercase">CELLULAR PROPERTIES & STRUCTURE</text>
+    <text x="0" y="36" fill="#ffffff" font-size="30" font-family="'Noto Serif TC', serif" font-weight="900" letter-spacing="1.5">細胞的特性</text>
+    <text x="0" y="62" fill="rgba(255,255,255,0.85)" font-size="12" font-family="'Noto Sans TC', sans-serif" font-weight="500">分子組成 · 生物膜構造 · 跨膜運輸 · 細胞生命歷程</text>
+  </g>
+
+  <!-- Bottom Brand Footer -->
+  <line x1="32" y1="452" x2="368" y2="452" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <text x="32" y="468" fill="rgba(255,255,255,0.7)" font-size="10.5" font-family="'Noto Sans TC', sans-serif" letter-spacing="1">選修生物（Ⅰ）互動教材 · 臺北市立麗山高中生物科自編</text>
+  <text x="368" y="468" fill="#2dd4bf" font-size="11" font-family="'Noto Sans TC', sans-serif" font-weight="900" text-anchor="end">HANLIN</text>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <filter id="dropshadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="600" height="360" rx="14" fill="#f0f9ff"/>
+  <rect x="12" y="12" width="576" height="336" rx="10" fill="#ffffff" stroke="#0284c7" stroke-width="1.5" opacity="0.95" filter="url(#dropshadow)"/>
+  
+  <!-- Subtle header banner -->
+  <rect x="12" y="12" width="576" height="44" rx="10" fill="#0284c7"/>
+  <rect x="12" y="44" width="576" height="12" fill="#0284c7"/>
+  <text x="32" y="38" fill="#ffffff" font-size="14" font-family="'Noto Serif TC', serif" font-weight="900" letter-spacing="1">圖 5-3　基因轉殖技術與基因改造生物應用</text>
+  <circle cx="560" cy="34" r="8" fill="#ffffff" opacity="0.3"/>
+  <circle cx="538" cy="34" r="5" fill="#ffffff" opacity="0.3"/>
+
+  <!-- Content -->
+  
+        <!-- Genetic Engineering applications -->
+        <g transform="translate(60, 60)">
+          <g transform="translate(20, 20)">
+            <rect width="130" height="150" rx="10" fill="#fff" stroke="#bae6fd" stroke-width="2"/>
+            <text x="65" y="30" fill="#0284c7" font-size="13" font-weight="bold" text-anchor="middle">植物基因轉殖</text>
+            <text x="65" y="65" fill="#555" font-size="11" text-anchor="middle">農桿菌 Ti 質體</text>
+            <text x="65" y="95" fill="#15803d" font-size="11" font-weight="bold" text-anchor="middle">抗蟲Bt玉米</text>
+            <text x="65" y="125" fill="#555" font-size="11" text-anchor="middle">黃金米 (胡蘿蔔素)</text>
+          </g>
+          <g transform="translate(180, 20)">
+            <rect width="130" height="150" rx="10" fill="#fff" stroke="#bae6fd" stroke-width="2"/>
+            <text x="65" y="30" fill="#0284c7" font-size="13" font-weight="bold" text-anchor="middle">動物基因轉殖</text>
+            <text x="65" y="65" fill="#555" font-size="11" text-anchor="middle">受精卵顯微注射</text>
+            <text x="65" y="95" fill="#be185d" font-size="11" font-weight="bold" text-anchor="middle">綠螢光水母基因</text>
+            <text x="65" y="125" fill="#555" font-size="11" text-anchor="middle">生物反應器乳腺表現</text>
+          </g>
+          <g transform="translate(340, 20)">
+            <rect width="130" height="150" rx="10" fill="#fff" stroke="#0284c7" stroke-width="3"/>
+            <text x="65" y="30" fill="#0284c7" font-size="13" font-weight="bold" text-anchor="middle">醫學與藥品</text>
+            <text x="65" y="65" fill="#555" font-size="11" text-anchor="middle">大腸桿菌合成</text>
+            <text x="65" y="95" fill="#d97706" font-size="11" font-weight="bold" text-anchor="middle">人類胰島素</text>
+            <text x="65" y="125" fill="#555" font-size="11" text-anchor="middle">生長激素 / 疫苗</text>
+          </g>
+        </g>
+        
+</svg>

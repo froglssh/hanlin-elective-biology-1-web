@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <filter id="dropshadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="600" height="360" rx="14" fill="#eef2ff"/>
+  <rect x="12" y="12" width="576" height="336" rx="10" fill="#ffffff" stroke="#4f46e5" stroke-width="1.5" opacity="0.95" filter="url(#dropshadow)"/>
+  
+  <!-- Subtle header banner -->
+  <rect x="12" y="12" width="576" height="44" rx="10" fill="#4f46e5"/>
+  <rect x="12" y="44" width="576" height="12" fill="#4f46e5"/>
+  <text x="32" y="38" fill="#ffffff" font-size="14" font-family="'Noto Serif TC', serif" font-weight="900" letter-spacing="1">圖 3-2　確認遺傳物質為DNA的三大關鍵實驗</text>
+  <circle cx="560" cy="34" r="8" fill="#ffffff" opacity="0.3"/>
+  <circle cx="538" cy="34" r="5" fill="#ffffff" opacity="0.3"/>
+
+  <!-- Content -->
+  
+        <!-- Griffith -> Avery -> Hershey-Chase -->
+        <g transform="translate(60, 60)">
+          <g transform="translate(20, 20)">
+            <rect width="130" height="160" rx="12" fill="#fff" stroke="#c7d2fe" stroke-width="2"/>
+            <text x="65" y="30" fill="#4338ca" font-size="13" font-weight="bold" text-anchor="middle">1928 格里夫茲</text>
+            <text x="65" y="65" fill="#666" font-size="11" text-anchor="middle">肺炎雙球菌小鼠</text>
+            <text x="65" y="95" fill="#4f46e5" font-size="11" font-weight="bold" text-anchor="middle">死S菌 + 活R菌</text>
+            <text x="65" y="130" fill="#b91c1c" font-size="12" font-weight="bold" text-anchor="middle">發現「轉型原則」</text>
+          </g>
+          <g transform="translate(180, 20)">
+            <rect width="130" height="160" rx="12" fill="#fff" stroke="#c7d2fe" stroke-width="2"/>
+            <text x="65" y="30" fill="#4338ca" font-size="13" font-weight="bold" text-anchor="middle">1944 艾弗里團隊</text>
+            <text x="65" y="65" fill="#666" font-size="11" text-anchor="middle">水解酵素專一分解</text>
+            <text x="65" y="95" fill="#4f46e5" font-size="11" font-weight="bold" text-anchor="middle">DNA水解酶加入後</text>
+            <text x="65" y="130" fill="#15803d" font-size="12" font-weight="bold" text-anchor="middle">轉型能力喪失</text>
+          </g>
+          <g transform="translate(340, 20)">
+            <rect width="130" height="160" rx="12" fill="#fff" stroke="#4338ca" stroke-width="3"/>
+            <text x="65" y="30" fill="#4338ca" font-size="13" font-weight="bold" text-anchor="middle">1952 赫希與蔡斯</text>
+            <text x="65" y="65" fill="#666" font-size="11" text-anchor="middle">T2 噬菌體放射同位素</text>
+            <text x="65" y="95" fill="#be185d" font-size="11" font-weight="bold" text-anchor="middle">32P (DNA) 進入細胞</text>
+            <text x="65" y="130" fill="#4338ca" font-size="12" font-weight="bold" text-anchor="middle">35S (蛋白質) 留外</text>
+          </g>
+        </g>
+        
+</svg>

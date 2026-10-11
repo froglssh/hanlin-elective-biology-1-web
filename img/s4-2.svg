@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <filter id="dropshadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="600" height="360" rx="14" fill="#fdf2f8"/>
+  <rect x="12" y="12" width="576" height="336" rx="10" fill="#ffffff" stroke="#be185d" stroke-width="1.5" opacity="0.95" filter="url(#dropshadow)"/>
+  
+  <!-- Subtle header banner -->
+  <rect x="12" y="12" width="576" height="44" rx="10" fill="#be185d"/>
+  <rect x="12" y="44" width="576" height="12" fill="#be185d"/>
+  <text x="32" y="38" fill="#ffffff" font-size="14" font-family="'Noto Serif TC', serif" font-weight="900" letter-spacing="1">圖 4-2　中心法則：轉錄修飾與轉譯合成</text>
+  <circle cx="560" cy="34" r="8" fill="#ffffff" opacity="0.3"/>
+  <circle cx="538" cy="34" r="5" fill="#ffffff" opacity="0.3"/>
+
+  <!-- Content -->
+  
+        <!-- Central Dogma: DNA -> mRNA -> Protein -->
+        <g transform="translate(60, 60)">
+          <!-- DNA Box -->
+          <g transform="translate(30, 30)">
+            <rect width="115" height="120" rx="10" fill="#fff" stroke="#be185d" stroke-width="2"/>
+            <text x="57" y="35" fill="#be185d" font-size="16" font-weight="900" text-anchor="middle">DNA</text>
+            <text x="57" y="65" fill="#666" font-size="11" text-anchor="middle">遺傳訊息藍圖</text>
+            <text x="57" y="95" fill="#9d174d" font-size="11" font-weight="bold" text-anchor="middle">雙股螺旋</text>
+          </g>
+          <!-- Arrow Transcription -->
+          <g transform="translate(155, 80)">
+            <line x1="0" y1="0" x2="45" y2="0" stroke="#be185d" stroke-width="4"/>
+            <text x="22" y="-10" fill="#be185d" font-size="11" font-weight="bold" text-anchor="middle">轉錄</text>
+          </g>
+          <!-- RNA Box -->
+          <g transform="translate(210, 30)">
+            <rect width="115" height="120" rx="10" fill="#fff" stroke="#be185d" stroke-width="2"/>
+            <text x="57" y="35" fill="#be185d" font-size="16" font-weight="900" text-anchor="middle">mRNA</text>
+            <text x="57" y="65" fill="#666" font-size="11" text-anchor="middle">5'帽、Poly-A尾</text>
+            <text x="57" y="95" fill="#9d174d" font-size="11" font-weight="bold" text-anchor="middle">剪接去內含子</text>
+          </g>
+          <!-- Arrow Translation -->
+          <g transform="translate(335, 80)">
+            <line x1="0" y1="0" x2="45" y2="0" stroke="#be185d" stroke-width="4"/>
+            <text x="22" y="-10" fill="#be185d" font-size="11" font-weight="bold" text-anchor="middle">轉譯</text>
+          </g>
+          <!-- Protein Box -->
+          <g transform="translate(390, 30)">
+            <rect width="115" height="120" rx="10" fill="#fff" stroke="#be185d" stroke-width="3"/>
+            <text x="57" y="35" fill="#be185d" font-size="16" font-weight="900" text-anchor="middle">蛋白質</text>
+            <text x="57" y="65" fill="#666" font-size="11" text-anchor="middle">核糖體+tRNA</text>
+            <text x="57" y="95" fill="#15803d" font-size="11" font-weight="bold" text-anchor="middle">多胜肽鏈表現</text>
+          </g>
+        </g>
+        
+</svg>

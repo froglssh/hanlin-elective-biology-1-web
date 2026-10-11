@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <filter id="dropshadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="600" height="360" rx="14" fill="#f0fdfa"/>
+  <rect x="12" y="12" width="576" height="336" rx="10" fill="#ffffff" stroke="#0d9488" stroke-width="1.5" opacity="0.95" filter="url(#dropshadow)"/>
+  
+  <!-- Subtle header banner -->
+  <rect x="12" y="12" width="576" height="44" rx="10" fill="#0d9488"/>
+  <rect x="12" y="44" width="576" height="12" fill="#0d9488"/>
+  <text x="32" y="38" fill="#ffffff" font-size="14" font-family="'Noto Serif TC', serif" font-weight="900" letter-spacing="1">探討活動 1-1　常見有機物的檢測實驗</text>
+  <circle cx="560" cy="34" r="8" fill="#ffffff" opacity="0.3"/>
+  <circle cx="538" cy="34" r="5" fill="#ffffff" opacity="0.3"/>
+
+  <!-- Content -->
+  
+        <!-- Lab 1-1 Reagents -->
+        <g transform="translate(60, 60)">
+          <g transform="translate(20, 20)"><rect width="100" height="150" rx="10" fill="#fff" stroke="#0d9488" stroke-width="2"/><text x="50" y="30" fill="#0f766e" font-size="12" font-weight="bold" text-anchor="middle">本氏液水浴</text><circle cx="50" cy="70" r="22" fill="#ef4444"/><text x="50" y="115" fill="#b91c1c" font-size="11" font-weight="bold" text-anchor="middle">還原醣 (紅橙)</text></g>
+          <g transform="translate(135, 20)"><rect width="100" height="150" rx="10" fill="#fff" stroke="#0d9488" stroke-width="2"/><text x="50" y="30" fill="#0f766e" font-size="12" font-weight="bold" text-anchor="middle">碘液測試</text><circle cx="50" cy="70" r="22" fill="#1e1b4b"/><text x="50" y="115" fill="#312e81" font-size="11" font-weight="bold" text-anchor="middle">澱粉 (藍黑)</text></g>
+          <g transform="translate(250, 20)"><rect width="100" height="150" rx="10" fill="#fff" stroke="#0d9488" stroke-width="2"/><text x="50" y="30" fill="#0f766e" font-size="12" font-weight="bold" text-anchor="middle">雙縮脲試劑</text><circle cx="50" cy="70" r="22" fill="#7c3aed"/><text x="50" y="115" fill="#6d28d9" font-size="11" font-weight="bold" text-anchor="middle">蛋白質 (紫色)</text></g>
+          <g transform="translate(365, 20)"><rect width="100" height="150" rx="10" fill="#fff" stroke="#0d9488" stroke-width="2"/><text x="50" y="30" fill="#0f766e" font-size="12" font-weight="bold" text-anchor="middle">蘇丹Ⅳ試劑</text><circle cx="50" cy="70" r="22" fill="#ea580c"/><text x="50" y="115" fill="#c2410c" font-size="11" font-weight="bold" text-anchor="middle">脂質 (橘紅色)</text></g>
+        </g>
+        
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <filter id="dropshadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="600" height="360" rx="14" fill="#fffbeb"/>
+  <rect x="12" y="12" width="576" height="336" rx="10" fill="#ffffff" stroke="#d97706" stroke-width="1.5" opacity="0.95" filter="url(#dropshadow)"/>
+  
+  <!-- Subtle header banner -->
+  <rect x="12" y="12" width="576" height="44" rx="10" fill="#d97706"/>
+  <rect x="12" y="44" width="576" height="12" fill="#d97706"/>
+  <text x="32" y="38" fill="#ffffff" font-size="14" font-family="'Noto Serif TC', serif" font-weight="900" letter-spacing="1">探討活動 2-1　酵素活性的測定 (過氧化氫酶)</text>
+  <circle cx="560" cy="34" r="8" fill="#ffffff" opacity="0.3"/>
+  <circle cx="538" cy="34" r="5" fill="#ffffff" opacity="0.3"/>
+
+  <!-- Content -->
+  
+        <!-- Lab 2-1 Catalase activity bubble height -->
+        <g transform="translate(300, 170)">
+          <g transform="translate(-100, -70)">
+            <rect x="-25" y="0" width="50" height="140" rx="8" fill="#fff" stroke="#d97706" stroke-width="2"/>
+            <rect x="-23" y="80" width="46" height="58" fill="#fef3c7"/>
+            <circle cx="-10" cy="95" r="4" fill="#f59e0b"/><circle cx="10" cy="110" r="5" fill="#f59e0b"/><circle cx="0" cy="120" r="3" fill="#f59e0b"/>
+            <text x="0" y="160" fill="#78350f" font-size="12" font-weight="bold" text-anchor="middle">沸水煮過 (變性)</text>
+            <text x="0" y="178" fill="#b91c1c" font-size="11" text-anchor="middle">無氣泡產生</text>
+          </g>
+          <g transform="translate(100, -70)">
+            <rect x="-25" y="0" width="50" height="140" rx="8" fill="#fff" stroke="#d97706" stroke-width="2"/>
+            <rect x="-23" y="20" width="46" height="118" fill="#fed7aa"/>
+            <circle cx="-10" cy="35" r="6" fill="#f97316"/><circle cx="10" cy="50" r="8" fill="#f97316"/><circle cx="-5" cy="70" r="7" fill="#f97316"/>
+            <text x="0" y="160" fill="#78350f" font-size="12" font-weight="bold" text-anchor="middle">室溫常態 (新鮮肝臟)</text>
+            <text x="0" y="178" fill="#15803d" font-size="11" font-weight="bold" text-anchor="middle">劇烈釋放 O2 氣泡</text>
+          </g>
+        </g>
+        
+</svg>
