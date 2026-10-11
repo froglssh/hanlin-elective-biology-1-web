@@ -2,9 +2,9 @@
 
 首頁 `index.html` → 五個章節頁 `chapter1.html`～`chapter5.html` → 各節互動教學網頁（GitHub Pages，另開新分頁）與教學影片（Google 雲端硬碟）。
 
-## 線上網址
-- 集合網站：https://froglssh.github.io/hanlin-elective-biology-1-web/（依實際發布路徑）
-- 各節網頁短網址：`https://froglssh.github.io/hanlin-elective-biology-1-web/ch1-1/` 等（2-3 為大寫 `CH2-3/`）
+## 🌐 線上發布與瀏覽說明
+- **集合網站首頁**：[https://froglssh.github.io/hanlin-elective-biology-1-web/選修生物1教材網站/](https://froglssh.github.io/hanlin-elective-biology-1-web/選修生物1教材網站/)（根目錄亦提供自動轉向）
+- **單元連結方式**：所有章節與探討活動皆採用相對路徑（`ch1-1/` 等），電腦本機離線開啟或於 GitHub Pages 線上瀏覽皆可直接暢順開啟，完全不依賴外部寫死的 GitHub 絕對路徑。
 
 ## 章節（依課本）
 1. 細胞的構造與功能（1-1～1-4，活動 1-1、1-2）

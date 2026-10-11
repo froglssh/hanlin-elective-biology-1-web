@@ -147,7 +147,7 @@ CHAPTERS = [
 TOTAL_UNITS = sum(len(c['units']) for c in CHAPTERS)
 TOTAL_LABS = sum(len(c['labs']) for c in CHAPTERS)
 
-def url(u): return BASE + u['slug'] + '/'
+def url(u): return u['slug'] + '/'
 def vurl(u): return DRIVE.format(u['vid'])
 
 HEAD = '''<!doctype html>
