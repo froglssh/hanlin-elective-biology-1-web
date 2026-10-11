@@ -3,9 +3,6 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>生命分子積木坊｜細胞的分子組成</title>
 <meta name="description" content="選修生物（Ⅰ）1-1 細胞的分子組成：以圖解、互動練習、逐步簡報與教學影片，認識水、無機鹽與醣類、蛋白質、脂質、核酸、維生素。">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap">
 <style>
 :root{
  --ground:#F3F2EC;--surface:#FFFEFA;--surface-2:#EEF0F1;--line:#D3D8DF;--line-soft:#E3E6EA;
@@ -473,6 +470,45 @@ body:has(#play:not(.hidden)) .tool-btn{height:34px;width:34px;font-size:15px}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--g1:#7DB9E6;--g1-soft:#1A3347;--g2:#BFA2E8;--g2-soft:#33264A;--g3:#E3BC5A;--g3-soft:#3A2F12;--g4:#F09A62;--g4-soft:#40281A}}
 .hexa{fill:#7FB0E3;stroke:#D7E6F7;stroke-width:1.4}.bead{stroke:#F3E3B5;stroke-width:1.2}
 .cov{stroke:#8A97AA;stroke-width:5}.oatom{fill:#E04A3F;stroke:#9B2A22;stroke-width:1.5}.hatom{fill:#F2F2F2;stroke:#8A97AA;stroke-width:1.5}.atomt{fill:#fff;font:700 20px var(--sans)}.atomt.s{fill:#333;font-size:14px}.hb{stroke:var(--ink-2);stroke-width:2.2;stroke-dasharray:3 5;fill:none}
+
+/* ===== 2026-10-09 優化 ===== */
+.tool-btn svg{width:18px;height:18px}
+@media(min-width:1000px){
+ #learn .lfig>figure{flex:1;min-height:0;display:flex;flex-direction:column}
+ #learn .lfig>figure>img{flex:1;min-height:0;height:0;max-height:none!important}
+ #learn .lfig>figure>figcaption{flex:none}
+ #learn .lfig .slidelink{flex:none}
+}
+@media(min-width:1000px) and (max-height:700px){
+ #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)){grid-template-columns:minmax(0,1fr) 210px}
+ #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)) .refs img{height:210px}
+}
+.font-large #learn .read-lesson-pane{font-size:18.5px!important;line-height:1.7}
+.font-large #learn .read-lesson-pane table.mini{font-size:16.5px!important}
+.font-large #learn .read-lesson-pane .learning-question p,.font-large #learn .read-lesson-pane .thinking-answer{font-size:17.5px!important}
+.font-large #play .q{font-size:20px}.font-large #play .qhint{font-size:16px}
+.font-large #play .grid.solo .q{font-size:27px}.font-large #play .grid.solo .opt{font-size:22px}.font-large #play .grid.solo .qhint{font-size:18px}
+.font-large .fillrow b{font-size:20px}.font-large .fillrow select{font-size:19px}
+@media(min-width:1000px) and (max-height:700px){#learn .read-lesson-pane table.mini td,#learn .read-lesson-pane table.mini th{padding:4px 8px}#learn .read-lesson-pane li{margin-bottom:4px!important}}
+@media(min-width:1000px) and (max-height:680px){.section-heading{margin:6px 0 6px}}
+/* 附參考圖的選擇題：放大參考圖、選項字縮小（2026-10-09 老師要求） */
+@media(min-width:1000px){
+ #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)){grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);column-gap:18px}
+ #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)) #q-fb{display:flex;flex-direction:column;min-height:0;height:100%}
+ #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)) .refs{flex:1;min-height:0;display:flex!important;flex-direction:column}
+ #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)) .refs figure{flex:1;min-height:0;display:flex;flex-direction:column;padding:6px}
+ #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)) .refs img{flex:1;min-height:0;height:0!important;max-height:none;object-fit:contain}
+ #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)) .refs figcaption{flex:none;font-size:12px}
+ #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)) .opts{gap:8px}
+ #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)) .opt{font-size:16px;line-height:1.45;padding:7px 10px;min-height:42px}
+ #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)) .opt .k{font-size:14px}
+ .font-large #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)) .opt{font-size:18px}
+}
+@media(min-width:1000px) and (max-height:620px){
+ #play .grid.solo .stagehead h2{font-size:20px} #play .grid.solo .stagehead{padding-bottom:4px;margin-bottom:4px}
+ #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)) .q{font-size:20px;margin-bottom:4px} #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)) .qhint{font-size:14px;margin-bottom:6px}
+ #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)) .opts{gap:6px} #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)) .opt{font-size:15px;padding:5px 9px;min-height:36px;line-height:1.4}
+}
 </style>
 </head>
 <body>
@@ -480,8 +516,7 @@ body:has(#play:not(.hidden)) .tool-btn{height:34px;width:34px;font-size:15px}
 <header class="site-head" id="site-head"><div class="wrap site-head-inner">
  <button class="site-brand" data-gohome aria-label="生命分子積木坊，回首頁"><span class="brand-mark"><svg viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M8 5l5 3v6l-5 3-5-3V8Z M22 13l5 3v6l-5 3-5-3v-6Z"/><path d="M13 11l4 3"/></svg></span><span><span class="brand-cn">生命分子積木坊</span><span class="brand-en">MOLECULES OF LIFE STUDIO</span></span></button>
  <nav class="head-nav" aria-label="主要導覽"><button class="nav-link" data-route="learn">圖解探索</button><button class="nav-link" data-route="play">互動練習</button><button class="nav-link" data-route="show">課堂簡報</button><button class="nav-link" data-route="video">教學影片</button></nav>
- <button class="nav-link" id="export-record">診斷報表</button>
-   <div class="head-tools"><button class="tool-btn" id="font-btn" aria-pressed="false" title="放大文字">Aa</button><button class="tool-btn" id="theme-btn" title="切換明暗">◐</button></div>
+ <div class="head-tools"><button class="tool-btn" id="diag-btn" title="學習診斷卡" aria-label="學習診斷卡"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 4h8v3H8Z M6 6H5v15h14V6h-1"/><path d="M8.5 12.5l2 2 4.5-4.5 M8.5 18h7"/></svg></button><button class="tool-btn" id="font-btn" aria-pressed="false" title="放大文字">Aa</button><button class="tool-btn" id="theme-btn" title="切換明暗">◐</button></div>
 </div></header>
 
 <header class="topbar hidden" id="topbar"><div class="wrap topin">
@@ -614,7 +649,7 @@ const LEARN=[
 <li>這些有機物只能由<b>生物體合成</b>，與各種生理反應息息相關。</li>
 <li>許多有機物是由簡單的<b>結構單體</b>連接成的<b>聚合物</b>：多醣←單醣、蛋白質←胺基酸、核酸←核苷酸。</li></ul>
 <p class="tip">本節主線：「單體 → 脫水連接 → 聚合物 → 立體構造決定功能」。</p>`,
- q:'在外星樣本中找到「某些有機物的殘留」，為什麼足以震撼科學界？',a:'因為這些有機物只能由生物體合成；找到它們，就是曾有生物存在的有力線索。'},
+ q:'多醣、蛋白質、核酸分別由哪一種結構單體連接而成？',a:'多醣←單醣（如葡萄糖）；蛋白質←胺基酸；核酸←核苷酸。三者都是單體以脫水反應連接成的聚合物。'},
 {id:'mol-02',g:'A',title:'水是極性分子',src:'課本 P8；簡報第 2–4 頁',mode:'flip',slides:[2,3,4],book:[],
  html:`<ul><li>水通常是細胞中<b>含量最多</b>的物質。</li>
 <li>氧原子對電子的吸引力比氫原子強 → 氧帶少量<b>負電性</b>、氫帶少量<b>正電性</b> → 水是<b class="k1">極性分子</b>。</li>
@@ -821,7 +856,7 @@ const QS=[
   ['乳糖',['葡萄糖＋半乳糖','葡萄糖＋果糖','半乳糖＋半乳糖'],'B6'],['肝糖儲存於',['動物肝臟與肌肉','植物根與莖','真菌細胞壁'],'B7'],
   ['幾丁質的單體',['葡萄糖胺','葡萄糖','胺基酸'],'B7'],['肽聚醣',['多醣與多肽連結而成','葡萄糖胺聚合而成','植物細胞壁成分'],'B7']],
  pre:[0],exp:'麥芽糖＝葡萄糖＋葡萄糖；乳糖＝葡萄糖＋半乳糖；肝糖儲存於動物肝臟與肌肉細胞；幾丁質由葡萄糖胺組成；肽聚醣由多醣與多肽連結而成，是細菌細胞壁的主要成分。'},
-{kind:'drag',g:'g3',title:'蛋白質的四級結構',sub:'由序列到立體',label:'排序題 · 拖放',
+{kind:'drag',g:'g3',title:'蛋白質的四級結構',sub:'由序列到立體',label:'配對題 · 拖放',
  q:'把描述卡放到正確的結構層級。',hint:'一級已給。有兩張卡描述的不是蛋白質。',
  vb:[600,470],note:'依課本 P17 蛋白質的結構',
  bg:()=>{let s='';['一級','二級','三級','四級'].forEach((t,i)=>{const y=12+i*62;s+=`<rect class="evbox" x="8" y="${y}" width="96" height="52" rx="8"/><text class="tbart" x="56" y="${y+33}" text-anchor="middle">${t}</text><path class="arrow" d="M106 ${y+26} h10"/>`;if(i<3)s+=`<path class="flow" d="M56 ${y+52} v8"/>`});s+='<text class="traylab" x="300" y="280" text-anchor="middle">候選描述</text>';return s},
@@ -839,9 +874,9 @@ const QS=[
  exp:'酵素—催化；膠原蛋白—支持；血紅素（與細胞膜上的運輸蛋白）—運輸物質；運動蛋白—運動；抗體—防禦；胰島素—調節血糖濃度。肝糖是多醣，膽固醇是固醇類。'},
 {kind:'mc',multi:true,g:'g4',title:'脂質大考驗',sub:'三酸甘油酯、磷脂、固醇類',label:'多選題 · 選出所有正確敘述',
  q:'關於脂質的敘述，哪些正確？',hint:'對照右側課本圖 1-9；留意「聚合」「極性」「脂肪酸」等關鍵詞。',ref:['f1_9','圖1-9 磷脂的構造'],
- opts:[['三酸甘油酯＝1 甘油＋3 脂肪酸，不具極性',null],['不飽和脂肪酸碳鏈只含單鍵，室溫多呈固態','B11'],['磷脂的脂肪酸碳鏈為疏水尾，磷酸基端為親水頭',null],
-  ['固醇類由脂肪酸聚合而成','B12'],['膽固醇是性激素與腎上腺皮質素的先驅物',null],['脂質和多醣一樣，都是同種單體聚合成的聚合物','B16']],
- ans:[0,2,4],exp:'不飽和脂肪酸含雙鍵，凝固點較低，室溫多呈液態；固醇類具 4 個碳環、不含脂肪酸；脂質通常不是由大量相同單體聚合而成的聚合物。'},
+ opts:[['不飽和脂肪酸碳鏈只含單鍵，室溫多呈固態','B11'],['三酸甘油酯＝1 甘油＋3 脂肪酸，不具極性',null],['固醇類由脂肪酸聚合而成','B12'],
+  ['磷脂的脂肪酸碳鏈為疏水尾，磷酸基端為親水頭',null],['膽固醇是性激素與腎上腺皮質素的先驅物',null],['脂質和多醣一樣，都是同種單體聚合成的聚合物','B16']],
+ ans:[1,3,4],exp:'不飽和脂肪酸含雙鍵，凝固點較低，室溫多呈液態；固醇類具 4 個碳環、不含脂肪酸；脂質通常不是由大量相同單體聚合而成的聚合物。'},
 {kind:'drag',g:'g5',title:'DNA 還是 RNA？',sub:'核酸的組成比較',label:'分類題 · 拖放',
  q:'把特徵卡放進正確的欄位。',hint:'「去氧核糖」已給。中間欄放兩者都有的特徵。有一張卡是干擾。',
  vb:[600,470],note:'每格放一張卡；同欄順序不拘',
@@ -853,9 +888,9 @@ const QS=[
  exp:'DNA：去氧核糖、T、雙股螺旋；RNA：核糖、U、通常單股；兩者都有磷酸基與 A、G、C 等鹼基。胺基酸是蛋白質的單體。'},
 {kind:'mc',multi:true,g:'g6',title:'總檢查',sub:'維生素、輔酶與全節統整',label:'多選題 · 6 選 3',
  q:'下列敘述哪些正確？（正確的有 3 項）',hint:'逐項檢查主詞與限定詞。',
- opts:[['B₃ 可衍生 NAD⁺、NADP⁺（皆由兩個核苷酸組成）',null],['人體可合成大部分維生素，只需從食物攝取無機鹽','B14'],['A、D、E、K 屬於脂溶性維生素',null],
-  ['NADPH 是呼吸作用的輔酶，NADH 是光合作用的輔酶','B15'],['多醣、蛋白質、核酸都是單體脫水連成的聚合物',null],['葡萄糖、果糖、半乳糖都是五碳醣','B5']],
- ans:[0,2,4],exp:'大多數動物無法自行合成所需的各種維生素，須從食物攝取；NADH 用於呼吸作用、NADPH 用於光合作用；葡萄糖、果糖、半乳糖是六碳醣。'}
+ opts:[['人體可合成大部分維生素，只需從食物攝取無機鹽','B14'],['A、D、E、K 屬於脂溶性維生素',null],['葡萄糖、果糖、半乳糖都是五碳醣','B5'],
+  ['B₃ 可衍生 NAD⁺、NADP⁺（皆由兩個核苷酸組成）',null],['NADPH 是呼吸作用的輔酶，NADH 是光合作用的輔酶','B15'],['多醣、蛋白質、核酸都是單體脫水連成的聚合物',null]],
+ ans:[1,3,5],exp:'大多數動物無法自行合成所需的各種維生素，須從食物攝取；NADH 用於呼吸作用、NADPH 用於光合作用；葡萄糖、果糖、半乳糖是六碳醣。'}
 ];
 
 </script>
@@ -916,7 +951,7 @@ let lbReturn=null;
 function zoom(src,cap,from){closeLB();lbReturn=from||document.activeElement;const d=document.createElement('div');d.className='lb';d.setAttribute('role','dialog');d.setAttribute('aria-modal','true');d.setAttribute('aria-label','放大圖片');
  d.innerHTML=`<span class="lb-caption">${esc(cap||'')}</span><button class="lb-close">關閉 ✕</button><img alt="${esc(cap||'放大圖')}" src="${src}">`;
  (document.fullscreenElement||document.body).appendChild(d);d.querySelector('.lb-close').focus();
- d.addEventListener('click',ev=>{if(ev.target===d||ev.target.closest('.lb-close'))closeLB()});}
+ d.addEventListener('click',ev=>{if(ev.target===d||ev.target.closest('.lb-close'))closeLB()});d.addEventListener('keydown',ev=>{if(ev.key==='Tab'){ev.preventDefault();d.querySelector('.lb-close').focus()}});}
 function closeLB(){const d=$('.lb');if(d){d.remove();if(lbReturn&&lbReturn.focus)try{lbReturn.focus()}catch(e){}lbReturn=null;return true}return false}
 document.addEventListener('click',e=>{const z=e.target.closest('.zoomable');if(z)zoom(z.src,z.alt,z)});
 document.addEventListener('keydown',e=>{if(e.key==='Enter'&&e.target.classList&&e.target.classList.contains('zoomable')){e.preventDefault();zoom(e.target.src,e.target.alt,e.target)}});
@@ -1023,13 +1058,14 @@ function stopVideo(){const v=$('#teaching-video');try{v.pause()}catch(e){}v.remo
 
 /* ---------- 互動練習：狀態 ---------- */
 const N=QS.length;
-function blank(){return{idx:0,tries:Array(N).fill(0),errors:Array(N).fill(0),passed:Array(N).fill(false),revealed:Array(N).fill(false),drafts:{},tags:{},t0:Date.now(),done:false}}
+function blank(){return{idx:0,tries:Array(N).fill(0),errors:Array(N).fill(0),passed:Array(N).fill(false),revealed:Array(N).fill(false),base:Array(N).fill(0),drafts:{},tags:{},t0:Date.now(),done:false}}
 let ST=store.get(KEY);
 (function validate(){const ok=ST&&typeof ST==='object'&&['tries','errors','passed','revealed'].every(k=>Array.isArray(ST[k])&&ST[k].length===N);
  if(!ok){ST=blank();return}
  if(!(Number.isInteger(ST.idx)&&ST.idx>=0&&ST.idx<N))ST.idx=0;
  ['tries','errors'].forEach(k=>ST[k]=ST[k].map(v=>Number.isFinite(v)&&v>=0?Math.floor(v):0));
  ['passed','revealed'].forEach(k=>ST[k]=ST[k].map(Boolean));
+ if(!Array.isArray(ST.base)||ST.base.length!==N)ST.base=Array(N).fill(0);ST.base=ST.base.map((v,k)=>Number.isFinite(v)&&v>=0?Math.min(Math.floor(v),ST.errors[k]):0);
  if(!ST.drafts||typeof ST.drafts!=='object')ST.drafts={};
  if(!ST.tags||typeof ST.tags!=='object')ST.tags={};
  Object.keys(ST.tags).forEach(t=>{if(!TAGS[t]||!Number.isFinite(ST.tags[t]))delete ST.tags[t]});
@@ -1088,6 +1124,7 @@ function clearMarks(){$$('#q-opts .right,#q-opts .wrong').forEach(x=>x.classList
 
 /* ---------- 拖放板 ---------- */
 const fit=(t,w,fs)=>{const L=[...t].reduce((a,ch)=>a+(/[\x00-\xff]/.test(ch)?.56:1),0);return Math.max(11,Math.min(fs,Math.floor((w-14)/L)))};
+function trayOrder(i){const Q=QS[i];if(!Q._ord){const a=Q.pieces.slice();let seed=i*97+13;const rnd=()=>{seed=(seed*9301+49297)%233280;return seed/233280};for(let k=a.length-1;k>0;k--){const j=Math.floor(rnd()*(k+1));[a[k],a[j]]=[a[j],a[k]]}Q._ord=a}return Q._ord}
 function trayPos(Q,k){const T=Q.tray;return[T.x+(k%T.cols)*T.gx,T.y+Math.floor(k/T.cols)*T.gy]}
 function drawBoard(){const i=ST.idx,Q=QS[i],d=draft(i),locked=ST.passed[i];
  const placed=new Set(Object.values(d.place));
@@ -1095,7 +1132,7 @@ function drawBoard(){const i=ST.idx,Q=QS[i],d=draft(i),locked=ST.passed[i];
  s+=Q.bg();
  Q.slots.forEach(sl=>{const pre=Q.pre&&Q.pre[sl.id];s+=`<g class="slotg" data-slot="${sl.id}" tabindex="${pre||locked?-1:0}" role="button" aria-label="第 ${Q.slots.indexOf(sl)+1} 格${d.place[sl.id]?'，已放入 '+esc(Q.pieces.find(p=>p.id===d.place[sl.id]).t):'，空的'}"><rect class="slot" x="${sl.x}" y="${sl.y}" width="${sl.w}" height="${sl.h}" rx="7"/></g>`});
  let k=0;const pieceSVG=(p,x,y,w,h,cls)=>{const fs=fit(p.t,w,15);return `<g class="piece ${cls}" data-p="${p.id}" tabindex="${cls.includes('given')||locked?-1:0}" role="button" aria-label="卡片：${esc(p.t)}" transform="translate(${x} ${y})"><rect class="pc" width="${w}" height="${h}" rx="7"/><text x="${w/2}" y="${h/2+fs*0.36}" text-anchor="middle" font-size="${fs}">${esc(p.t)}</text></g>`};
- Q.pieces.forEach(p=>{if(placed.has(p.id))return;const [x,y]=trayPos(Q,k++);s+=pieceSVG(p,x,y,Q.pw,Q.ph,(SEL===p.id?'sel ':'')+(locked?'locked':''))});
+ trayOrder(i).forEach(p=>{if(placed.has(p.id))return;const [x,y]=trayPos(Q,k++);s+=pieceSVG(p,x,y,Q.pw,Q.ph,(SEL===p.id?'sel ':'')+(locked?'locked':''))});
  Object.entries(d.place).forEach(([sid,pid])=>{const sl=Q.slots.find(x=>x.id===sid),p=Q.pieces.find(x=>x.id===pid);const w=Math.min(sl.w-6,Math.max(Q.pw,sl.w-6)),h=Math.min(sl.h-6,Q.ph);
   const given=Q.pre&&Q.pre[sid]===pid;s+=pieceSVG(p,sl.x+(sl.w-w)/2,sl.y+(sl.h-h)/2,w,h,(given?'given ':'')+(SEL===pid?'sel ':'')+(locked?'locked':''))});
  $('#board').innerHTML=s;
@@ -1148,7 +1185,7 @@ function check(){const i=ST.idx,Q=QS[i],d=draft(i);if(ST.passed[i])return;clearM
  else if(Q.kind==='mc'){wrongs.forEach(k=>{if(Q.opts[k][1])tags.add(Q.opts[k][1])});if(!tags.size)Q.opts.forEach(o=>o[1]&&tags.size<1&&tags.add(o[1]))}
  else{wrongs.forEach(ri=>{tags.add(Q.rows[ri][2]);$(`#q-opts .fillrow[data-r="${ri}"]`).classList.add('wrong')})}
  tags.forEach(addTag);
- const left=REVEAL_N-ST.errors[i];
+ const left=REVEAL_N-(ST.errors[i]-(ST.base[i]||0));
  if(left<=0){reveal(i);return}
  const tagHTML=[...tags].filter(t=>TAGS[t]).map(t=>`<span class="tag">${esc(TAGS[t][0])}</span>`).join('');
  const what=Q.kind==='drag'?`有 ${wrongs.length} 格放錯（紅框），再想想。`:Q.kind==='fill'?`有 ${wrongs.length} 列選錯（紅色），再想想。`:(Q.multi?`有 ${wrongs.length} 個選項判斷錯誤。`:'這個選項不正確。');
@@ -1163,15 +1200,15 @@ function showPassed(i,silent){const Q=QS[i],d=draft(i);
  if(Q.kind==='fill'){$$('#q-opts .fillrow').forEach(r=>{const ri=+r.dataset.r;const sel=r.querySelector('select');if(sel){sel.value='0';sel.disabled=true;r.classList.add('right')}})}
  if(Q.kind==='drag')drawBoard();
  const rv=ST.revealed[i];
- setFB(fbHTML(rv?'rev':'ok',rv?'已顯示正確答案':'答對了！',`<p>${esc(Q.exp)}</p>${rv?'<p class="left">已累積 5 次錯誤，系統填入答案；這一題在診斷卡會標記為「看過答案」。</p>':''}`));
+ setFB(fbHTML(rv?'rev':'ok',rv?'已顯示正確答案':'答對了！',`<p>${esc(Q.exp)}</p>${rv?'<p class="left">本輪已累積 5 次錯誤，系統填入答案；這一題在診斷卡會標記為「看過答案」。</p>':''}`));
  $('#check-btn').classList.add('hidden');$('#skip-btn').classList.add('hidden');$('#next-btn').classList.remove('hidden');
  drawTrack();if(!silent){msg(rv?'':'很好，可以前往下一題。');$('#next-btn').focus()}}
 $('#check-btn').onclick=check;
-$('#reset-btn').onclick=()=>{const i=ST.idx;delete ST.drafts[i];ST.passed[i]=false;ST.revealed[i]=false;save();renderQ(i);msg('已重置這一題（作答次數保留在紀錄中）。')};
+$('#reset-btn').onclick=()=>{const i=ST.idx;delete ST.drafts[i];ST.passed[i]=false;ST.revealed[i]=false;ST.base[i]=ST.errors[i];save();renderQ(i);msg('已重置這一題，可重新作答；先前的錯誤次數仍記在診斷卡。')};
 $('#prev-btn').onclick=()=>renderQ(ST.idx-1);
 const nextQ=()=>{if(ST.idx>=N-1){ST.done=true;save();go('done')}else renderQ(ST.idx+1)};
 $('#skip-btn').onclick=nextQ;$('#next-btn').onclick=nextQ;
-$('#finish-btn').onclick=()=>go('done');$('#finish-top').onclick=()=>go('done');
+$('#finish-btn').onclick=()=>go('done');$('#diag-btn').onclick=()=>go('done');$('#finish-top').onclick=()=>go('done');
 
 /* ---------- 診斷卡 ---------- */
 function renderDone(){const pass=ST.passed.filter(Boolean).length,rev=ST.revealed.filter(Boolean).length,self=pass-rev;
@@ -1207,19 +1244,12 @@ function lessonTabs(){
   if (question) think.append(question);
   const noteBox = text.querySelector(".note-details");
   if (noteBox) think.append(noteBox);
-  for (const n of [...text.childNodes]) {
-    if (n.nodeType === 1 && (n.matches(".quote,table,.tip,.mini") || (n.querySelector && n.querySelector("table") && !n.matches("ul,ol")))) {
-      ref.append(n);
-    } else {
-      core.append(n);
-    }
-  }
-  if (!core.textContent.trim() && ref.childNodes.length) core.append(ref.firstChild);
+  for (const n of [...text.childNodes]) core.append(n);
   const tabs = document.createElement("div");
   tabs.className = "read-tabs";
   tabs.setAttribute("role", "tablist");
   tabs.setAttribute("aria-label", "右側教學內容");
-  const items = [["教學重點", core], ["原文與表格", ref], ["思考筆記", think]].filter(([name, pane]) => pane.childNodes.length);
+  const items = [["教學重點", core], ["想一想・筆記", think]].filter(([name, pane]) => pane.childNodes.length);
   for (let i = 0; i < items.length; i++) {
     const [name, pane] = items[i];
     const button = document.createElement("button");

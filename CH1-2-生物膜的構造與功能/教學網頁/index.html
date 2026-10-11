@@ -461,15 +461,53 @@ body:has(#play:not(.hidden)) .tool-btn{height:34px;width:34px;font-size:15px}
 @media(min-width:1000px) and (max-height:700px){.specimen-label,.specimen-foot span{display:none}.specimen-foot strong{font-size:24px}.specimen{aspect-ratio:1.5/1;border-radius:80px 80px 6px 6px}}
 @media(min-width:1000px) and (max-height:680px){.chapter-strip{padding:6px 0}.page-foot{margin-top:4px}.hero h1{font-size:34px}.route p{font-size:11.5px}}
 @media print{.site-head,.topbar,.bar,.lhome,.report-actions,.toast{display:none!important}body{background:#fff;color:#222}.card2{border:0;box-shadow:none;padding:0}}
+
+/* ===== 2026-10-09 優化 ===== */
+.tool-btn svg{width:18px;height:18px}
+@media(min-width:1000px){
+ #learn .lfig>figure{flex:1;min-height:0;display:flex;flex-direction:column}
+ #learn .lfig>figure>img{flex:1;min-height:0;height:0;max-height:none!important}
+ #learn .lfig>figure>figcaption{flex:none}
+ #learn .lfig .slidelink{flex:none}
+}
+@media(min-width:1000px) and (max-height:700px){
+ #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)){grid-template-columns:minmax(0,1fr) 210px}
+ #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)) .refs img{height:210px}
+}
+.font-large #learn .read-lesson-pane{font-size:18.5px!important;line-height:1.7}
+.font-large #learn .read-lesson-pane table.mini{font-size:16.5px!important}
+.font-large #learn .read-lesson-pane .learning-question p,.font-large #learn .read-lesson-pane .thinking-answer{font-size:17.5px!important}
+.font-large #play .q{font-size:20px}.font-large #play .qhint{font-size:16px}
+.font-large #play .grid.solo .q{font-size:27px}.font-large #play .grid.solo .opt{font-size:22px}.font-large #play .grid.solo .qhint{font-size:18px}
+.font-large .fillrow b{font-size:20px}.font-large .fillrow select{font-size:19px}
+@media(min-width:1000px) and (max-height:700px){#learn .read-lesson-pane table.mini td,#learn .read-lesson-pane table.mini th{padding:4px 8px}#learn .read-lesson-pane li{margin-bottom:4px!important}}
+@media(min-width:1000px) and (max-height:680px){.section-heading{margin:6px 0 6px}}
+/* 附參考圖的選擇題：放大參考圖、選項字縮小（2026-10-09 老師要求） */
+@media(min-width:1000px){
+ #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)){grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);column-gap:18px}
+ #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)) #q-fb{display:flex;flex-direction:column;min-height:0;height:100%}
+ #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)) .refs{flex:1;min-height:0;display:flex!important;flex-direction:column}
+ #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)) .refs figure{flex:1;min-height:0;display:flex;flex-direction:column;padding:6px}
+ #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)) .refs img{flex:1;min-height:0;height:0!important;max-height:none;object-fit:contain}
+ #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)) .refs figcaption{flex:none;font-size:12px}
+ #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)) .opts{gap:8px}
+ #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)) .opt{font-size:16px;line-height:1.45;padding:7px 10px;min-height:42px}
+ #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)) .opt .k{font-size:14px}
+ .font-large #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)) .opt{font-size:18px}
+}
+@media(min-width:1000px) and (max-height:620px){
+ #play .grid.solo .stagehead h2{font-size:20px} #play .grid.solo .stagehead{padding-bottom:4px;margin-bottom:4px}
+ #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)) .q{font-size:20px;margin-bottom:4px} #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)) .qhint{font-size:14px;margin-bottom:6px}
+ #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)) .opts{gap:6px} #play .grid.solo .panel:has(#q-fb>.refs):not(:has(#q-fb .fb)) .opt{font-size:15px;padding:5px 9px;min-height:36px;line-height:1.4}
+}
 </style>
 </head>
 <body>
 <a class="skip-link" href="#main">跳到主要內容</a>
 <header class="site-head" id="site-head"><div class="wrap site-head-inner">
  <button class="site-brand" data-gohome aria-label="生物膜研究所，回首頁"><span class="brand-mark"><svg viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 11q12-6 24 0M3 19q12 6 24 0"/><circle cx="7" cy="11" r="1.6"/><circle cx="12" cy="9.2" r="1.6"/><circle cx="18" cy="9.2" r="1.6"/><circle cx="23" cy="11" r="1.6"/><circle cx="7" cy="19" r="1.6"/><circle cx="12" cy="20.8" r="1.6"/><circle cx="18" cy="20.8" r="1.6"/><circle cx="23" cy="19" r="1.6"/><ellipse cx="15" cy="15" rx="3" ry="7"/></svg></span><span><span class="brand-cn">生物膜研究所</span><span class="brand-en">BIOMEMBRANE LABORATORY</span></span></button>
- <nav class="head-nav" aria-label="主要導覽"><button class="nav-link" id="to-home" data-route="intro">首頁</button><button class="nav-link" data-route="learn">圖解探索</button><button class="nav-link" data-route="play">互動練習</button><button class="nav-link" data-route="show">課堂簡報</button><button class="nav-link" data-route="video">教學影片</button></nav>
- <button class="nav-link" id="export-record">診斷報表</button>
-   <div class="head-tools"><button class="tool-btn" id="font-btn" aria-pressed="false" title="放大文字">Aa</button><button class="tool-btn" id="theme-btn" title="切換明暗">◐</button></div>
+ <nav class="head-nav" aria-label="主要導覽"><button class="nav-link" data-route="learn">圖解探索</button><button class="nav-link" data-route="play">互動練習</button><button class="nav-link" data-route="show">課堂簡報</button><button class="nav-link" data-route="video">教學影片</button></nav>
+ <div class="head-tools"><button class="tool-btn" id="diag-btn" title="學習診斷卡" aria-label="學習診斷卡"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 4h8v3H8Z M6 6H5v15h14V6h-1"/><path d="M8.5 12.5l2 2 4.5-4.5 M8.5 18h7"/></svg></button><button class="tool-btn" id="font-btn" aria-pressed="false" title="放大文字">Aa</button><button class="tool-btn" id="theme-btn" title="切換明暗">◐</button></div>
 </div></header>
 
 <header class="topbar hidden" id="topbar"><div class="wrap topin">
@@ -833,9 +871,9 @@ const QS=[
 {kind:'mc',multi:true,g:'g2',title:'細胞膜的成分',sub:'磷脂、醣類、固醇類與蛋白質',label:'多選題 · 選出所有正確敘述',
  q:'關於細胞膜的成分與特性，哪些敘述正確？',
  hint:'注意每個敘述中的「只」「都」「固定」等限定詞。',
- opts:[['醣類多為寡醣，只與蛋白質結合成醣蛋白','M9'],['磷脂的親水性頭部朝向細胞質或外界，疏水性尾部在雙層內部',null],['膜蛋白都貫穿整個脂雙層','M10'],
-  ['固醇類比例越高，膜的流動性越低',null],['流體鑲嵌模型中，只有蛋白質能移動，磷脂固定不動','M10'],['醣脂與醣蛋白位於膜的外側，與細胞間的辨識有關',null]],
- ans:[1,3,5],exp:'醣類也可接在磷脂上形成醣脂；膜蛋白可位於內、外側或貫穿；流體鑲嵌模型中磷脂可移動，蛋白質也隨之移動。'},
+ opts:[['磷脂的親水性頭部朝向細胞質或外界，疏水性尾部在雙層內部',null],['醣類多為寡醣，只與蛋白質結合成醣蛋白','M9'],['膜蛋白都貫穿整個脂雙層','M10'],
+  ['固醇類比例越高，膜的流動性越低',null],['醣脂與醣蛋白位於膜的外側，與細胞間的辨識有關',null],['流體鑲嵌模型中，只有蛋白質能移動，磷脂固定不動','M10']],
+ ans:[0,3,4],exp:'醣類也可接在磷脂上形成醣脂；膜蛋白可位於內、外側或貫穿；流體鑲嵌模型中磷脂可移動，蛋白質也隨之移動。'},
 
 {kind:'drag',g:'g3',title:'蛋白質出貨路線',sub:'以分泌性蛋白質為例',label:'流程組裝 · 拖放',
  q:'依序排出分泌性蛋白質從合成到分泌的路徑。',
@@ -870,10 +908,10 @@ const QS=[
 {kind:'mc',multi:true,g:'g4',title:'總檢查',sub:'內膜系統、知識補給站與動植物比較',label:'多選題 · 6 選 3',
  q:'下列敘述哪些正確？（正確的有 3 項）',
  hint:'逐項檢查主詞與限定詞，特別是分類與構造位置。',
- opts:[['過氧化體屬於內膜系統，由高基氏體的囊泡形成','M15'],['附著於內質網上的核糖體所合成的蛋白質，可能成為分泌物、膜蛋白或溶體內的水解酶',null],
-  ['細胞骨架由醣類構成，只負責維持細胞形狀','M15'],['卵巢細胞中，平滑內質網的酵素可協助合成多種性激素',null],
+ opts:[['過氧化體屬於內膜系統，由高基氏體的囊泡形成','M15'],['細胞骨架由醣類構成，只負責維持細胞形狀','M15'],
+  ['附著於內質網上的核糖體所合成的蛋白質，可能成為分泌物、膜蛋白或溶體內的水解酶',null],['卵巢細胞中，平滑內質網的酵素可協助合成多種性激素',null],
   ['植物細胞有中心粒，動物細胞有細胞壁','M16'],['細胞骨架三種纖維中，微管最粗、微絲最細',null]],
- ans:[1,3,5],exp:'課本指出過氧化體是非內膜系統的單層膜胞器；細胞骨架由蛋白質構成，功能包括維持形狀、變形、運動與幫助胞器移動；植物細胞有細胞壁，動物細胞有中心粒。'}
+ ans:[2,3,5],exp:'課本指出過氧化體是非內膜系統的單層膜胞器；細胞骨架由蛋白質構成，功能包括維持形狀、變形、運動與幫助胞器移動；植物細胞有細胞壁，動物細胞有中心粒。'}
 ];
 
 function membraneSVG(){
@@ -974,7 +1012,7 @@ let lbReturn=null;
 function zoom(src,cap,from){closeLB();lbReturn=from||document.activeElement;const d=document.createElement('div');d.className='lb';d.setAttribute('role','dialog');d.setAttribute('aria-modal','true');d.setAttribute('aria-label','放大圖片');
  d.innerHTML=`<span class="lb-caption">${esc(cap||'')}</span><button class="lb-close">關閉 ✕</button><img alt="${esc(cap||'放大圖')}" src="${src}">`;
  (document.fullscreenElement||document.body).appendChild(d);d.querySelector('.lb-close').focus();
- d.addEventListener('click',ev=>{if(ev.target===d||ev.target.closest('.lb-close'))closeLB()});}
+ d.addEventListener('click',ev=>{if(ev.target===d||ev.target.closest('.lb-close'))closeLB()});d.addEventListener('keydown',ev=>{if(ev.key==='Tab'){ev.preventDefault();d.querySelector('.lb-close').focus()}});}
 function closeLB(){const d=$('.lb');if(d){d.remove();if(lbReturn&&lbReturn.focus)try{lbReturn.focus()}catch(e){}lbReturn=null;return true}return false}
 document.addEventListener('click',e=>{const z=e.target.closest('.zoomable');if(z)zoom(z.src,z.alt,z)});
 document.addEventListener('keydown',e=>{if(e.key==='Enter'&&e.target.classList&&e.target.classList.contains('zoomable')){e.preventDefault();zoom(e.target.src,e.target.alt,e.target)}});
@@ -1081,13 +1119,14 @@ function stopVideo(){const v=$('#teaching-video');try{v.pause()}catch(e){}v.remo
 
 /* ---------- 互動練習：狀態 ---------- */
 const N=QS.length;
-function blank(){return{idx:0,tries:Array(N).fill(0),errors:Array(N).fill(0),passed:Array(N).fill(false),revealed:Array(N).fill(false),drafts:{},tags:{},t0:Date.now(),done:false}}
+function blank(){return{idx:0,tries:Array(N).fill(0),errors:Array(N).fill(0),passed:Array(N).fill(false),revealed:Array(N).fill(false),base:Array(N).fill(0),drafts:{},tags:{},t0:Date.now(),done:false}}
 let ST=store.get(KEY);
 (function validate(){const ok=ST&&typeof ST==='object'&&['tries','errors','passed','revealed'].every(k=>Array.isArray(ST[k])&&ST[k].length===N);
  if(!ok){ST=blank();return}
  if(!(Number.isInteger(ST.idx)&&ST.idx>=0&&ST.idx<N))ST.idx=0;
  ['tries','errors'].forEach(k=>ST[k]=ST[k].map(v=>Number.isFinite(v)&&v>=0?Math.floor(v):0));
  ['passed','revealed'].forEach(k=>ST[k]=ST[k].map(Boolean));
+ if(!Array.isArray(ST.base)||ST.base.length!==N)ST.base=Array(N).fill(0);ST.base=ST.base.map((v,k)=>Number.isFinite(v)&&v>=0?Math.min(Math.floor(v),ST.errors[k]):0);
  if(!ST.drafts||typeof ST.drafts!=='object')ST.drafts={};
  if(!ST.tags||typeof ST.tags!=='object')ST.tags={};
  Object.keys(ST.tags).forEach(t=>{if(!TAGS[t]||!Number.isFinite(ST.tags[t]))delete ST.tags[t]});
@@ -1146,6 +1185,7 @@ function clearMarks(){$$('#q-opts .right,#q-opts .wrong').forEach(x=>x.classList
 
 /* ---------- 拖放板 ---------- */
 const fit=(t,w,fs)=>{const L=[...t].reduce((a,ch)=>a+(/[\x00-\xff]/.test(ch)?.56:1),0);return Math.max(11,Math.min(fs,Math.floor((w-14)/L)))};
+function trayOrder(i){const Q=QS[i];if(!Q._ord){const a=Q.pieces.slice();let seed=i*97+13;const rnd=()=>{seed=(seed*9301+49297)%233280;return seed/233280};for(let k=a.length-1;k>0;k--){const j=Math.floor(rnd()*(k+1));[a[k],a[j]]=[a[j],a[k]]}Q._ord=a}return Q._ord}
 function trayPos(Q,k){const T=Q.tray;return[T.x+(k%T.cols)*T.gx,T.y+Math.floor(k/T.cols)*T.gy]}
 function drawBoard(){const i=ST.idx,Q=QS[i],d=draft(i),locked=ST.passed[i];
  const placed=new Set(Object.values(d.place));
@@ -1153,7 +1193,7 @@ function drawBoard(){const i=ST.idx,Q=QS[i],d=draft(i),locked=ST.passed[i];
  s+=Q.bg();
  Q.slots.forEach(sl=>{const pre=Q.pre&&Q.pre[sl.id];s+=`<g class="slotg" data-slot="${sl.id}" tabindex="${pre||locked?-1:0}" role="button" aria-label="第 ${Q.slots.indexOf(sl)+1} 格${d.place[sl.id]?'，已放入 '+esc(Q.pieces.find(p=>p.id===d.place[sl.id]).t):'，空的'}"><rect class="slot" x="${sl.x}" y="${sl.y}" width="${sl.w}" height="${sl.h}" rx="7"/></g>`});
  let k=0;const pieceSVG=(p,x,y,w,h,cls)=>{const fs=fit(p.t,w,15);return `<g class="piece ${cls}" data-p="${p.id}" tabindex="${cls.includes('given')||locked?-1:0}" role="button" aria-label="卡片：${esc(p.t)}" transform="translate(${x} ${y})"><rect class="pc" width="${w}" height="${h}" rx="7"/><text x="${w/2}" y="${h/2+fs*0.36}" text-anchor="middle" font-size="${fs}">${esc(p.t)}</text></g>`};
- Q.pieces.forEach(p=>{if(placed.has(p.id))return;const [x,y]=trayPos(Q,k++);s+=pieceSVG(p,x,y,Q.pw,Q.ph,(SEL===p.id?'sel ':'')+(locked?'locked':''))});
+ trayOrder(i).forEach(p=>{if(placed.has(p.id))return;const [x,y]=trayPos(Q,k++);s+=pieceSVG(p,x,y,Q.pw,Q.ph,(SEL===p.id?'sel ':'')+(locked?'locked':''))});
  Object.entries(d.place).forEach(([sid,pid])=>{const sl=Q.slots.find(x=>x.id===sid),p=Q.pieces.find(x=>x.id===pid);const w=Math.min(sl.w-6,Math.max(Q.pw,sl.w-6)),h=Math.min(sl.h-6,Q.ph);
   const given=Q.pre&&Q.pre[sid]===pid;s+=pieceSVG(p,sl.x+(sl.w-w)/2,sl.y+(sl.h-h)/2,w,h,(given?'given ':'')+(SEL===pid?'sel ':'')+(locked?'locked':''))});
  $('#board').innerHTML=s;
@@ -1206,7 +1246,7 @@ function check(){const i=ST.idx,Q=QS[i],d=draft(i);if(ST.passed[i])return;clearM
  else if(Q.kind==='mc'){wrongs.forEach(k=>{if(Q.opts[k][1])tags.add(Q.opts[k][1])});if(!tags.size)Q.opts.forEach(o=>o[1]&&tags.size<1&&tags.add(o[1]))}
  else{wrongs.forEach(ri=>{tags.add(Q.rows[ri][2]);$(`#q-opts .fillrow[data-r="${ri}"]`).classList.add('wrong')})}
  tags.forEach(addTag);
- const left=REVEAL_N-ST.errors[i];
+ const left=REVEAL_N-(ST.errors[i]-(ST.base[i]||0));
  if(left<=0){reveal(i);return}
  const tagHTML=[...tags].filter(t=>TAGS[t]).map(t=>`<span class="tag">${esc(TAGS[t][0])}</span>`).join('');
  const what=Q.kind==='drag'?`有 ${wrongs.length} 格放錯（紅框），再想想。`:Q.kind==='fill'?`有 ${wrongs.length} 列選錯（紅色），再想想。`:(Q.multi?`有 ${wrongs.length} 個選項判斷錯誤。`:'這個選項不正確。');
@@ -1221,15 +1261,15 @@ function showPassed(i,silent){const Q=QS[i],d=draft(i);
  if(Q.kind==='fill'){$$('#q-opts .fillrow').forEach(r=>{const ri=+r.dataset.r;const sel=r.querySelector('select');if(sel){sel.value='0';sel.disabled=true;r.classList.add('right')}})}
  if(Q.kind==='drag')drawBoard();
  const rv=ST.revealed[i];
- setFB(fbHTML(rv?'rev':'ok',rv?'已顯示正確答案':'答對了！',`<p>${esc(Q.exp)}</p>${rv?'<p class="left">已累積 5 次錯誤，系統填入答案；這一題在診斷卡會標記為「看過答案」。</p>':''}`));
+ setFB(fbHTML(rv?'rev':'ok',rv?'已顯示正確答案':'答對了！',`<p>${esc(Q.exp)}</p>${rv?'<p class="left">本輪已累積 5 次錯誤，系統填入答案；這一題在診斷卡會標記為「看過答案」。</p>':''}`));
  $('#check-btn').classList.add('hidden');$('#skip-btn').classList.add('hidden');$('#next-btn').classList.remove('hidden');
  drawTrack();if(!silent){msg(rv?'':'很好，可以前往下一題。');$('#next-btn').focus()}}
 $('#check-btn').onclick=check;
-$('#reset-btn').onclick=()=>{const i=ST.idx;delete ST.drafts[i];ST.passed[i]=false;ST.revealed[i]=false;save();renderQ(i);msg('已重置這一題（作答次數保留在紀錄中）。')};
+$('#reset-btn').onclick=()=>{const i=ST.idx;delete ST.drafts[i];ST.passed[i]=false;ST.revealed[i]=false;ST.base[i]=ST.errors[i];save();renderQ(i);msg('已重置這一題，可重新作答；先前的錯誤次數仍記在診斷卡。')};
 $('#prev-btn').onclick=()=>renderQ(ST.idx-1);
 const nextQ=()=>{if(ST.idx>=N-1){ST.done=true;save();go('done')}else renderQ(ST.idx+1)};
 $('#skip-btn').onclick=nextQ;$('#next-btn').onclick=nextQ;
-$('#finish-btn').onclick=()=>go('done');$('#finish-top').onclick=()=>go('done');
+$('#finish-btn').onclick=()=>go('done');$('#diag-btn').onclick=()=>go('done');$('#finish-top').onclick=()=>go('done');
 
 /* ---------- 診斷卡 ---------- */
 function renderDone(){const pass=ST.passed.filter(Boolean).length,rev=ST.revealed.filter(Boolean).length,self=pass-rev;
@@ -1265,19 +1305,12 @@ function lessonTabs(){
   if (question) think.append(question);
   const noteBox = text.querySelector(".note-details");
   if (noteBox) think.append(noteBox);
-  for (const n of [...text.childNodes]) {
-    if (n.nodeType === 1 && (n.matches(".quote,table,.tip,.mini") || (n.querySelector && n.querySelector("table") && !n.matches("ul,ol")))) {
-      ref.append(n);
-    } else {
-      core.append(n);
-    }
-  }
-  if (!core.textContent.trim() && ref.childNodes.length) core.append(ref.firstChild);
+  for (const n of [...text.childNodes]) core.append(n);
   const tabs = document.createElement("div");
   tabs.className = "read-tabs";
   tabs.setAttribute("role", "tablist");
   tabs.setAttribute("aria-label", "右側教學內容");
-  const items = [["教學重點", core], ["原文與表格", ref], ["思考筆記", think]].filter(([name, pane]) => pane.childNodes.length);
+  const items = [["教學重點", core], ["想一想・筆記", think]].filter(([name, pane]) => pane.childNodes.length);
   for (let i = 0; i < items.length; i++) {
     const [name, pane] = items[i];
     const button = document.createElement("button");
