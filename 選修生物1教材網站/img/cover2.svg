@@ -70,6 +70,6 @@
 
   <!-- Bottom Brand Footer -->
   <line x1="32" y1="452" x2="368" y2="452" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
-  <text x="32" y="468" fill="rgba(255,255,255,0.7)" font-size="10.5" font-family="'Noto Sans TC', sans-serif" letter-spacing="1">選修生物（Ⅰ）互動教材 · 臺北市立麗山高中生物科自編</text>
+  <text x="32" y="468" fill="rgba(255,255,255,0.7)" font-size="10.5" font-family="'Noto Sans TC', sans-serif" letter-spacing="1">選修生物（Ⅰ）互動教學教材</text>
   <text x="368" y="468" fill="#f59e0b" font-size="11" font-family="'Noto Sans TC', sans-serif" font-weight="900" text-anchor="end">HANLIN</text>
 </svg>
