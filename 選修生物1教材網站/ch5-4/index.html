@@ -575,6 +575,16 @@ body:has(#play:not(.hidden)) .tool-btn{height:34px;width:34px;font-size:15px}
  #play .panel.tight2 .q{font-size:18px!important}
 }
 </style>
+<style id="ex-css">
+/* 課文講解分頁 */
+.read-lesson-pane .ex,.reading-body .ex{margin:0 0 12px;padding:2px 0 2px 12px;border-left:3px solid var(--accent);line-height:1.62}
+.read-lesson-pane .ex h4{margin:0 0 3px;font-size:.84em;font-weight:700;letter-spacing:.06em;color:var(--accent)}
+.read-lesson-pane .ex p{margin:0}
+.read-lesson-pane .ex ul{margin:2px 0 0;padding-left:1.15em}
+.read-lesson-pane .ex li{margin:0 0 3px}
+.read-lesson-pane .ex.g{background:var(--surface-2);padding:8px 12px;border-radius:0 8px 8px 0}
+.read-lesson-pane p.src{font-size:12.5px;color:var(--ink-3);margin:8px 0 0}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main">跳到主要內容</a>
@@ -748,6 +758,7 @@ const MAN = {"1": ["step_001"], "2": ["step_002", "step_003"], "3": ["step_004",
 
 const GROUPS = [{"id": "A", "name": "人類基因體計畫", "cls": "g1"}, {"id": "B", "name": "人類基因體的應用與問題", "cls": "g2"}, {"id": "C", "name": "知識補給站：基因概念的演變", "cls": "g3"}];
 
+const EXPL={"gn-01": "<div class=\"ex g\"><h4>什麼是基因體<\/h4><p>21 世紀已進入<b>基因體時代<\/b>。<b>基因體<\/b>是生物細胞內<b>單套 DNA<\/b> 的總稱。<\/p><\/div><div class=\"ex\"><h4>重點<\/h4><ul><li>21 世紀初，人類基因體計畫（HGP）完成人類基因體定序，其他生物的定序也陸續增加。<\/li><li>分析這些基因體大數據，對人類世界會產生深遠影響。<\/li><\/ul><\/div><div class=\"ex\"><h4>提醒<\/h4><p>「單套」是計算範圍：人類體細胞有 46 條染色體，但基因體指單套序列的總和（22 條體染色體加上 X、Y 的序列）。<\/p><\/div>", "gn-02": "<div class=\"ex g\"><h4>讀圖 5－10：人類基因體計畫<\/h4><p>HGP 是國際合作的計畫。<\/p><\/div><div class=\"ex\"><h4>時間與數字<\/h4><ul><li>1990 年，美國能源部啟動國際人類基因體計畫。<\/li><li>2003 年完成大部分人類基因體定序。<\/li><li>人類基因體約 <b>30 億個鹼基對<\/b>（3×10⁹ bp）。<\/li><li>2018 年，研究者宣布其中可製造蛋白質的基因約 <b>2 萬個<\/b>。<\/li><\/ul><\/div><div class=\"ex\"><h4>怎麼解讀<\/h4><p>30 億個鹼基對中，能編碼蛋白質的只占一小部分，大部分序列沒有蛋白質產物。<\/p><\/div>", "gn-03": "<div class=\"ex g\"><h4>基因體的應用<\/h4><p>隨著人類基因體序列資料庫資訊增加，醫學與生物技術的發展更迅速，也更能認識疾病成因。<\/p><\/div><div class=\"ex\"><h4>兩個應用方向<\/h4><ul><li><b>開發新藥與新療法<\/b>：以癌症研究為例，分析整理病患基因體序列資料，有利於癌症治療與新藥開發。<\/li><li><b>客製化醫療<\/b>：定序費用愈來愈低，可依病患的基因體序列、發病症狀或對藥物的反應，作為診斷與用藥的參考。<\/li><\/ul><\/div><div class=\"ex\"><h4>例<\/h4><p>同一種藥有人有效、有人無效，與個人基因體序列不同有關；分析基因體可預先選擇適合的藥物。<\/p><\/div>", "gn-04": "<div class=\"ex g\"><h4>基因體資料帶來的問題<\/h4><p>基因體研究使醫藥進展更快速，但資料統整後帶來新議題。<\/p><\/div><div class=\"ex\"><h4>課本提出的問題<\/h4><ul><li>個人基因體序列、疾病史、家族成員背景等資料如何<b>保護<\/b>？<\/li><li>政府與保險公司取得與使用這些資料的<b>正當性<\/b>，一再挑戰普世的價值觀與道德觀。<\/li><\/ul><\/div><div class=\"ex\"><h4>課本的建議<\/h4><ul><li>遺傳科技應在<b>適當限制<\/b>下發展，避免不可預期的危機，使成果真正為人類帶來福祉。<\/li><li>在後基因體時代，遺傳學與大眾生命息息相關，要以簡單易懂的內容讓大眾了解其福祉與可能危險。<\/li><\/ul><\/div><div class=\"ex\"><h4>想一想<\/h4><p>保險公司若取得你的基因體資料，可能依遺傳疾病風險拒保或提高保費，造成基因歧視；這是討論取得與使用正當性的原因。<\/p><\/div>", "gn-05": "<div class=\"ex g\"><h4>知識補給站：基因概念的演變（1930 年代前）<\/h4><p>基因的定義隨科學發現一層層疊加。<\/p><\/div><div class=\"ex\"><h4>四個「單位」<\/h4><ul><li>孟德爾提出遺傳因子；1909 年以「基因」取代，是帶有遺傳訊息的<b>功能單位<\/b>。<\/li><li>摩根等人證明基因位於染色體上，提出連鎖與互換，使基因成為<b>重組的單位<\/b>。<\/li><li>馬勒以 X 光誘變得到許多突變果蠅，基因成為<b>突變的單位<\/b>。<\/li><li>綜合：1930 年代前，基因是<b>遺傳結構單位、功能單位、重組的單位及突變的單位<\/b>。<\/li><\/ul><\/div>", "gn-06": "<div class=\"ex g\"><h4>分子生物學之後：定義變複雜<\/h4><p>1940 年代提出<b>「一基因一酵素（蛋白質）」<\/b>假說；1953 年確定 DNA 立體結構。<\/p><\/div><div class=\"ex\"><h4>當時的定義<\/h4><ul><li>基因是攜帶能合成特定訊息的一段核苷酸序列。<\/li><li>「一個基因的 DNA 產生一條 mRNA，進一步產生一條多肽。」<\/li><\/ul><\/div><div class=\"ex\"><h4>新發現偏離了這個定義<\/h4><ul><li>基因的 DNA 序列分為<b>內含子與外顯子<\/b>，只有外顯子會合成蛋白質。<\/li><li><b>選擇式剪接<\/b>：同一前驅 mRNA 以外顯子不同組合，產生多種蛋白質。<\/li><li>同一基因有多個<b>轉錄起點或終止位置<\/b>，可產生多種 RNA 與蛋白質。<\/li><\/ul><\/div><div class=\"ex\"><h4>小結<\/h4><p>基因的定義隨觀念與技術進步，勢必愈來愈複雜；「一個基因一條多肽」只是歷史上的簡化定義。<\/p><\/div>"};
 const LEARN = [{"id": "gn-01", "g": "A", "title": "什麼是基因體", "src": "課本 P176；簡報第 1–2 頁", "mode": "flip", "slides": [1, 2], "book": [], "bookcap": [], "html": "<ul><li>21 世紀已進入<b>基因體時代</b>。</li><li><b>基因體</b>：生物細胞內<b>單套 DNA</b> 的總稱。</li><li>人類基因體完成定序後，其他完成定序的生物種類也陸續增加；分析這些基因體大數據，將對人類世界產生深遠影響。</li></ul>", "q": "人體細胞有 46 條染色體，人類基因體指的是幾條染色體的 DNA？", "a": "單套：22 條體染色體加上 X、Y 性染色體的 DNA 序列（單套 DNA 的總稱）。"}, {"id": "gn-02", "g": "A", "title": "人類基因體計畫（HGP）", "src": "課本 P176 圖5-10；簡報第 3 頁", "mode": "book", "slides": [3], "book": ["bk510"], "bookcap": ["課本 P176 圖5-10 美國能源部人類基因體計畫的代表標誌"], "html": "<ul><li><b>1990 年</b>，美國能源部啟動國際人類基因體計畫（HGP）。</li><li><b>2003 年</b>完成大部分的人類基因體定序。</li><li>人類基因體約 <b>30 億個鹼基對</b>（3×10⁹ bp）。</li><li>2018 年，研究者宣布人類基因體中<b>可製造蛋白質的基因約 2 萬個</b>。</li></ul>", "q": "30 億個鹼基對中只有約 2 萬個基因能製造蛋白質，這代表什麼？", "a": "基因體中絕大部分的序列沒有蛋白質產物，能編碼蛋白質的只占一小部分。"}, {"id": "gn-03", "g": "B", "title": "人類基因體的應用", "src": "課本 P176；簡報第 4 頁", "mode": "flip", "slides": [4], "book": [], "bookcap": [], "html": "<ul><li>基因體序列資料庫資訊增加，醫學與生物技術發展更迅速，更認識疾病成因。</li><li><b>開發新藥與新療法</b>：以癌症研究為例，分析整理病患的基因體序列資料，有利於癌症治療與新藥開發。</li><li><b>客製化醫療</b>：定序費用愈來愈低，可根據病患的基因體序列、發病症狀或對藥物的反應，作為診斷與用藥的參考。</li></ul>", "q": "同一種藥，為什麼有人有效、有人無效？基因體資訊能幫上什麼忙？", "a": "個人基因體序列不同，對藥物的反應也不同；分析基因體可預先選擇適合的藥物與劑量，即客製化醫療。"}, {"id": "gn-04", "g": "B", "title": "基因體資料可能帶來的問題", "src": "課本 P177；簡報第 5 頁", "mode": "flip", "slides": [5], "book": [], "bookcap": [], "html": "<ul><li><b>個人基因體資料的保護</b>：個人基因體序列、疾病史及家族成員背景等資料統整後如何保護？</li><li><b>政府與保險公司</b>取得與使用基因體資料的<b>正當性</b>，挑戰普世的價值觀與道德觀。</li><li>遺傳科技應在<b>適當限制</b>下發展，避免不可預期的危機；並以簡單易懂的內容讓大眾理解基因體知識、了解其福祉與可能危險。</li></ul>", "q": "想一想：保險公司若能取得你的基因體資料，可能會發生什麼事？你的看法是什麼？", "a": "可能依遺傳疾病風險拒保或提高保費，造成基因歧視；因此個人基因體資料需審慎保護，取得與使用要有正當性。"}, {"id": "gn-05", "g": "C", "title": "基因概念的演變（一）：1930 年代前", "src": "課本 P177 知識補給站；簡報第 6 頁", "mode": "flip", "slides": [6], "book": [], "bookcap": [], "html": "<ul><li>孟德爾提出<b>遺傳因子</b>的假說；1909 年以「基因」一詞取代遺傳因子 → 基因是<b>帶有遺傳訊息的功能單位</b>。</li><li>摩根等人證明基因位於染色體上，提出<b>連鎖與互換</b> → 基因是<b>重組的單位</b>。</li><li>馬勒以 X 光人工誘變得到許多突變果蠅 → 基因是<b>突變的單位</b>。</li><li>1930 年代前：基因是遺傳結構單位、功能單位、重組的單位及突變的單位。</li></ul>", "q": "摩根的連鎖與互換，讓基因的定義多了什麼？", "a": "基因是「重組的單位」：互換使同源染色體上的基因重新組合。"}, {"id": "gn-06", "g": "C", "title": "基因概念的演變（二）：分子生物學之後", "src": "課本 P177 知識補給站；簡報第 7–8 頁", "mode": "flip", "slides": [7, 8], "book": [], "bookcap": [], "html": "<ul><li>1940 年代：<b>一基因一酵素（蛋白質）</b>假說；1953 年確定 DNA 立體結構。</li><li>基因為攜帶能合成某種特定訊息的一段核苷酸序列：「<b>一個基因的 DNA 產生一條 mRNA，進一步產生一條多肽</b>」。</li><li>新發現使這個定義被偏離：<ol><li>基因的 DNA 序列分為<b>內含子與外顯子</b>，只有外顯子會合成蛋白質；</li><li><b>選擇式剪接</b>：同一前驅 mRNA 的外顯子不同組合，產生多種蛋白質；</li><li>同一基因有<b>多個轉錄起點或終止位置</b>，可產生多種 RNA 與蛋白質。</li></ol></li></ul>", "q": "選擇式剪接為什麼讓「一基因一多肽」說不通？", "a": "同一個基因的前驅 mRNA 可用不同外顯子組合剪接，產生多種成熟 mRNA 與蛋白質，一個基因就不只對應一條多肽。"}];
 
 const LFCFG={"lfgc": {"ix": 0, "iw": 620, "ih": 433, "tx": 740.0, "ty": 18}};
@@ -1145,7 +1156,9 @@ function lessonTabs(){
   tabs.className = "read-tabs";
   tabs.setAttribute("role", "tablist");
   tabs.setAttribute("aria-label", "右側教學內容");
-  const items = [["教學重點", core], ["想一想・筆記", think]].filter(([name, pane]) => pane.childNodes.length);
+  const ex = document.createElement("div"); ex.className = "read-lesson-pane"; ex.setAttribute("role", "tabpanel");
+  { const _c = LEARN[LI], _h = _c && EXPL[_c.id]; ex.innerHTML = _h ? _h + `<p class="src">依課本內容改寫｜${esc(_c.src)}</p>` : "<p>（此張尚無課文講解）</p>"; }
+  const items = [["教學重點", core], ["課文講解", ex], ["想一想・筆記", think]].filter(([name, pane]) => pane.childNodes.length);
   for (let i = 0; i < items.length; i++) {
     const [name, pane] = items[i];
     const button = document.createElement("button");
@@ -1161,6 +1174,7 @@ function lessonTabs(){
     button.tabIndex = i === 0 ? 0 : -1;
     pane.hidden = i !== 0;
     button.onclick = () => {
+      window.__EXSEL = (name === "課文講解");
       for (const [j, other] of items.entries()) {
         other[1].hidden = j !== i;
         tabs.children[j].setAttribute("aria-selected", String(j === i));
@@ -1181,6 +1195,7 @@ function lessonTabs(){
     tabs.append(button);
   }
   text.replaceChildren(tabs, ...items.map((x) => x[1]));
+  { const _k = items.findIndex((x) => x[0] === "課文講解"); if (window.__EXSEL && _k > 0) tabs.children[_k].click(); }
 }
 
 function readSizes(){

@@ -575,6 +575,16 @@ body:has(#play:not(.hidden)) .tool-btn{height:34px;width:34px;font-size:15px}
  #play .panel.tight2 .q{font-size:18px!important}
 }
 </style>
+<style id="ex-css">
+/* 課文講解分頁 */
+.read-lesson-pane .ex,.reading-body .ex{margin:0 0 12px;padding:2px 0 2px 12px;border-left:3px solid var(--accent);line-height:1.62}
+.read-lesson-pane .ex h4{margin:0 0 3px;font-size:.84em;font-weight:700;letter-spacing:.06em;color:var(--accent)}
+.read-lesson-pane .ex p{margin:0}
+.read-lesson-pane .ex ul{margin:2px 0 0;padding-left:1.15em}
+.read-lesson-pane .ex li{margin:0 0 3px}
+.read-lesson-pane .ex.g{background:var(--surface-2);padding:8px 12px;border-radius:0 8px 8px 0}
+.read-lesson-pane p.src{font-size:12.5px;color:var(--ink-3);margin:8px 0 0}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main">跳到主要內容</a>
@@ -769,6 +779,7 @@ const MAN = {"1": ["step_001"], "2": ["step_002"], "3": ["step_003", "step_004",
 
 const GROUPS = [{"id": "A", "name": "原理", "cls": "g1"}, {"id": "B", "name": "步驟", "cls": "g2"}, {"id": "C", "name": "討論", "cls": "g3"}];
 
+const EXPL={"pm-01": "<div class=\"ex g\"><h4>為什麼要做這個活動<\/h4><p>細胞內的水、有機物、無機鹽等含量與細胞外水溶液明顯不同，可見<b>細胞膜形成屏障<\/b>，控制物質不能任意離開。<\/p><\/div><div class=\"ex\"><h4>兩個面向<\/h4><ul><li>若細胞是完全封閉的系統，就無法取得所需物質，代謝廢物也排不出去。<\/li><li>所以細胞膜具有<b>選擇性<\/b>，讓某些物質進出（例：水可通過，許多物質卻不行）。<\/li><\/ul><\/div><div class=\"ex\"><h4>活動目的<\/h4><p>藉由觀察<b>水分子的滲透方向<\/b>，了解<b>蔗糖<\/b>是否能通過植物葉片細胞的細胞膜。<\/p><\/div>", "pm-02": "<div class=\"ex g\"><h4>滲透作用與質離現象<\/h4><p>水分子擴散通過細胞膜稱<b>滲透作用<\/b>，但顯微鏡下看不到水分子。因此要藉由細胞形態的變化來間接證明。<\/p><\/div><div class=\"ex\"><h4>水往哪裡走<\/h4><ul><li>水的方向由膜兩側<b>水所占的比例<\/b>決定；溶質濃度愈高，水的比例愈低。<\/li><li>細胞外水的比例低於細胞內，且溶質<b>無法通過細胞膜<\/b>，水就淨滲透到細胞外。<\/li><\/ul><\/div><div class=\"ex\"><h4>質離現象<\/h4><ul><li>植物細胞失水萎縮，細胞膜（連同細胞質）與<b>細胞壁分離<\/b>，兩者間出現明顯空隙。<\/li><li>水再進入細胞時，質離現象消失。<\/li><li>觀察質離，可間接證實水分子的滲透方向。<\/li><\/ul><\/div>", "pm-03": "<div class=\"ex g\"><h4>為什麼選 0.2 M 與 1.0 M<\/h4><p>一般植物細胞中水所占的比例，大約與 <b>0.2 M 蔗糖溶液<\/b>相似，但細胞間有個別差異。<\/p><\/div><div class=\"ex\"><h4>預期<\/h4><ul><li>置於 <b>0.2 M<\/b>：大多數細胞<b>不會<\/b>質離。<\/li><li>置於 <b>1.0 M<\/b>：大多數細胞<b>會<\/b>質離。<\/li><\/ul><\/div><div class=\"ex\"><h4>溶質若能通過細胞膜<\/h4><p>溶質進入細胞，溶液的溶質濃度會降低，膜兩側差距變小，就不易質離。所以 1.0 M 蔗糖中發生質離，反過來說明蔗糖不易通過細胞膜。<\/p><\/div>", "pm-04": "<div class=\"ex g\"><h4>器材與步驟 1–2：製作標本<\/h4><p>全班使用蒸餾水、0.2 M 與 1.0 M 蔗糖溶液；材料可用水蘊草、水王孫、紫背萬年青葉片或紫色洋蔥鱗葉。<\/p><\/div><div class=\"ex\"><h4>做法<\/h4><ul><li>步驟 1：指出實驗組，寫出控制、操作、應變變因。<\/li><li>步驟 2：以鑷子取下水蘊草或水王孫葉片，在載玻片上用解剖刀切出長約 <b>1 公分<\/b>的標本。<\/li><li>或撕下紫背萬年青葉片、紫色洋蔥鱗葉的<b>下表皮<\/b>，同樣切成約 1 公分。<\/li><\/ul><\/div><div class=\"ex\"><h4>為什麼撕表皮<\/h4><p>表皮只有一兩層細胞，光線容易透過，才看得清楚細胞形態。四種材料之後的步驟類似，課本一律以水蘊草說明。<\/p><\/div>", "pm-05": "<div class=\"ex g\"><h4>步驟 3：滴加 0.2 M 蔗糖溶液<\/h4><p>在標本上滴加 0.2 M 蔗糖溶液，蓋上蓋玻片，玻片標本用培養皿蓋住，靜置 <b>5 分鐘<\/b>。<\/p><\/div><div class=\"ex\"><h4>為什麼蓋培養皿<\/h4><p>減少水分蒸發，避免溶液變濃而影響結果；靜置時間也是控制變因，各組要一致。<\/p><\/div>", "pm-06": "<div class=\"ex g\"><h4>步驟 4–5：觀察計數與換成蒸餾水<\/h4><p>這兩步要同時做好取樣與換液。<\/p><\/div><div class=\"ex\"><h4>步驟 4<\/h4><ul><li>置於顯微鏡下，移動玻片選取 <b>5 個樣區<\/b>，計算視野中發生質離的細胞占視野細胞數的比例，求<b>平均值<\/b>。<\/li><li>描繪大部分細胞的形狀與內部構造。<\/li><li>多取樣再平均，可減少個別差異造成的誤差。<\/li><\/ul><\/div><div class=\"ex\"><h4>步驟 5<\/h4><ul><li>在蓋玻片一側滴加蒸餾水，另一側用吸水紙吸走液體。<\/li><li>用培養皿蓋住，靜置 5 分鐘。<\/li><\/ul><\/div>", "pm-07": "<div class=\"ex g\"><h4>步驟 6–7：再觀察、改用 1.0 M<\/h4><p>把同樣的流程換成較高濃度，比較結果。<\/p><\/div><div class=\"ex\"><h4>做法<\/h4><ul><li>步驟 6：再次觀察，描繪細胞形狀並記錄內部構造的變化。<\/li><li>步驟 7：把 0.2 M 改成 <b>1.0 M<\/b> 蔗糖溶液，重複步驟 1～6，並把兩種溶液中發生質離的<b>比例<\/b>繪成統計圖。<\/li><\/ul><\/div><div class=\"ex\"><h4>用紫色材料時<\/h4><p>留意細胞內<b>紫色範圍<\/b>的變化：細胞失水後，紫色範圍縮小、顏色變深，因為色素集中在較小的體積中。<\/p><\/div>", "pm-08": "<div class=\"ex g\"><h4>討論 1–2：三種溶液中的細胞<\/h4><p>比較水蘊草（或水王孫）葉片細胞，或紫背萬年青（或紫色洋蔥）下表皮細胞在不同濃度蔗糖中的形態變化，推論形態與濃度的關係。<\/p><\/div><div class=\"ex\"><h4>預期<\/h4><ul><li><b>蒸餾水<\/b>：細胞質部分脹大、緊貼細胞壁；水由細胞外流入。<\/li><li><b>0.2 M<\/b>：大致不變；內外水比例相似，進出速率相同。<\/li><li><b>1.0 M<\/b>：細胞質皺縮，與細胞壁分離（質離）；水由細胞內流出。<\/li><\/ul><\/div><div class=\"ex\"><h4>結論與誤差來源<\/h4><p>1.0 M 蔗糖中發生質離，表示蔗糖不能（或很難）通過細胞膜。各組差異可能來自取樣大小、試劑與樣本量、觀察時間長短不同等。<\/p><\/div>", "pm-09": "<div class=\"ex g\"><h4>討論 3–4<\/h4><p>兩題都是把結果往外推。<\/p><\/div><div class=\"ex\"><h4>討論 3：為什麼不脹破<\/h4><ul><li>植物細胞外有<b>細胞壁<\/b>，阻止細胞過度膨脹，限制水分子繼續滲入，所以在蒸餾水中不會脹破。<\/li><\/ul><\/div><div class=\"ex\"><h4>討論 4：動物細胞怎麼設計<\/h4><ul><li>把動物細胞（如蛙的紅血球）置於不同濃度的蔗糖溶液或食鹽水中，觀察形態變化，推論水所占的比例。<\/li><li>動物細胞沒有細胞壁，在蒸餾水中會吸水膨脹甚至破裂。<\/li><\/ul><\/div>"};
 const LEARN = [{"id": "pm-01", "g": "A", "title": "前言與目的", "src": "課本 P61；簡報第 1–2 頁", "mode": "flip", "slides": [1, 2], "book": [], "bookcap": [], "html": "<ul><li>細胞內的水、有機物、無機鹽與細胞外明顯不同 → 細胞膜形成屏障，控制物質不能任意離開。</li><li>細胞又必須取得所需物質、排除廢物 → 細胞膜具<b>選擇性</b>，能讓某些物質進出。</li><li>目的：藉由觀察<b>水分子的滲透方向</b>，了解<b>蔗糖是否可以通過</b>植物葉片細胞的細胞膜。</li></ul>", "q": "為什麼說細胞不能是一個完全封閉的系統？", "a": "封閉就無法從環境取得所需物質，代謝廢物也無法排出；所以細胞膜必須有選擇地讓某些物質進出。"}, {"id": "pm-02", "g": "A", "title": "滲透作用與質離現象", "src": "課本 P61；簡報第 3–4 頁", "mode": "flip", "slides": [3, 4], "book": [], "bookcap": [], "html": "<ul><li>水分子擴散通過細胞膜，稱為<b>滲透作用</b>；顯微鏡下無法直接看到水分子。</li><li>水的滲透方向由膜兩側<b>水所占的比例</b>決定：溶質濃度愈高，水的比例愈低。細胞外水的比例低於細胞內、且溶質無法通過細胞膜時，水分子淨滲透到細胞外。</li><li><b>質離現象</b>：植物細胞失水萎縮，細胞膜與細胞壁分離，兩者間出現明顯空隙。水再進入細胞時，質離現象消失。</li><li>觀察質離現象，可<b>間接證實</b>水分子的滲透方向。</li></ul>", "q": "質離現象中，分開的是哪兩個構造？", "a": "細胞膜（連同細胞質）與細胞壁；細胞壁仍維持原來形狀。"}, {"id": "pm-03", "g": "A", "title": "0.2 M 與 1.0 M 蔗糖溶液", "src": "課本 P62；簡報第 5 頁", "mode": "flip", "slides": [5], "book": [], "bookcap": [], "html": "<ul><li>一般植物細胞中，水所占的比例約與 <b>0.2 M 蔗糖溶液</b>相似（細胞間有個別差異）。</li><li>置於 0.2 M 蔗糖溶液：大多數細胞<b>不會</b>發生質離現象。</li><li>置於 <b>1.0 M</b> 蔗糖溶液：大多數細胞<b>會</b>發生質離現象。</li><li>若溶液中的溶質也能通過細胞膜進入細胞，溶液的溶質濃度會降低，因此<b>不易</b>發生質離。</li></ul>", "q": "如果把蔗糖換成能自由通過細胞膜的溶質，1.0 M 溶液還容易造成質離嗎？", "a": "不易。溶質會進入細胞，使膜兩側濃度差變小，水不會持續大量滲出。"}, {"id": "pm-04", "g": "B", "title": "器材與步驟 1–2：製作標本", "src": "課本 P62–63；簡報第 6–9 頁", "mode": "book", "slides": [6, 7, 8, 9], "book": ["bk_s2a", "bk_s2b"], "bookcap": ["課本 P63 步驟 2：取下水王孫（水蘊草）葉片，切出約 1 公分標本", "課本 P63 撕下紫背萬年青葉片的下表皮"], "pair": true, "pairwide": true, "html": "<ul><li>材料：水蘊草葉片（或水王孫、紫背萬年青葉片、紫色洋蔥鱗葉）、蒸餾水、0.2 M 與 1.0 M 蔗糖溶液。</li><li>步驟 1：指出實驗組，寫下控制、操作與應變變因。</li><li>步驟 2：以鑷子取下水蘊草或水王孫葉片，在載玻片上用解剖刀切出長約 1 公分的標本；或撕下紫背萬年青葉片、紫色洋蔥鱗葉的<b>下表皮</b>。</li></ul>", "q": "紫背萬年青或紫色洋蔥為什麼要撕下表皮使用？", "a": "表皮只有一兩層細胞，光線容易透過，顯微鏡下才看得清楚細胞的形態變化。"}, {"id": "pm-05", "g": "B", "title": "步驟 3：滴加 0.2 M 蔗糖溶液", "src": "課本 P64；簡報第 10 頁", "mode": "book", "slides": [10], "book": ["bk_s3"], "bookcap": ["課本 P64 步驟 3：滴加 0.2 M 蔗糖溶液 → 蓋上蓋玻片 → 以培養皿蓋住"], "pair": true, "pairwide": true, "html": "<ul><li>在標本上滴加 <b>0.2 M 蔗糖溶液</b>，蓋上蓋玻片，玻片標本以<b>培養皿蓋住</b>，靜置 <b>5 分鐘</b>。</li></ul>", "q": "靜置時為什麼要用培養皿蓋住玻片標本？", "a": "減少水分蒸發，避免溶液變濃而影響結果。"}, {"id": "pm-06", "g": "B", "title": "步驟 4–5：觀察計數與換成蒸餾水", "src": "課本 P64；簡報第 11–12 頁", "mode": "book", "slides": [11, 12], "book": ["bk_s4", "bk_s5"], "bookcap": ["課本 P64 步驟 4：顯微鏡觀察，選 5 個樣區計數", "課本 P64 步驟 5：一側滴加蒸餾水，另一側用吸水紙吸走液體"], "pair": true, "pairwide": true, "html": "<ul><li>步驟 4：顯微鏡觀察，選取 <b>5 個樣區</b>，計算發生質離現象的細胞所占比例並求<b>平均值</b>；描繪大部分細胞的形狀與內部構造。</li><li>步驟 5：在蓋玻片一側滴加<b>蒸餾水</b>，另一側以<b>吸水紙</b>吸走液體，以培養皿蓋住靜置 5 分鐘。</li></ul>", "q": "為什麼要選 5 個樣區再求平均？", "a": "細胞間有個別差異，多取樣再平均可減少誤差，結果較可信。"}, {"id": "pm-07", "g": "B", "title": "步驟 6–7：再觀察與改用 1.0 M", "src": "課本 P65；簡報第 13 頁", "mode": "flip", "slides": [13], "book": [], "bookcap": [], "html": "<ul><li>步驟 6：再以顯微鏡觀察，描繪細胞形狀，記錄內部構造的變化。</li><li>步驟 7：將 0.2 M 改為 <b>1.0 M 蔗糖溶液</b>，重複步驟 1～6；把兩種溶液中發生質離的比例繪製成統計圖。</li><li>註：以紫背萬年青或紫色洋蔥下表皮為材料時，留意細胞內<b>紫色範圍</b>的變化。</li></ul>", "q": "用紫色洋蔥做實驗時，質離後紫色範圍會怎樣變化？", "a": "紫色範圍縮小、顏色變深，因為細胞失水，色素集中在較小的體積中。"}, {"id": "pm-08", "g": "C", "title": "討論 1–2：三種溶液中的細胞", "src": "課本 P65；簡報第 14–16 頁", "mode": "flip", "slides": [14, 15, 16], "book": [], "bookcap": [], "html": "<table class=\"mini\"><tr><th>溶液</th><th>細胞形態</th><th>水的移動</th></tr><tr><td>蒸餾水</td><td>細胞質部分脹大、緊貼細胞壁</td><td>水由細胞外流入</td></tr><tr><td>0.2 M 蔗糖</td><td>大致不變</td><td>內外水比例相似，進出速率相同</td></tr><tr><td>1.0 M 蔗糖</td><td>細胞質皺縮，與細胞壁分離（質離）</td><td>水由細胞內流出</td></tr></table><ul><li>各組差異來源：取樣大小、試劑與樣本量、觀察時間長短不同等。</li></ul>", "q": "1.0 M 蔗糖溶液中的細胞發生質離，說明蔗糖能否通過細胞膜？", "a": "不能（或很難）。若蔗糖能進入細胞，膜兩側濃度差會變小，不易持續質離。"}, {"id": "pm-09", "g": "C", "title": "討論 3–4：細胞壁與動物細胞", "src": "課本 P65；簡報第 17 頁", "mode": "flip", "slides": [17], "book": [], "bookcap": [], "html": "<ul><li>討論 3：步驟 5 的植物細胞在蒸餾水中<b>不會脹破</b>——植物細胞有<b>細胞壁</b>，阻止細胞過度膨脹，限制水分子繼續滲入。</li><li>討論 4：推論動物細胞（如蛙的紅血球）中水所占的比例 → 將紅血球置於<b>不同濃度</b>的蔗糖溶液或食鹽水中，觀察紅血球的形態變化。</li></ul>", "q": "紅血球放在蒸餾水中會怎樣？為什麼和植物細胞不同？", "a": "紅血球會吸水膨脹甚至破裂，因為動物細胞沒有細胞壁保護。"}];
 
 const LFCFG={"lfosm": {"ix": 0, "iw": 860, "ih": 375, "tx": 430.0, "ty": 395}, "lfs5": {"ix": 0, "iw": 600, "ih": 458, "tx": 705.0, "ty": 18}};
@@ -1168,7 +1179,9 @@ function lessonTabs(){
   tabs.className = "read-tabs";
   tabs.setAttribute("role", "tablist");
   tabs.setAttribute("aria-label", "右側教學內容");
-  const items = [["教學重點", core], ["想一想・筆記", think]].filter(([name, pane]) => pane.childNodes.length);
+  const ex = document.createElement("div"); ex.className = "read-lesson-pane"; ex.setAttribute("role", "tabpanel");
+  { const _c = LEARN[LI], _h = _c && EXPL[_c.id]; ex.innerHTML = _h ? _h + `<p class="src">依課本內容改寫｜${esc(_c.src)}</p>` : "<p>（此張尚無課文講解）</p>"; }
+  const items = [["教學重點", core], ["課文講解", ex], ["想一想・筆記", think]].filter(([name, pane]) => pane.childNodes.length);
   for (let i = 0; i < items.length; i++) {
     const [name, pane] = items[i];
     const button = document.createElement("button");
@@ -1184,6 +1197,7 @@ function lessonTabs(){
     button.tabIndex = i === 0 ? 0 : -1;
     pane.hidden = i !== 0;
     button.onclick = () => {
+      window.__EXSEL = (name === "課文講解");
       for (const [j, other] of items.entries()) {
         other[1].hidden = j !== i;
         tabs.children[j].setAttribute("aria-selected", String(j === i));
@@ -1204,6 +1218,7 @@ function lessonTabs(){
     tabs.append(button);
   }
   text.replaceChildren(tabs, ...items.map((x) => x[1]));
+  { const _k = items.findIndex((x) => x[0] === "課文講解"); if (window.__EXSEL && _k > 0) tabs.children[_k].click(); }
 }
 
 function readSizes(){

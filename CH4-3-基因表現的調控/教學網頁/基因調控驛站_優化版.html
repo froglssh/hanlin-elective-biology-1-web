@@ -575,6 +575,16 @@ body:has(#play:not(.hidden)) .tool-btn{height:34px;width:34px;font-size:15px}
  #play .panel.tight2 .q{font-size:18px!important}
 }
 </style>
+<style id="ex-css">
+/* 課文講解分頁 */
+.read-lesson-pane .ex,.reading-body .ex{margin:0 0 12px;padding:2px 0 2px 12px;border-left:3px solid var(--accent);line-height:1.62}
+.read-lesson-pane .ex h4{margin:0 0 3px;font-size:.84em;font-weight:700;letter-spacing:.06em;color:var(--accent)}
+.read-lesson-pane .ex p{margin:0}
+.read-lesson-pane .ex ul{margin:2px 0 0;padding-left:1.15em}
+.read-lesson-pane .ex li{margin:0 0 3px}
+.read-lesson-pane .ex.g{background:var(--surface-2);padding:8px 12px;border-radius:0 8px 8px 0}
+.read-lesson-pane p.src{font-size:12.5px;color:var(--ink-3);margin:8px 0 0}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main">跳到主要內容</a>
@@ -720,6 +730,7 @@ const MAN = {"1": ["step_001"], "2": ["step_002", "step_003", "step_004"], "3": 
 
 const GROUPS = [{"id": "A", "name": "基因表現的調控", "cls": "g1"}, {"id": "B", "name": "操縱組的介紹", "cls": "g2"}, {"id": "C", "name": "乳糖操縱組的調控", "cls": "g3"}];
 
+const EXPL={"ge-01": "<div class=\"ex g\"><h4>同樣的基因，為什麼功能不同<\/h4><p>同一生物的細胞含有<b>相同的基因<\/b>，但不同細胞表現的基因不同，所以功能各異。例：血紅素基因只在紅血球表現，胰島素基因只在胰臟細胞表現。<\/p><\/div><div class=\"ex\"><h4>調控的目的與細菌的基因類型<\/h4><ul><li>基因表現的調控，是確保細胞在<b>適當條件<\/b>下產生所需的蛋白質。<\/li><li>細菌的 DNA 含<b>結構基因<\/b>：產物組成細胞結構，或作為生理生化反應的酵素（如分解乳糖的酵素）。<\/li><li>細菌也含<b>調節基因<\/b>：產物（調節蛋白）負責開啟或關閉結構基因的表現。<\/li><\/ul><\/div><div class=\"ex\"><h4>提醒<\/h4><p>肝細胞與胰臟細胞基因相同；差別在於哪些基因被表現，不是有沒有基因。<\/p><\/div>", "ge-02": "<div class=\"ex g\"><h4>知識補給站：microRNA（2024 諾貝爾生理醫學獎）<\/h4><p>1980 年代末，安布羅斯與魯夫昆以<b>秀麗隱桿線蟲<\/b>研究基因調控，研究 lin-4 與 lin-14 兩個基因。<\/p><\/div><div class=\"ex\"><h4>發現<\/h4><ul><li>lin-4 產生一種小型 RNA，即 <b>microRNA（miRNA）<\/b>，不轉譯成蛋白質。<\/li><li>它與 lin-14 mRNA 的<b>互補序列<\/b>結合，阻止蛋白質合成，使 lin-14 表現被抑制。<\/li><li>2000 年發現 let-7 的 miRNA，高度保守、廣泛存在於動物界，顯示 miRNA 在多細胞生物普遍參與調控。<\/li><li>miRNA 與細胞分化、發育有關，失調可能導致癌症。<\/li><\/ul><\/div><div class=\"ex\"><h4>重點<\/h4><p>抑制發生在 mRNA 已轉錄之後，所以是<b>轉錄後基因調控<\/b>。<\/p><\/div>", "ge-03": "<div class=\"ex g\"><h4>讀圖 4－13：操縱組<\/h4><p>原核生物分解一種養分常需多種酵素，這些酵素的基因<b>相連<\/b>在一起、同時被轉錄：養分充足時一起合成，不足時一起被抑制。<\/p><\/div><div class=\"ex\"><h4>莫諾與賈克伯的操縱組理論<\/h4><ul><li>研究大腸桿菌，發現培養基含乳糖時會誘發細胞合成乳糖代謝的蛋白質。<\/li><li><b>操縱組 = 啟動子 + 操作子 + 結構基因<\/b>。<\/li><li><b>啟動子<\/b>在上游，供 RNA 聚合酶結合；<b>操作子<\/b>在啟動子與結構基因之間，供調節蛋白結合。<\/li><li>乳糖操縱組有<b>三個<\/b>結構基因，產物參與乳糖的吸收與分解。<\/li><\/ul><\/div><div class=\"ex\"><h4>提醒<\/h4><p>調節基因經轉錄、轉譯得到調節蛋白，但調節基因<b>不屬於<\/b>操縱組。<\/p><\/div>", "ge-04": "<div class=\"ex g\"><h4>讀圖 4－14a：乳糖少 → 關閉<\/h4><p>環境中乳糖濃度低時，<b>調節蛋白與操作子結合<\/b>。<\/p><\/div><div class=\"ex\"><h4>後果<\/h4><ul><li>RNA 聚合酶雖結合在啟動子，卻被擋住，無法轉錄。<\/li><li>結構基因不表現，細胞不製造吸收與分解乳糖的酵素，避免浪費。<\/li><\/ul><\/div><div class=\"ex\"><h4>常見誤解<\/h4><p>這時調節基因仍然表現：它不受操作子控制，持續合成調節蛋白；是調節蛋白結合操作子，才使結構基因不表現。<\/p><\/div>", "ge-05": "<div class=\"ex g\"><h4>讀圖 4－14b：乳糖多 → 開啟<\/h4><p>乳糖濃度升高時，<b>乳糖與調節蛋白接合<\/b>，改變調節蛋白的構形，使它無法結合操作子。<\/p><\/div><div class=\"ex\"><h4>後果<\/h4><ul><li>沒有調節蛋白擋住，RNA 聚合酶開始轉錄結構基因，再轉譯出吸收與分解乳糖的酵素。<\/li><li>乳糖充足時才合成這些蛋白質，所以乳糖是<b>誘導物<\/b>，乳糖操縱組屬於<b>可誘導型操縱組<\/b>。<\/li><\/ul><\/div><div class=\"ex\"><h4>回到低濃度<\/h4><p>乳糖被分解用完後，調節蛋白不再與乳糖接合，恢復原構形，又能結合操作子，結構基因停止轉錄。<\/p><\/div>"};
 const LEARN = [{"id": "ge-01", "g": "A", "title": "基因表現的調控：結構基因與調節基因", "src": "課本 P151；簡報第 1–2 頁", "mode": "flip", "slides": [1, 2], "book": [], "bookcap": [], "html": "<ul><li>同一生物的細胞含有<b>相同基因</b>，但不同細胞表現不同基因，所以功能各異。例：血紅素基因僅在紅血球表現，胰島素基因只在胰臟細胞表現。</li><li>基因表現的調控，是確保細胞在適當條件下產生所需的蛋白質。</li><li>細菌的 DNA 含有<b>結構基因</b>與<b>調節基因</b>：<ol><li><b>結構基因</b>：製造的蛋白質用以組成細胞結構，或作為生理、生化反應所需的酵素（如分解乳糖的酵素）。</li><li><b>調節基因</b>：製造的蛋白質負責調控（開啟或關閉）結構基因的表現。</li></ol></li></ul>", "q": "人體的肝細胞和胰臟細胞含有的基因相同嗎？為什麼只有胰臟細胞會製造胰島素？", "a": "基因相同。不同細胞表現的基因不同：胰島素基因只在胰臟細胞表現，這就是基因表現的調控。"}, {"id": "ge-02", "g": "A", "title": "知識補給站：microRNA 的發現", "src": "課本 P151 知識補給站；簡報第 3–6 頁", "mode": "book", "slides": [3, 4, 5, 6], "book": ["bk_mi"], "bookcap": ["課本 P151 秀麗隱桿線蟲；lin-4 microRNA 與 lin-14 mRNA 特定序列互補結合"], "html": "<ul><li>1980 年代末，<b>安布羅斯</b>與<b>魯夫昆</b>以秀麗隱桿線蟲（<i>C. elegans</i>）研究基因調控。</li><li><i>lin-4</i> 基因產生一種小型 RNA，即 <b>microRNA（miRNA）</b>；它<b>不會轉譯為蛋白質</b>，但會與 <i>lin-14</i> mRNA 的<b>互補序列結合</b>，阻止 lin-14 蛋白質的合成。</li><li>2000 年發現 <i>let-7</i> 基因的 miRNA，具高度保守性、廣泛存在於動物界 → miRNA 在多細胞生物中普遍參與基因調控，與細胞分化、發育有關，失調可能導致癌症。</li><li>揭示<b>轉錄後基因調控</b>，獲 2024 年諾貝爾生理醫學獎。</li></ul>", "q": "lin-4 miRNA 抑制的是 lin-14 的轉錄還是轉譯？", "a": "轉譯。lin-14 mRNA 已經轉錄出來，miRNA 與其互補序列結合，阻止蛋白質合成，所以屬於轉錄後基因調控。"}, {"id": "ge-03", "g": "B", "title": "操縱組與大腸桿菌的乳糖操縱組", "src": "課本 P152 圖4-13；簡報第 7–9 頁", "mode": "book", "slides": [7, 8, 9], "book": ["bk413"], "pair": true, "pairwide": true, "bookcap": ["課本 P152 圖4-13 原核生物的操縱組構造"], "html": "<ul><li>原核生物分解一種養分需要多種酵素，這些酵素的基因常<b>相連在一起而同時被轉錄</b>：養分充足時一起合成，不足時一起被抑制。</li><li>莫諾與賈克伯研究大腸桿菌，提出<b>操縱組</b>理論。操縱組＝<b>啟動子</b>＋<b>操作子</b>＋<b>結構基因</b>：<ol><li>啟動子：RNA 聚合酶結合處（上游）。</li><li>操作子：調節蛋白結合處（啟動子與結構基因之間）。</li><li>結構基因：乳糖操縱組有三個，產物參與乳糖的吸收與分解。</li></ol></li><li><b>調節基因</b>經轉錄、轉譯合成<b>調節蛋白</b>，<b>不屬於操縱組</b>。</li></ul>", "q": "乳糖操縱組的三個結構基因相連在一起，有什麼好處？", "a": "三個基因可以同時被轉錄，乳糖充足時一起合成吸收與分解乳糖的酵素，不足時一起被抑制。"}, {"id": "ge-04", "g": "C", "title": "乳糖濃度低：調節蛋白擋住轉錄", "src": "課本 P153 圖4-14(a)；簡報第 10 頁", "mode": "book", "slides": [10], "book": ["bk414a"], "pair": true, "pairwide": true, "bookcap": ["課本 P153 圖4-14(a) 乳糖濃度低，結構基因無法進行轉錄"], "html": "<ul><li>環境中乳糖濃度低時，<b>調節蛋白與操作子結合</b>。</li><li>RNA 聚合酶雖結合在啟動子，卻被擋住而<b>無法進行轉錄</b>。</li><li>結構基因不表現 → 細胞不會製造協助吸收與分解乳糖的酵素，避免浪費。</li></ul>", "q": "乳糖濃度低時，調節基因會不會表現？", "a": "會。調節基因不屬於操縱組、不受操作子控制，持續合成調節蛋白；是調節蛋白結合操作子，使結構基因不表現。"}, {"id": "ge-05", "g": "C", "title": "乳糖濃度升高：乳糖是誘導物", "src": "課本 P153 圖4-14(b)；簡報第 11–12 頁", "mode": "book", "slides": [11, 12], "book": ["bk414b"], "pair": true, "pairwide": true, "bookcap": ["課本 P153 圖4-14(b) 乳糖濃度高，結構基因進行轉錄與轉譯"], "html": "<ul><li>乳糖濃度升高時，<b>乳糖與調節蛋白接合</b>，改變調節蛋白的<b>構形</b>，使其無法結合到操作子上。</li><li>沒有調節蛋白阻擋，RNA 聚合酶開始<b>轉錄</b>結構基因，再經<b>轉譯</b>產生吸收與分解乳糖所需的酵素。</li><li>乳糖充足時細胞才合成這些蛋白質 → 乳糖扮演<b>誘導物</b>，乳糖操縱組屬於<b>可誘導型操縱組</b>。</li></ul>", "q": "乳糖被分解用完後，乳糖操縱組會變成什麼狀態？", "a": "調節蛋白不再與乳糖接合，恢復原本構形，又能與操作子結合，結構基因停止轉錄。"}];
 
 const LFCFG={"lf413": {"ix": 0, "iw": 760, "ih": 259, "tx": 380.0, "ty": 279}, "lf414": {"ix": 0, "iw": 640, "ih": 411, "tx": 735.0, "ty": 18}, "lftrp": {"ix": 0, "iw": 800, "ih": 202, "tx": 400.0, "ty": 222}};
@@ -1127,7 +1138,9 @@ function lessonTabs(){
   tabs.className = "read-tabs";
   tabs.setAttribute("role", "tablist");
   tabs.setAttribute("aria-label", "右側教學內容");
-  const items = [["教學重點", core], ["想一想・筆記", think]].filter(([name, pane]) => pane.childNodes.length);
+  const ex = document.createElement("div"); ex.className = "read-lesson-pane"; ex.setAttribute("role", "tabpanel");
+  { const _c = LEARN[LI], _h = _c && EXPL[_c.id]; ex.innerHTML = _h ? _h + `<p class="src">依課本內容改寫｜${esc(_c.src)}</p>` : "<p>（此張尚無課文講解）</p>"; }
+  const items = [["教學重點", core], ["課文講解", ex], ["想一想・筆記", think]].filter(([name, pane]) => pane.childNodes.length);
   for (let i = 0; i < items.length; i++) {
     const [name, pane] = items[i];
     const button = document.createElement("button");
@@ -1143,6 +1156,7 @@ function lessonTabs(){
     button.tabIndex = i === 0 ? 0 : -1;
     pane.hidden = i !== 0;
     button.onclick = () => {
+      window.__EXSEL = (name === "課文講解");
       for (const [j, other] of items.entries()) {
         other[1].hidden = j !== i;
         tabs.children[j].setAttribute("aria-selected", String(j === i));
@@ -1163,6 +1177,7 @@ function lessonTabs(){
     tabs.append(button);
   }
   text.replaceChildren(tabs, ...items.map((x) => x[1]));
+  { const _k = items.findIndex((x) => x[0] === "課文講解"); if (window.__EXSEL && _k > 0) tabs.children[_k].click(); }
 }
 
 function readSizes(){

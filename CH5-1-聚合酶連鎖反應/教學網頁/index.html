@@ -575,6 +575,16 @@ body:has(#play:not(.hidden)) .tool-btn{height:34px;width:34px;font-size:15px}
  #play .panel.tight2 .q{font-size:18px!important}
 }
 </style>
+<style id="ex-css">
+/* 課文講解分頁 */
+.read-lesson-pane .ex,.reading-body .ex{margin:0 0 12px;padding:2px 0 2px 12px;border-left:3px solid var(--accent);line-height:1.62}
+.read-lesson-pane .ex h4{margin:0 0 3px;font-size:.84em;font-weight:700;letter-spacing:.06em;color:var(--accent)}
+.read-lesson-pane .ex p{margin:0}
+.read-lesson-pane .ex ul{margin:2px 0 0;padding-left:1.15em}
+.read-lesson-pane .ex li{margin:0 0 3px}
+.read-lesson-pane .ex.g{background:var(--surface-2);padding:8px 12px;border-radius:0 8px 8px 0}
+.read-lesson-pane p.src{font-size:12.5px;color:var(--ink-3);margin:8px 0 0}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main">跳到主要內容</a>
@@ -712,6 +722,7 @@ const MAN = {"1": ["step_001"], "2": ["step_002", "step_003", "step_004", "step_
 
 const GROUPS = [{"id": "A", "name": "PCR 的發明與材料", "cls": "g1"}, {"id": "B", "name": "PCR 的反應過程", "cls": "g2"}, {"id": "C", "name": "PCR 的應用與相關技術", "cls": "g3"}];
 
+const EXPL={"pc-01": "<div class=\"ex g\"><h4>PCR 為什麼被發明<\/h4><p>做與基因相關的生物技術實驗時，常遇到從細胞萃取的 DNA 量<b>太少<\/b>，無法進一步分析。1983 年美國的穆勒斯（圖 5－1）發明可在生物體外合成 DNA 的方法——<b>聚合酶連鎖反應（PCR）<\/b>。<\/p><\/div><div class=\"ex\"><h4>重點<\/h4><ul><li>PCR 可使<b>特定 DNA 片段<\/b>在試管中快速擴增。<\/li><li>課本脈絡：從孟德爾、摩根，到細菌與噬菌體，再到華生、克里克揭示 DNA 結構，遺傳學進入分子生物學時代；生物科技由限制酶開始，發展出重組 DNA、PCR、基因轉殖到基因體時代。<\/li><\/ul><\/div>", "pc-02": "<div class=\"ex g\"><h4>PCR 的材料<\/h4><p>在有 <b>PCR 緩衝溶液<\/b>的試管中加入下列成分，放進 <b>PCR 熱循環儀<\/b>，依設定溫度循環反應。<\/p><\/div><div class=\"ex\"><h4>四樣成分<\/h4><ul><li><b>目標 DNA<\/b>（模版）。<\/li><li><b>DNA 引子<\/b>：長度約 20 個核苷酸的<b>單股 DNA<\/b> 序列。<\/li><li>四種<b>去氧核糖核苷酸<\/b>（原料）。<\/li><li><b>DNA 聚合酶<\/b>。<\/li><\/ul><\/div><div class=\"ex\"><h4>與細胞內複製比較<\/h4><p>細胞內複製用的是 RNA 引子；PCR 用的是 DNA 引子，且不用解旋酶，改用加熱使雙股分開。<\/p><\/div>", "pc-03": "<div class=\"ex g\"><h4>讀圖 5－2：一個循環三步驟<\/h4><p>變性 → 黏合 → 延長，為一個循環。<\/p><\/div><div class=\"ex\"><h4>三步驟<\/h4><ul><li><b>❶ 變性（93～97 ℃）<\/b>：加熱打斷氫鍵，使 DNA 雙股分開成單股。<\/li><li><b>❷ 黏合（50～60 ℃）<\/b>：降溫，引子依鹼基配對原則黏合在有互補序列的單股 DNA 上。<\/li><li><b>❸ 延長（70～75 ℃）<\/b>：升溫到 DNA 聚合酶的最適溫度，自引子處以 <b>5′→3′<\/b> 方向合成新的互補股。<\/li><\/ul><\/div><div class=\"ex\"><h4>腦力激盪的答案<\/h4><p>不需要解旋酶，因為 93～97 ℃ 的高溫就足以破壞氫鍵，使兩股分開。<\/p><\/div>", "pc-04": "<div class=\"ex g\"><h4>循環與倍增<\/h4><p>每個循環後，特定片段的 DNA 量<b>倍增<\/b>（圖 5－2）。<\/p><\/div><div class=\"ex\"><h4>數量變化<\/h4><ul><li>起始 1 個 DNA 分子：第一循環後 2 個、第二循環後 4 個、第三循環後 <b>8 個<\/b>。<\/li><li>經 n 個循環，理論上可得 <b>2ⁿ<\/b> 個分子。<\/li><li>例：10 個循環 → 2¹⁰ = 1024 個。<\/li><\/ul><\/div><div class=\"ex\"><h4>提醒<\/h4><p>2ⁿ 是理論值；實際效率會受材料與條件影響。倍增的是「兩引子之間的目標序列」。<\/p><\/div>", "pc-05": "<div class=\"ex g\"><h4>PCR 的優點與應用<\/h4><p>最大優點：以<b>簡單的控溫方式<\/b>快速提高 DNA 含量，以符合試驗分析所需。<\/p><\/div><div class=\"ex\"><h4>應用<\/h4><ul><li>過去因 DNA 量少而難以進行的試驗，如<b>考古學研究<\/b>、<b>犯罪現場蒐證<\/b>分析，現在都可行。<\/li><li>廣泛應用於工業、農業及醫學，尤其在<b>病原體檢測<\/b>幾乎不可或缺。<\/li><\/ul><\/div><div class=\"ex\"><h4>例<\/h4><p>現場只有一根毛髮，也可用 PCR 把極少量 DNA 擴增到足以分析。<\/p><\/div>", "pc-06": "<div class=\"ex g\"><h4>知識補給站：Taq 聚合酶<\/h4><p>PCR 使用的 <b>Taq 聚合酶<\/b>，是從生活在溫泉或火山口附近的<b>水生棲熱菌<\/b>分離出的特殊 DNA 聚合酶。<\/p><\/div><div class=\"ex\"><h4>特性<\/h4><ul><li>在 <b>70～75 ℃<\/b> 最活躍。<\/li><li>在 <b>93～97 ℃<\/b> 仍不會失去活性。<\/li><li>所以持續循環中保持催化活性，<b>不必每個循環重新添加<\/b>。<\/li><li>臺灣科學家錢嘉韻博士在美國研究期間，與其他科學家合作成功分離出這種耐高溫聚合酶。<\/li><\/ul><\/div><div class=\"ex\"><h4>假設<\/h4><p>若改用人體的 DNA 聚合酶，變性的高溫會使它失去活性，每個循環都得重新添加，無法自動連續循環。<\/p><\/div>", "pc-07": "<div class=\"ex g\"><h4>知識補給站：DNA 膠體電泳<\/h4><p>利用 <b>DNA 帶負電<\/b>的特性：把注入 DNA 樣品的膠體放在緩衝溶液中並通電。<\/p><\/div><div class=\"ex\"><h4>分離原理<\/h4><ul><li>DNA 片段由<b>負電端移向正電端<\/b>。<\/li><li>片段分子量不同，移動速度不同：分子量<b>愈大移動愈慢<\/b>，條帶位置較高（靠近加樣處）。<\/li><li>以 <b>DNA 分子量標準品<\/b>對照，判斷樣品片段大小。<\/li><\/ul><\/div><div class=\"ex\"><h4>用途<\/h4><p>可與 PCR 產物分析、重組 DNA 中外來目標基因與載體的分析及純化等技術結合。例：1 kb 與 5 kb 片段，1 kb 跑得較遠。<\/p><\/div>"};
 const LEARN = [{"id": "pc-01", "g": "A", "title": "聚合酶連鎖反應（PCR）的發明", "src": "課本 P164 圖5-1；簡報第 1–2 頁", "mode": "book", "slides": [1, 2], "book": ["bk51"], "bookcap": ["課本 P164 圖5-1 穆勒斯"], "html": "<ul><li>進行與基因相關的生物技術實驗時，常碰到從細胞萃取出的 <b>DNA 量太少</b>，無法進一步分析的問題。</li><li>1983 年美國科學家<b>穆勒斯</b>發明可在生物體外合成 DNA 的方法——<b>聚合酶連鎖反應（PCR）</b>。</li><li>PCR 可使<b>特定 DNA 片段</b>在試管中快速擴增。</li></ul>", "q": "PCR 解決了生物技術實驗中的什麼問題？", "a": "從細胞萃取出的 DNA 量太少、無法分析的問題；PCR 可在試管中快速擴增特定 DNA 片段。"}, {"id": "pc-02", "g": "A", "title": "PCR 的材料與熱循環儀", "src": "課本 P164–165；簡報第 3–4 頁", "mode": "flip", "slides": [3, 4], "book": [], "bookcap": [], "html": "<ul><li>在有 <b>PCR 緩衝溶液</b>的試管中加入：<ol><li><b>目標 DNA</b>（模版）</li><li><b>DNA 引子</b>（長度約 20 個核苷酸的單股 DNA 序列）</li><li><b>四種去氧核糖核苷酸</b>（原料）</li><li><b>DNA 聚合酶</b></li></ol></li><li>將試管放入 <b>PCR 熱循環儀</b>，依設定的溫度循環進行反應。</li></ul>", "q": "PCR 用的引子是 DNA 還是 RNA？", "a": "DNA 引子：長度約 20 個核苷酸的單股 DNA 序列。（細胞內 DNA 複製用的是 RNA 引子。）"}, {"id": "pc-03", "g": "B", "title": "PCR 的三個步驟：變性、黏合、延長", "src": "課本 P164–165 圖5-2；簡報第 5–6、8 頁", "mode": "book", "slides": [5, 6, 8], "book": ["bk52a"], "bookcap": ["課本 P165 圖5-2（上半）目標序列與第一循環的三個步驟"], "html": "<table class=\"mini\"><tr><th>步驟</th><th>溫度</th><th>作用</th></tr><tr><td><b>❶ 變性</b></td><td>93～97 ℃</td><td>打斷氫鍵，使 DNA 雙股分開成單股</td></tr><tr><td><b>❷ 黏合</b></td><td>50～60 ℃</td><td>引子依鹼基配對原則，黏合在有互補序列的單股 DNA 上</td></tr><tr><td><b>❸ 延長</b></td><td>70～75 ℃</td><td>DNA 聚合酶自引子處以 5′→3′ 方向合成新的互補股</td></tr></table>", "q": "腦力激盪：進行 PCR 時，為何不使用解旋酶將 DNA 雙股解開？", "a": "熱循環儀設定的 93～97 ℃ 高溫（變性）即可破壞 DNA 的氫鍵，使兩股分開，不需要解旋酶。"}, {"id": "pc-04", "g": "B", "title": "循環倍增：2、4、8 個 DNA 分子", "src": "課本 P165 圖5-2；簡報第 7 頁", "mode": "book", "slides": [7], "book": ["bk52a", "bk52b"], "bookcap": ["課本 P165 圖5-2（左）第一循環", "課本 P165 圖5-2（右）第二、三循環"], "pair": true, "pairwide": true, "html": "<ul><li>變性→黏合→延長為一個循環，循環進行時，特定片段 DNA 的量隨循環次數<b>倍增</b>。</li><li>1 個 DNA 分子：第一循環後 2 個，第二循環後 4 個，第三循環後 <b>8 個</b>。</li><li>經 n 個循環，理論上可得 <b>2ⁿ</b> 個 DNA 分子，持續反應即可大幅擴增 DNA 的量。</li></ul>", "q": "1 個目標 DNA 分子經過 10 個循環，理論上可得到多少個 DNA 分子？", "a": "2¹⁰＝1024 個。"}, {"id": "pc-05", "g": "C", "title": "PCR 的優點與應用", "src": "課本 P166；簡報第 9 頁", "mode": "flip", "slides": [9], "book": [], "bookcap": [], "html": "<ul><li>PCR 最大優點：以<b>簡單的控溫方式</b>快速提高 DNA 含量，符合試驗分析所需。</li><li>過去因 DNA 量少而難以進行的試驗，如<b>考古學研究</b>、<b>犯罪現場蒐證分析</b>，現在都可行。</li><li>廣泛應用在工業、農業及醫學等領域，尤其在<b>病原體的檢測</b>上幾乎不可或缺。</li></ul>", "q": "犯罪現場只找到一根毛髮，為什麼仍可能進行 DNA 分析？", "a": "可用 PCR 將毛髮中極少量的 DNA 擴增到足以分析的量。"}, {"id": "pc-06", "g": "C", "title": "知識補給站：PCR 的 DNA 聚合酶", "src": "課本 P166 知識補給站；簡報第 10 頁", "mode": "book", "slides": [10], "book": ["bk_taq"], "bookcap": ["課本 P166 溫泉或火山口附近的水生棲熱菌電顯圖"], "html": "<ul><li>PCR 使用的 <b><i>Taq</i> 聚合酶</b>，是從生活於溫泉或火山口附近的<b>水生棲熱菌</b>分離出的特殊 DNA 聚合酶。</li><li>臺灣科學家<b>錢嘉韻</b>博士在美國研究期間，與其他科學家合作成功分離出這種耐高溫的聚合酶。</li><li>在 <b>70～75 ℃</b> 最為活躍，在 <b>93～97 ℃</b> 仍不會失去活性 → 不必在每個循環重新添加 DNA 聚合酶。</li></ul>", "q": "如果改用人體的 DNA 聚合酶進行 PCR，會遇到什麼問題？", "a": "人體的 DNA 聚合酶在變性的高溫下會失去活性，每個循環都得重新添加，無法自動連續循環。"}, {"id": "pc-07", "g": "C", "title": "知識補給站：DNA 膠體電泳", "src": "課本 P166 知識補給站；簡報第 11 頁", "mode": "book", "slides": [11], "book": ["bk_gel"], "bookcap": ["課本 P166 DNA 膠體電泳：白色條帶為不同分子量的 DNA 片段"], "html": "<ul><li>DNA <b>帶負電</b>：膠體放在緩衝溶液中施加電流，DNA 片段由<b>負電端移向正電端</b>。</li><li>片段分子量不同，移動速度不同而分開：<b>分子量愈大移動愈慢</b>，條帶位於膠體較高位置。</li><li>以 <b>DNA 分子量標準品</b>對照，可判斷樣品片段的大小。</li><li>可與 PCR 產物分析、重組 DNA 中目標基因與載體的分析及純化等技術結合使用。</li></ul>", "q": "同一條膠體上，1 kb 和 5 kb 的 DNA 片段，哪一個離加樣處較遠？", "a": "1 kb。分子量愈小移動愈快，跑得離加樣處（負極端）愈遠。"}];
 
 const LFCFG={"lf52": {"ix": 0, "iw": 640, "ih": 499, "tx": 725.0, "ty": 18}, "lfgel": {"ix": 0, "iw": 620, "ih": 320, "tx": 310.0, "ty": 340}};
@@ -1109,7 +1120,9 @@ function lessonTabs(){
   tabs.className = "read-tabs";
   tabs.setAttribute("role", "tablist");
   tabs.setAttribute("aria-label", "右側教學內容");
-  const items = [["教學重點", core], ["想一想・筆記", think]].filter(([name, pane]) => pane.childNodes.length);
+  const ex = document.createElement("div"); ex.className = "read-lesson-pane"; ex.setAttribute("role", "tabpanel");
+  { const _c = LEARN[LI], _h = _c && EXPL[_c.id]; ex.innerHTML = _h ? _h + `<p class="src">依課本內容改寫｜${esc(_c.src)}</p>` : "<p>（此張尚無課文講解）</p>"; }
+  const items = [["教學重點", core], ["課文講解", ex], ["想一想・筆記", think]].filter(([name, pane]) => pane.childNodes.length);
   for (let i = 0; i < items.length; i++) {
     const [name, pane] = items[i];
     const button = document.createElement("button");
@@ -1125,6 +1138,7 @@ function lessonTabs(){
     button.tabIndex = i === 0 ? 0 : -1;
     pane.hidden = i !== 0;
     button.onclick = () => {
+      window.__EXSEL = (name === "課文講解");
       for (const [j, other] of items.entries()) {
         other[1].hidden = j !== i;
         tabs.children[j].setAttribute("aria-selected", String(j === i));
@@ -1145,6 +1159,7 @@ function lessonTabs(){
     tabs.append(button);
   }
   text.replaceChildren(tabs, ...items.map((x) => x[1]));
+  { const _k = items.findIndex((x) => x[0] === "課文講解"); if (window.__EXSEL && _k > 0) tabs.children[_k].click(); }
 }
 
 function readSizes(){

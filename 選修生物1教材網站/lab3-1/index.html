@@ -575,6 +575,16 @@ body:has(#play:not(.hidden)) .tool-btn{height:34px;width:34px;font-size:15px}
  #play .panel.tight2 .q{font-size:18px!important}
 }
 </style>
+<style id="ex-css">
+/* 課文講解分頁 */
+.read-lesson-pane .ex,.reading-body .ex{margin:0 0 12px;padding:2px 0 2px 12px;border-left:3px solid var(--accent);line-height:1.62}
+.read-lesson-pane .ex h4{margin:0 0 3px;font-size:.84em;font-weight:700;letter-spacing:.06em;color:var(--accent)}
+.read-lesson-pane .ex p{margin:0}
+.read-lesson-pane .ex ul{margin:2px 0 0;padding-left:1.15em}
+.read-lesson-pane .ex li{margin:0 0 3px}
+.read-lesson-pane .ex.g{background:var(--surface-2);padding:8px 12px;border-radius:0 8px 8px 0}
+.read-lesson-pane p.src{font-size:12.5px;color:var(--ink-3);margin:8px 0 0}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main">跳到主要內容</a>
@@ -730,6 +740,7 @@ const MAN = {"1": ["step_001"], "2": ["step_002"], "3": ["step_003"], "4": ["ste
 
 const GROUPS = [{"id": "A", "name": "目的與評分", "cls": "g1"}, {"id": "B", "name": "活動流程", "cls": "g2"}, {"id": "C", "name": "討論與評比", "cls": "g3"}];
 
+const EXPL={"dn-01": "<div class=\"ex g\"><h4>為什麼做 DNA 模型<\/h4><p>前面已學過解開 DNA 構造的科學史，並了解雙股螺旋結構。親手建構模型，可更了解 DNA 結構的特色，並訓練邏輯思考。<\/p><\/div><div class=\"ex\"><h4>活動目的<\/h4><ul><li>清楚表達 DNA 的基本結構與特色。<\/li><li>了解<b>鹼基配對原則<\/b>。<\/li><li>了解組成 DNA 的核苷酸在結構上應有哪些特徵，才能形成<b>單一直徑<\/b>的雙股螺旋。<\/li><\/ul><\/div><div class=\"ex\"><h4>單一直徑的原因<\/h4><p>嘌呤（A、G，雙環）一定與嘧啶（T、C，單環）配對，每一對鹼基的大小相同，所以整條螺旋的粗細一致。<\/p><\/div>", "dn-02": "<div class=\"ex g\"><h4>活動形式：手作立體模型<\/h4><p>讓同學發揮創意，自己尋找適合的材料製作 DNA 立體模型，並在課堂上討論，進一步思考 DNA 結構的相關概念。<\/p><\/div><div class=\"ex\"><h4>課本示意圖<\/h4><ul><li>課本用糖果與水果組成 DNA 模型（討論 3 會用到）。<\/li><li>外側連續排列的球體組成雙股螺旋骨架（代表五碳醣與磷酸基）。<\/li><li>中間橫向的糖果代表成對的含氮鹼基。<\/li><\/ul><\/div>", "dn-03": "<div class=\"ex g\"><h4>評分標準三項<\/h4><p>製作前先看標準，才知道要往哪裡努力。<\/p><\/div><div class=\"ex\"><h4>三個面向<\/h4><ul><li><b>呈現 DNA 結構特色<\/b>：雙股、4 種含氮鹼基、以五碳醣與磷酸基為骨架、規律的構形。<\/li><li><b>維持穩定性<\/b>：結構穩定，各構造能互相支撐。<\/li><li><b>兼具美感、環保及實用性<\/b>：顏色搭配、器材是否可食用或回收等。<\/li><\/ul><\/div><div class=\"ex\"><h4>提醒<\/h4><p>只漂亮但站不起來，會在「穩定性」吃虧。<\/p><\/div>", "dn-04": "<div class=\"ex g\"><h4>器材與步驟 1–2：分組討論<\/h4><p>器材由同學自備。<\/p><\/div><div class=\"ex\"><h4>材料<\/h4><ul><li>黏土、棉花糖、小番茄等，作為鹼基或骨架。<\/li><li>牙籤或鐵絲，作為銜接物。<\/li><\/ul><\/div><div class=\"ex\"><h4>討論<\/h4><ul><li>步驟 1：分組。<\/li><li>步驟 2：各組討論 DNA 結構有哪些基本特色，建立立體結構需有哪些基本組成。<\/li><\/ul><\/div><div class=\"ex\"><h4>提示<\/h4><p>至少需要<b>五碳醣（去氧核糖）、磷酸基、含氮鹼基<\/b>三種組成。<\/p><\/div>", "dn-05": "<div class=\"ex g\"><h4>步驟 3–5：製作、展示與評比<\/h4><p>這三步把討論轉成作品。<\/p><\/div><div class=\"ex\"><h4>流程<\/h4><ul><li>步驟 3：各組派代表在黑板寫出討論結果，老師總結。<\/li><li>步驟 4：討論手作材料並分配工作，在 <b>1～2 週<\/b>內完成模型；之後課堂展示，由各組代表說明結構特色。<\/li><li>步驟 5：同學選出<b>最正確<\/b>與<b>最具創意<\/b>的各一組，老師依成果與討論狀況評分。<\/li><\/ul><\/div><div class=\"ex\"><h4>報告重點<\/h4><p>說明模型的結構特色，並對照 DNA 的實際構造。<\/p><\/div>", "dn-06": "<div class=\"ex g\"><h4>討論 1（一）：各組成資訊是否正確<\/h4><p>把自己的作品與華生、克里克的模型比較，找優缺點。第一部分檢查「組成」。<\/p><\/div><div class=\"ex\"><h4>檢核點<\/h4><ul><li>雙股骨架中，<b>五碳醣與磷酸基是否交錯<\/b>出現。<\/li><li>含氮鹼基是否與<b>五碳醣<\/b>（而非磷酸基）連結。<\/li><li>四種鹼基是否以顏色或形狀區分。<\/li><li>鹼基配對是否正確（A–T；C–G）。<\/li><li>能區分 A–T 間 2 個氫鍵、G–C 間 3 個氫鍵者較優。<\/li><\/ul><\/div><div class=\"ex\"><h4>回顧<\/h4><p>鹼基接在去氧核糖的 1′ 碳，磷酸接在 5′ 碳。<\/p><\/div>", "dn-07": "<div class=\"ex g\"><h4>討論 1（二）：整體結構是否正確<\/h4><p>第二部分檢查「整體形狀」。<\/p><\/div><div class=\"ex\"><h4>檢核點<\/h4><ul><li>是否呈現<b>雙股螺旋<\/b>立體形狀，且為<b>右旋<\/b>。<\/li><li>能否展現完整包含 <b>10 對鹼基<\/b>的螺旋構形（B 型 DNA 每圈約 10 對）。<\/li><li>模型是否立體且結構穩定。<\/li><\/ul><\/div><div class=\"ex\"><h4>不穩定的可能原因<\/h4><p>鹼基太大或太小、每轉所含核苷酸數、是否固定，或至少（至多）需幾個核苷酸才能維持穩定螺旋。<\/p><\/div>", "dn-08": "<div class=\"ex g\"><h4>討論 2：與別組比較<\/h4><p>各組報告討論結果，列出與其他組的名次排序及理由（優缺點）。<\/p><\/div><div class=\"ex\"><h4>評分重點<\/h4><ul><li>報告的<b>清晰度<\/b>。<\/li><li>評比其他組理由的<b>正確度、可信度與創意<\/b>。<\/li><li>除了與標準模式的差距，也可加入創意美感與環保等方面。<\/li><\/ul><\/div><div class=\"ex\"><h4>提醒<\/h4><p>只說「比較漂亮」不夠，要說出具體優缺點，並對照 DNA 結構的正確性、穩定性與環保性。<\/p><\/div>", "dn-09": "<div class=\"ex g\"><h4>討論 3：糖果水果模型的限制<\/h4><p>課本的示意圖是教學用的簡化模型，哪些地方無法貼切呈現 DNA？<\/p><\/div><div class=\"ex\"><h4>限制<\/h4><ul><li>看不出 <b>major groove（大溝）與 minor groove（小溝）<\/b>的差別。<\/li><li>旋轉一圈看起來不是 10 對鹼基對。<\/li><li>模型可能無法「站立」，需要多餘的支撐物。<\/li><li>代表嘌呤、嘧啶的糖果沒有剛好的大小差異，無法呈現<b>嘌呤必與嘧啶<\/b>互補配對。<\/li><li>沒有表達 A–T 間 2 個、G–C 間 3 個氫鍵。<\/li><\/ul><\/div><div class=\"ex\"><h4>補充<\/h4><p>大溝與小溝是因為兩條股的骨架沒有等距環繞，兩股之間形成寬窄不同的凹槽（寬為大溝、窄為小溝）。<\/p><\/div>"};
 const LEARN = [{"id": "dn-01", "g": "A", "title": "前言與目的", "src": "課本 P131；簡報第 1–2 頁", "mode": "flip", "slides": [1, 2], "book": [], "bookcap": [], "html": "<ul><li>已學過解開 DNA 構造的科學史，並了解 DNA 的<b>雙股螺旋</b>結構；建構模型可更了解 DNA 結構的特色，並訓練邏輯思考能力。</li><li>目的：清楚表達 DNA 基本的結構與特色，了解<b>鹼基配對原則</b>，以及組成 DNA 的核苷酸在結構上應有哪些特徵，才能形成<b>單一直徑</b>的雙股螺旋。</li></ul>", "q": "為什麼 DNA 雙股螺旋的直徑必須是單一直徑？", "a": "嘌呤（A、G，雙環）一定與嘧啶（T、C，單環）配對，每一對鹼基的大小相同，所以整條螺旋的粗細一致。"}, {"id": "dn-02", "g": "A", "title": "說明：手作立體模型", "src": "課本 P131；簡報第 3 頁", "mode": "book", "slides": [3], "book": ["bk_dna"], "bookcap": ["課本 P131 示意圖：用糖果與水果組成的 DNA 模型"], "html": "<ul><li>利用手作 DNA 結構，讓同學發揮創意，自己尋找適合的材料製作<b>立體模型</b>。</li><li>於課堂上討論問題，進一步訓練思考 DNA 結構的相關概念。</li><li>課本示意圖：以糖果與水果組成的 DNA 模型（討論 3 會用到）。</li></ul>", "q": "觀察照片：模型中哪些部分像骨架？哪些像鹼基？", "a": "外側連續的球體排成雙股螺旋骨架（代表五碳醣與磷酸基）；中間橫向的糖果代表成對的含氮鹼基。"}, {"id": "dn-03", "g": "A", "title": "評分標準", "src": "課本 P131；簡報第 4 頁", "mode": "flip", "slides": [4], "book": [], "bookcap": [], "html": "<ol><li><b>能呈現 DNA 結構的特色</b>：雙股、4 種含氮鹼基、以五碳醣與磷酸基為骨架、規律的構形。</li><li><b>能維持穩定性</b>：結構是否穩定，各構造能否互相支撐。</li><li><b>能兼具美感、環保及實用性</b>：顏色搭配、器材是否能食用或回收等。</li></ol>", "q": "只把模型做得很漂亮，但站不起來，哪一項評分會吃虧？", "a": "「能維持穩定性」；各構造必須互相支撐、結構穩定。"}, {"id": "dn-04", "g": "B", "title": "器材與步驟 1–2：分組討論", "src": "課本 P132；簡報第 5–6 頁", "mode": "flip", "slides": [5, 6], "book": [], "bookcap": [], "html": "<ul><li>器材：同學自備材料（如<b>黏土、棉花糖、小番茄</b>作為鹼基或骨架，以<b>牙籤或鐵絲</b>作為銜接物）。</li><li>步驟 1：同學們進行分組。</li><li>步驟 2：各組討論 DNA 結構有哪些<b>基本特色</b>，要建立立體結構需有哪些<b>基本組成</b>？</li></ul>", "q": "建立 DNA 立體結構至少需要哪三種基本組成？", "a": "五碳醣（去氧核糖）、磷酸基與含氮鹼基。"}, {"id": "dn-05", "g": "B", "title": "步驟 3–5：製作、展示與評比", "src": "課本 P132；簡報第 7 頁", "mode": "flip", "slides": [7], "book": [], "bookcap": [], "html": "<ul><li>步驟 3：各組派代表在黑板寫出討論結果，老師總結。</li><li>步驟 4：討論手作材料並分配工作，在 <b>1～2 週內</b>完成模型；之後課堂上展示，由各組代表說明結構特色。</li><li>步驟 5：同學選出<b>最正確</b>與<b>最具創意</b>的各一組，老師根據成果與討論狀況評分。</li></ul>", "q": "展示模型時，各組代表最重要的任務是什麼？", "a": "說明模型的結構特色，並能對照 DNA 的實際構造。"}, {"id": "dn-06", "g": "C", "title": "討論 1：與華生・克里克模型比較（一）", "src": "課本 P132；簡報第 8–9 頁", "mode": "flip", "slides": [8, 9], "book": [], "bookcap": [], "html": "<p><b>(1) 各組成資訊是否正確呈現</b></p><ul><li>雙股骨架中，五碳醣與磷酸基是否<b>交錯</b>出現</li><li>含氮鹼基是否與<b>五碳醣</b>（而非磷酸基）連結</li><li>四種鹼基是否以顏色或形狀區分</li><li>鹼基配對是否正確（<b>A–T；C–G</b>）</li><li>能區分 A、T 間<b>兩個氫鍵</b>與 G、C 間<b>三個氫鍵</b>者較優</li></ul>", "q": "鹼基應接在骨架的哪一個成分上？", "a": "五碳醣（去氧核糖）的 1' 碳，不是磷酸基。"}, {"id": "dn-07", "g": "C", "title": "討論 1：與華生・克里克模型比較（二）", "src": "課本 P132；簡報第 10 頁", "mode": "flip", "slides": [10], "book": [], "bookcap": [], "html": "<p><b>(2) 整體結構是否正確呈現</b></p><ul><li>是否呈現<b>雙股螺旋</b>立體形狀，且為<b>右旋</b></li><li>能否展現完整包含 <b>10 對鹼基</b>的螺旋轉構形</li><li>模型是否立體且結構穩定</li><li>不穩定的可能原因：鹼基太大或太小、每轉所含核苷酸數、是否固定，或至少（至多）需幾個核苷酸才能維持穩定螺旋。</li></ul>", "q": "B 型 DNA 每旋轉一圈約含幾對鹼基？", "a": "約 10 對鹼基。"}, {"id": "dn-08", "g": "C", "title": "討論 2：與別組比較", "src": "課本 P132；簡報第 11 頁", "mode": "flip", "slides": [11], "book": [], "bookcap": [], "html": "<ul><li>各組報告討論結果：與其他組的名次優劣排序及<b>理由</b>（列出優缺點）。</li><li>老師評分重點：報告的<b>清晰度</b>，以及評比其他組理由的<b>正確度、可信度與創意</b>。</li><li>除了與標準模式的差距外，也可加入<b>創意美感與環保</b>等方面比較。</li></ul>", "q": "評比別組時，只說「比較漂亮」夠不夠？", "a": "不夠；要說出具體的優缺點與理由，並對照 DNA 結構的正確性、穩定性與環保性。"}, {"id": "dn-09", "g": "C", "title": "討論 3：糖果水果模型的限制", "src": "課本 P132；簡報第 12 頁", "mode": "book", "slides": [12], "book": ["bk_dna"], "bookcap": ["課本 P131 示意圖：糖果與水果組成的 DNA 模型"], "html": "<ul><li>看不出 <b>major groove</b> 與 <b>minor groove</b> 的差別。</li><li>旋轉一圈看起來不是 10 對鹼基對。</li><li>模型可能無法「站立」，需要多餘的支撐物。</li><li>代表嘌呤、嘧啶的糖果沒有剛好的大小差異，無法呈現<b>嘌呤必與嘧啶互補配對</b>。</li><li>沒有表達 A–T 間<b>兩個氫鍵</b>、G–C 間<b>三個氫鍵</b>。</li></ul>", "q": "大溝與小溝是怎麼形成的？", "a": "兩條股的骨架沒有等距環繞，兩股之間形成寬窄不同的凹槽，寬的是大溝、窄的是小溝。"}];
 
 const LFCFG={};
@@ -1128,7 +1139,9 @@ function lessonTabs(){
   tabs.className = "read-tabs";
   tabs.setAttribute("role", "tablist");
   tabs.setAttribute("aria-label", "右側教學內容");
-  const items = [["教學重點", core], ["想一想・筆記", think]].filter(([name, pane]) => pane.childNodes.length);
+  const ex = document.createElement("div"); ex.className = "read-lesson-pane"; ex.setAttribute("role", "tabpanel");
+  { const _c = LEARN[LI], _h = _c && EXPL[_c.id]; ex.innerHTML = _h ? _h + `<p class="src">依課本內容改寫｜${esc(_c.src)}</p>` : "<p>（此張尚無課文講解）</p>"; }
+  const items = [["教學重點", core], ["課文講解", ex], ["想一想・筆記", think]].filter(([name, pane]) => pane.childNodes.length);
   for (let i = 0; i < items.length; i++) {
     const [name, pane] = items[i];
     const button = document.createElement("button");
@@ -1144,6 +1157,7 @@ function lessonTabs(){
     button.tabIndex = i === 0 ? 0 : -1;
     pane.hidden = i !== 0;
     button.onclick = () => {
+      window.__EXSEL = (name === "課文講解");
       for (const [j, other] of items.entries()) {
         other[1].hidden = j !== i;
         tabs.children[j].setAttribute("aria-selected", String(j === i));
@@ -1164,6 +1178,7 @@ function lessonTabs(){
     tabs.append(button);
   }
   text.replaceChildren(tabs, ...items.map((x) => x[1]));
+  { const _k = items.findIndex((x) => x[0] === "課文講解"); if (window.__EXSEL && _k > 0) tabs.children[_k].click(); }
 }
 
 function readSizes(){

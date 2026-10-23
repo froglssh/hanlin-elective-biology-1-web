@@ -560,6 +560,16 @@ body:has(#play:not(.hidden)) .tool-btn{height:34px;width:34px;font-size:15px}
  #play .panel.tight2 .q{font-size:18px!important}
 }
 </style>
+<style id="ex-css">
+/* 課文講解分頁 */
+.read-lesson-pane .ex,.reading-body .ex{margin:0 0 12px;padding:2px 0 2px 12px;border-left:3px solid var(--accent);line-height:1.62}
+.read-lesson-pane .ex h4{margin:0 0 3px;font-size:.84em;font-weight:700;letter-spacing:.06em;color:var(--accent)}
+.read-lesson-pane .ex p{margin:0}
+.read-lesson-pane .ex ul{margin:2px 0 0;padding-left:1.15em}
+.read-lesson-pane .ex li{margin:0 0 3px}
+.read-lesson-pane .ex.g{background:var(--surface-2);padding:8px 12px;border-radius:0 8px 8px 0}
+.read-lesson-pane p.src{font-size:12.5px;color:var(--ink-3);margin:8px 0 0}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main">跳到主要內容</a>
@@ -705,6 +715,7 @@ const MAN = {"1": ["step_001"], "2": ["step_002", "step_003", "step_004", "step_
 
 const GROUPS = [{"id": "A", "name": "能量的來源與流轉", "cls": "g1"}, {"id": "B", "name": "ATP 的作用方式", "cls": "g2"}, {"id": "C", "name": "能量的使用：同化代謝、主動運輸、運動", "cls": "g3"}];
 
+const EXPL={"er-01": "<div class=\"ex g\"><h4>能量的源頭：太陽<\/h4><p>生物進行新陳代謝所需的能量，大多<b>直接或間接來自太陽<\/b>。能量經兩次轉換才變成細胞能用的形式。<\/p><\/div><div class=\"ex\"><h4>兩次轉換<\/h4><ul><li><b>光合作用<\/b>：光能 → 有機物（醣類）的化學能，並經食物網在生態系中流轉。<\/li><li><b>呼吸作用<\/b>：有機物的化學能 → <b>ATP<\/b> 的化學能，供細胞進行各種新陳代謝。<\/li><\/ul><\/div><div class=\"ex\"><h4>提醒<\/h4><p>動物不行光合作用，但牠吃的有機物來自生產者，所以能量是「間接」來自太陽。<\/p><\/div>", "er-02": "<div class=\"ex g\"><h4>怎麼獲得有機物？<\/h4><p>依<b>獲取有機物的方式<\/b>分成自營與異營。<\/p><\/div><div class=\"ex\"><h4>分類<\/h4><ul><li><b>自營生物<\/b>：把環境中的無機物轉變成有機物，是生態系的<b>生產者<\/b>。<\/li><li><b>異營生物<\/b>：攝食其他生物，或分解枯枝落葉、遺骸、排泄物，是<b>消費者或分解者<\/b>。<\/li><\/ul><\/div><div class=\"ex\"><h4>自營再依能量來源分<\/h4><ul><li><b>光自營<\/b>：利用太陽光能，如綠色植物、藻類、藍綠菌。<\/li><li><b>化學自營<\/b>：氧化環境中的無機物取得能量，如硝化菌氧化 NH₄⁺、硫化菌氧化 H₂S。<\/li><\/ul><\/div><div class=\"ex\"><h4>提醒<\/h4><p>化學自營生物同樣是自營，不是因為不吃東西就不用能量，而是能量來自無機物氧化，不是光。<\/p><\/div>", "er-03": "<div class=\"ex g\"><h4>能量為什麼愈傳愈少<\/h4><p>能量隨有機物沿食物網傳遞，異營生物的能量直接或間接來自生產者。<\/p><\/div><div class=\"ex\"><h4>生物把能量用在三方面<\/h4><ul><li>合成所需分子（同化代謝）。<\/li><li>主動運輸。<\/li><li>運動。<\/li><\/ul><\/div><div class=\"ex\"><h4>哪些能往下傳<\/h4><p>只有用於<b>合成分子<\/b>、儲存在身體有機物中的部分，能被下一階層取得；主動運輸與運動所用的能量無法傳給捕食者或分解者。大部分能量在代謝中被消耗，以<b>熱能<\/b>形式流失，所以只有少量能量在食物網中傳遞。<\/p><\/div>", "er-04": "<div class=\"ex g\"><h4>ATP 如何供能：磷酸化<\/h4><p>呼吸作用把有機物的能量轉移到 ATP，ATP 再供應各種耗能活動。<\/p><\/div><div class=\"ex\"><h4>ATP 水解之後<\/h4><ul><li>釋出的<b>磷酸根與能量<\/b>轉移到其他分子，使它被磷酸化。<\/li><li>結果一：<b>提升能量<\/b>，成為活化狀態，利於代謝反應進行。<\/li><li>結果二：使分子<b>構形改變<\/b>。<\/li><\/ul><\/div><div class=\"ex\"><h4>後面三張的對照<\/h4><p>同化代謝用的是「活化」；主動運輸與運動用的是「構形改變」。<\/p><\/div>", "er-05": "<div class=\"ex g\"><h4>同化代謝：合成三酸甘油酯<\/h4><p>同化代謝是細胞利用簡單分子合成較複雜分子的過程，通常要<b>消耗能量<\/b>。<\/p><\/div><div class=\"ex\"><h4>讀圖 2－10<\/h4><ul><li>甘油先與 ATP 反應，磷酸基與能量轉移給甘油，形成<b>磷酸甘油<\/b>（ATP → ADP）。<\/li><li>酵素才能催化磷酸甘油與 <b>3 分子脂肪酸<\/b>結合，產生三酸甘油酯並釋出磷酸根。<\/li><li>ATP 的部分能量就被轉移、儲存在三酸甘油酯中。<\/li><\/ul><\/div>", "er-06": "<div class=\"ex g\"><h4>主動運輸：鈉鉀幫浦<\/h4><p>主動運輸所需能量通常由 ATP 提供。<\/p><\/div><div class=\"ex\"><h4>讀圖 2－11<\/h4><ul><li>構形 1 的運輸蛋白先與細胞內的 <b>Na⁺<\/b> 接合。<\/li><li><b>ATP 使它磷酸化<\/b>而變成構形 2，有利於把 Na⁺ 釋放到細胞外，同時與細胞外的 <b>K⁺<\/b> 接合。<\/li><li>去磷酸化後回到構形 1，把 K⁺ 釋放到細胞內。<\/li><\/ul><\/div><div class=\"ex\"><h4>提醒<\/h4><p>用 ATP 的是磷酸化這一步；構形改變是「結果」，不是ATP 本身在搬離子。<\/p><\/div>", "er-07": "<div class=\"ex g\"><h4>運動：運動蛋白沿微管走<\/h4><p>動物肌肉細胞收縮、細胞內胞器位移，所需能量主要由 ATP 提供。<\/p><\/div><div class=\"ex\"><h4>讀圖 2－12<\/h4><ul><li>ATP 使運動蛋白磷酸化而改變構形；去磷酸化後恢復原構形。<\/li><li>反覆磷酸化、去磷酸化，運動蛋白的構形循環變化，可重複與微管的<b>不同部位<\/b>接合，帶動胞器沿微管前進。<\/li><\/ul><\/div><div class=\"ex\"><h4>小結<\/h4><p>同化代謝、主動運輸與運動，每一步都靠 ATP 使分子磷酸化。<\/p><\/div>"};
 const LEARN = [{"id": "er-01", "g": "A", "title": "能量的源頭：太陽光能 → 化學能 → ATP", "src": "課本 P82；簡報第 1–2 頁", "mode": "flip", "slides": [1, 2], "book": ["bk_p82a", "bk_p82b"], "bookcap": ["課本 P82（上）", "課本 P82（下）"], "html": "<ul><li>生物進行新陳代謝所需的能量，大多<b>直接或間接來自太陽</b>。</li><li>能量的兩次轉換：<ol><li><b>光合作用</b>：太陽的光能 → 有機物（醣類）的<b>化學能</b>，再經由<b>食物網</b>在生態系中流轉。</li><li><b>呼吸作用</b>：有機物的化學能 → <b>ATP</b> 的化學能，提供細胞進行各種新陳代謝。</li></ol></li></ul><table class=\"mini\"><tr><th>反應</th><th>能量形式的改變</th></tr><tr><td>光合作用</td><td>光能 → 有機物的化學能</td></tr><tr><td>呼吸作用</td><td>有機物的化學能 → ATP 的化學能</td></tr></table>", "q": "為什麼說動物體內 ATP 的能量「間接」來自太陽？", "a": "動物攝食的有機物源自生產者行光合作用時，把太陽的光能轉成有機物的化學能；動物再經呼吸作用把有機物的化學能轉移到 ATP。"}, {"id": "er-02", "g": "A", "title": "自營生物與異營生物：光自營與化學自營", "src": "課本 P82；簡報第 3–6 頁", "mode": "flip", "slides": [3, 4, 5, 6], "book": ["bk_p82a", "bk_p82b"], "bookcap": ["課本 P82（上）", "課本 P82（下）"], "html": "<ul><li>依<b>獲取有機物的方式</b>分為：<ol><li><b>自營生物</b>：可將環境中的無機物轉變為有機物 → 生態系中的<b>生產者</b>。</li><li><b>異營生物</b>：攝食其他生物，或分解枯枝落葉、動物遺骸及排泄物、排遺物等有機物 → <b>消費者或分解者</b>。</li></ol></li><li>自營生物再依<b>能量的來源</b>分為：<ol><li><b>光自營生物</b>：吸收並利用太陽的光能，如綠色植物、藻類及藍綠菌。</li><li><b>化學自營生物</b>：氧化環境中的物質，利用反應釋出的能量將無機物轉變為有機物，如硝化菌氧化銨鹽（NH₄⁺）、硫化菌氧化硫化氫（H₂S）。</li></ol></li></ul>", "q": "化學自營生物不靠光，它合成有機物所需的能量從哪裡來？", "a": "來自氧化環境中的無機物（如硝化菌氧化銨鹽、硫化菌氧化硫化氫）時所釋出的能量。"}, {"id": "er-03", "g": "A", "title": "能量的去向：為什麼食物網中只有少量能量往下傳？", "src": "課本 P82；簡報第 7–8 頁", "mode": "flip", "slides": [7, 8], "book": ["bk_p82a", "bk_p82b"], "bookcap": ["課本 P82（上）", "課本 P82（下）"], "html": "<ul><li>能量隨著有機物經<b>食物網</b>傳遞，異營生物的能量直接或間接來自生產者。</li><li>生物體把有機物分解所得的能量用於三方面：<b>合成所需分子（同化代謝）、主動運輸、運動</b>。</li><li>只有<b>用於合成分子</b>的能量，<b>部分</b>能透過食物網傳給下一階層的生物；用於<b>主動運輸與運動</b>的能量，無法傳給捕食者或分解者。</li><li>因此只有<b>少量</b>能量能在食物網中傳遞，大部分能量在代謝過程中被消耗，以<b>熱能</b>的形式流失。</li></ul>", "q": "一隻兔子吃進的能量，為什麼不能全部傳給吃牠的狐狸？", "a": "兔子把能量用於合成分子、主動運輸及運動；只有用於合成分子、儲存在身體有機物中的部分能被狐狸取得，主動運輸與運動所用的能量已在代謝中消耗，最後以熱能流失。"}, {"id": "er-04", "g": "B", "title": "ATP 的作用方式：磷酸化", "src": "課本 P83；簡報第 9–10 頁", "mode": "flip", "slides": [9, 10], "book": ["bk_p83"], "bookcap": ["課本 P83 能量的使用與同化代謝"], "html": "<ul><li>生物體經<b>呼吸作用</b>把有機物所含的能量轉移至 ATP，再以 ATP 供應細胞的各種耗能活動。</li><li>ATP 被水解後，釋出的<b>磷酸根與能量轉移到其他分子</b>，使該分子<b>磷酸化</b>，結果有兩種：<ol><li><b>提升分子的能量</b>，成為活化狀態，以利代謝反應進行；</li><li>使分子發生<b>構形改變</b>。</li></ol></li></ul>", "q": "同一個「磷酸化」，在同化代謝與主動運輸中各發揮哪一種作用？", "a": "同化代謝中，甘油磷酸化後能量提升成為活化狀態，才能與脂肪酸結合；主動運輸中，運輸蛋白磷酸化後發生構形改變，才能把 Na⁺ 往外釋放。"}, {"id": "er-05", "g": "C", "title": "同化代謝：三酸甘油酯的合成", "src": "課本 P83 圖2-10；簡報第 11 頁", "mode": "book", "slides": [11], "book": ["bk_f210"], "bookcap": ["課本 P83 圖2-10 細胞的三酸甘油酯生合成示意圖"], "html": "<ul><li><b>同化代謝</b>：細胞利用數個簡單分子合成較複雜分子的過程，通常需要<b>消耗能量</b>。</li><li>以合成<b>三酸甘油酯</b>為例：<ol><li><b>甘油</b>先與 <b>ATP</b> 反應，ATP 的磷酸基與能量轉移至甘油，形成<b>磷酸甘油</b>（ATP → ADP）。</li><li>酵素才能催化磷酸甘油與 <b>3 分子脂肪酸</b>結合，產生<b>三酸甘油酯</b>，並釋出磷酸根。</li></ol></li><li>ATP 所含的部分能量被轉移、<b>儲存在三酸甘油酯</b>中。</li></ul>", "q": "甘油為什麼要先與 ATP 反應，才能和脂肪酸結合？", "a": "ATP 的磷酸基與能量轉移到甘油形成磷酸甘油，提升其能量成為活化狀態，酵素才能催化它與脂肪酸結合。"}, {"id": "er-06", "g": "C", "title": "主動運輸：鈉鉀幫浦", "src": "課本 P84 圖2-11；簡報第 12 頁", "mode": "book", "slides": [12], "book": ["bk_f211"], "bookcap": ["課本 P84 圖2-11 動物細胞膜上鈉鉀幫浦運送 Na⁺ 與 K⁺ 的示意圖"], "html": "<ul><li>主動運輸所需的能量通常由 <b>ATP</b> 提供。以動物細胞膜上的<b>鈉鉀幫浦</b>為例：<ol><li>運輸蛋白（<b>構形 1</b>）與<b>細胞內的 Na⁺</b> 接合。</li><li>ATP 使運輸蛋白<b>磷酸化</b>而改變構形（<b>構形 2</b>），有利於將 <b>Na⁺ 往細胞外釋放</b>。</li><li>構形 2 同時與<b>細胞外的 K⁺</b> 接合。</li><li>運輸蛋白<b>去磷酸化</b>後恢復原構形（構形 1），有利於將 <b>K⁺ 往細胞內釋放</b>。</li></ol></li></ul>", "q": "鈉鉀幫浦哪一步需要 ATP？去磷酸化後發生什麼事？", "a": "運輸蛋白與細胞內的 Na⁺ 接合後，需要 ATP 使它磷酸化而改變構形；去磷酸化後恢復構形 1，把 K⁺ 釋放到細胞內。"}, {"id": "er-07", "g": "C", "title": "運動：運動蛋白帶動胞器沿微管移動", "src": "課本 P85 圖2-12；簡報第 13–14 頁", "mode": "book", "slides": [13, 14], "book": ["bk_f212"], "bookcap": ["課本 P85 圖2-12 運動蛋白在 ATP 水解過程中發生構形變化，而帶動胞器沿著微管移動"], "html": "<ul><li>運動是生物的特徵之一，如<b>肌肉細胞的收縮</b>與<b>細胞內胞器的位移</b>，所需能量主要由 <b>ATP</b> 提供。</li><li>ATP 使<b>運動蛋白磷酸化</b>而改變構形；去磷酸化後又恢復原構形。</li><li>運動蛋白在磷酸化、去磷酸化之間<b>反覆改變構形</b>，可重複與<b>微管</b>的不同部位接合，帶動<b>胞器沿著微管</b>前進。</li><li>簡報第 14 頁統整：同化代謝、主動運輸與運動，<b>每一步都靠 ATP 使分子磷酸化</b>。</li></ul>", "q": "運動蛋白怎麼把「構形改變」變成「移動」？", "a": "每次 ATP 水解，運動蛋白在不同構形間循環變化，重複與微管的不同部位接合、放開，像走路一樣帶著胞器沿微管前進。"}];
 
 const LFCFG={"lf210": {"ix": 0, "iw": 700, "ih": 272, "tx": 350.0, "ty": 292}, "lf211": {"ix": 0, "iw": 640, "ih": 422, "tx": 800.0, "ty": 18}, "lf212": {"ix": 0, "iw": 640, "ih": 328, "tx": 320.0, "ty": 348}};
@@ -1114,7 +1125,9 @@ function lessonTabs(){
   tabs.className = "read-tabs";
   tabs.setAttribute("role", "tablist");
   tabs.setAttribute("aria-label", "右側教學內容");
-  const items = [["教學重點", core], ["想一想・筆記", think]].filter(([name, pane]) => pane.childNodes.length);
+  const ex = document.createElement("div"); ex.className = "read-lesson-pane"; ex.setAttribute("role", "tabpanel");
+  { const _c = LEARN[LI], _h = _c && EXPL[_c.id]; ex.innerHTML = _h ? _h + `<p class="src">依課本內容改寫｜${esc(_c.src)}</p>` : "<p>（此張尚無課文講解）</p>"; }
+  const items = [["教學重點", core], ["課文講解", ex], ["想一想・筆記", think]].filter(([name, pane]) => pane.childNodes.length);
   for (let i = 0; i < items.length; i++) {
     const [name, pane] = items[i];
     const button = document.createElement("button");
@@ -1130,6 +1143,7 @@ function lessonTabs(){
     button.tabIndex = i === 0 ? 0 : -1;
     pane.hidden = i !== 0;
     button.onclick = () => {
+      window.__EXSEL = (name === "課文講解");
       for (const [j, other] of items.entries()) {
         other[1].hidden = j !== i;
         tabs.children[j].setAttribute("aria-selected", String(j === i));
@@ -1150,6 +1164,7 @@ function lessonTabs(){
     tabs.append(button);
   }
   text.replaceChildren(tabs, ...items.map((x) => x[1]));
+  { const _k = items.findIndex((x) => x[0] === "課文講解"); if (window.__EXSEL && _k > 0) tabs.children[_k].click(); }
 }
 
 function readSizes(){

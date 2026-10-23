@@ -575,6 +575,16 @@ body:has(#play:not(.hidden)) .tool-btn{height:34px;width:34px;font-size:15px}
  #play .panel.tight2 .q{font-size:18px!important}
 }
 </style>
+<style id="ex-css">
+/* 課文講解分頁 */
+.read-lesson-pane .ex,.reading-body .ex{margin:0 0 12px;padding:2px 0 2px 12px;border-left:3px solid var(--accent);line-height:1.62}
+.read-lesson-pane .ex h4{margin:0 0 3px;font-size:.84em;font-weight:700;letter-spacing:.06em;color:var(--accent)}
+.read-lesson-pane .ex p{margin:0}
+.read-lesson-pane .ex ul{margin:2px 0 0;padding-left:1.15em}
+.read-lesson-pane .ex li{margin:0 0 3px}
+.read-lesson-pane .ex.g{background:var(--surface-2);padding:8px 12px;border-radius:0 8px 8px 0}
+.read-lesson-pane p.src{font-size:12.5px;color:var(--ink-3);margin:8px 0 0}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main">跳到主要內容</a>
@@ -826,6 +836,7 @@ const MAN = {"1": ["step_001"], "2": ["step_002"], "3": ["step_003", "step_004",
 
 const GROUPS = [{"id": "A", "name": "限制酶與 DNA 連接酶", "cls": "g1"}, {"id": "B", "name": "載體", "cls": "g2"}, {"id": "C", "name": "重組 DNA 的製作", "cls": "g3"}];
 
+const EXPL={"rd-01": "<div class=\"ex g\"><h4>重組 DNA 與三種工具<\/h4><p>1970 年代，科學家能在試管裡以人為方式把<b>不同來源的 DNA<\/b> 剪切並連結在一起，產物稱<b>重組 DNA 分子<\/b>。<\/p><\/div><div class=\"ex\"><h4>關鍵工具<\/h4><ul><li><b>限制酶<\/b>：剪切 DNA。<\/li><li><b>DNA 連接酶<\/b>：連接 DNA 片段。<\/li><li><b>載體<\/b>：載運 DNA 進入目標細胞。<\/li><\/ul><\/div><div class=\"ex\"><h4>例<\/h4><p>把人類的基因接到細菌的質體上，就是「重組」：不同來源的 DNA 被連在一起。<\/p><\/div>", "rd-02": "<div class=\"ex g\"><h4>讀圖 5－3：限制酶像剪刀<\/h4><p>1970 年前後，科學家從<b>流感嗜血桿菌<\/b>分離出限制酶。<\/p><\/div><div class=\"ex\"><h4>特性<\/h4><ul><li>能辨認<b>特定的核苷酸序列<\/b>。<\/li><li>在 DNA <b>雙股鏈上各產生一個切口<\/b>，但不破壞核苷酸與鹼基。<\/li><li>例：EcoRI 辨識 <b>GAATTC<\/b>。<\/li><\/ul><\/div><div class=\"ex\"><h4>提醒<\/h4><p>切的是每一股上核苷酸之間的鍵結，不是兩股之間的氫鍵。<\/p><\/div>", "rd-03": "<div class=\"ex g\"><h4>迴文序列與黏端<\/h4><p>不同限制酶辨識的序列不同，但都有<b>迴文特性<\/b>：從一股 5′ 讀到 3′ 的序列，與另一股從 5′ 讀到 3′ 的序列相同。<\/p><\/div><div class=\"ex\"><h4>應用<\/h4><ul><li>用<b>相同限制酶<\/b>分別剪切目標基因與載體。<\/li><li>若切出<b>黏端<\/b>，兩片段可用黏端的鹼基互補配對，以<b>氫鍵<\/b>相連。<\/li><\/ul><\/div><div class=\"ex\"><h4>腦力激盪<\/h4><p>5′-AAG□□□-3′：補齊成 5′-AAGCTT-3′，另一股 3′-TTCGAA-5′，從 5′ 端讀也是 AAGCTT。<\/p><\/div>", "rd-04": "<div class=\"ex g\"><h4>知識補給站：限制酶的切割模式<\/h4><p>限制酶是一群由細菌產生的<b>核酸內切酶<\/b>，針對特定序列的 DNA 切斷。<\/p><\/div><div class=\"ex\"><h4>兩個例子<\/h4><ul><li><b>EcoRI<\/b>（來自大腸桿菌）：辨認 GAATTC，切開 G 與 A 之間的鍵結，形成具有 <b>AATT<\/b> 的<b>黏端<\/b>。<\/li><li><b>HaeIII<\/b>（來自流感嗜血桿菌）：辨認 GGCC，切開 G 與 C 之間，產生<b>平端<\/b>。<\/li><\/ul><\/div><div class=\"ex\"><h4>比較<\/h4><p>黏端有突出的單股，可與另一段互補配對，先以氫鍵相連再接合，較容易把兩段 DNA 接起來。<\/p><\/div>", "rd-05": "<div class=\"ex g\"><h4>DNA 連接酶<\/h4><p>主要功能是以<b>共價鍵<\/b>連接兩段 DNA 的核苷酸，將兩片段連結起來（圖 5－4）。<\/p><\/div><div class=\"ex\"><h4>為什麼還需要它<\/h4><ul><li>黏端互補配對時只以<b>氫鍵<\/b>相連，不夠穩固。<\/li><li>需要連接酶以共價鍵接合，片段才真正成為一條。<\/li><\/ul><\/div><div class=\"ex\"><h4>與限制酶對照<\/h4><p>限制酶切斷核苷酸之間的鍵結；連接酶把同類型的共價鍵重新接起來。<\/p><\/div>", "rd-06": "<div class=\"ex g\"><h4>讀圖 5－4：載體與重組 DNA<\/h4><p><b>載體<\/b>是能攜帶目標基因進入宿主細胞的 DNA，常用細菌的<b>質體<\/b>或病毒 DNA。<\/p><\/div><div class=\"ex\"><h4>做法<\/h4><ul><li>以<b>同一種限制酶<\/b>切割載體與目標基因。<\/li><li>再以 DNA 連接酶接合，形成<b>重組 DNA<\/b>。<\/li><li>載體內含數個不同的限制酶切割位點，供插入外來基因。<\/li><\/ul><\/div><div class=\"ex\"><h4>篩選基因<\/h4><p>有些載體帶有篩選用基因，如<b>抗抗生素基因<\/b>：一般細菌無法在含該抗生素的培養基生存，含重組 DNA 的細菌則可存活。<\/p><\/div>", "rd-07": "<div class=\"ex g\"><h4>知識補給站：質體<\/h4><p>有些細菌除染色體外，細胞質中還有較小型的<b>環狀 DNA<\/b>，稱為質體。<\/p><\/div><div class=\"ex\"><h4>特點<\/h4><ul><li>質體上的基因不是細菌生存代謝所必需，而是讓細菌增加<b>額外能力<\/b>，如抵抗某種抗生素。<\/li><li>質體可以<b>自行複製<\/b>，也可隨細菌分裂分配到新細菌。<\/li><li>科學家把目標基因與改造過的質體做成重組 DNA，送入細菌中表現。<\/li><\/ul><\/div><div class=\"ex\"><h4>適合當載體的原因<\/h4><p>小型環狀、能在細菌中複製並傳給子代，又帶有可供篩選的基因。<\/p><\/div>", "rd-08": "<div class=\"ex g\"><h4>補充：以胰島素基因製作重組 DNA<\/h4><p>這一張是簡報補充（課本未詳述），把前面三項工具串起來。<\/p><\/div><div class=\"ex\"><h4>三步驟<\/h4><ul><li>用限制酶切下人類細胞的<b>胰島素基因<\/b>（目標 DNA）。<\/li><li>用<b>同一種限制酶<\/b>切開細菌的質體。<\/li><li>用 <b>DNA 連接酶<\/b>把處理過的質體與胰島素基因連接，形成重組 DNA。<\/li><\/ul><\/div><div class=\"ex\"><h4>為什麼要同一種酶<\/h4><p>同一種限制酶切出的黏端序列互補，兩者才能以黏端配對，再由連接酶接合。<\/p><\/div>"};
 const LEARN = [{"id": "rd-01", "g": "A", "title": "重組 DNA 技術的三種工具", "src": "課本 P167；簡報第 1–2 頁", "mode": "flip", "slides": [1, 2], "book": [], "bookcap": [], "html": "<ul><li>1970 年代，科學家能以人為方式在試管裡將<b>不同來源的 DNA 剪切並連結</b>在一起，產物稱為<b>重組 DNA</b> 分子。</li><li>關鍵工具：<ol><li>剪切 DNA 的<b>限制酶</b>；</li><li>連接 DNA 片段的 <b>DNA 連接酶</b>；</li><li>載運 DNA 進入目標細胞的<b>載體</b>。</li></ol></li></ul>", "q": "重組 DNA 的「重組」指的是什麼？", "a": "把不同來源的 DNA 片段剪切後連結在一起，例如把人類的基因接到細菌的質體上。"}, {"id": "rd-02", "g": "A", "title": "限制酶：辨認特定序列的剪刀", "src": "課本 P167 圖5-3；簡報第 3–4 頁", "mode": "book", "slides": [3, 4], "book": ["bk53"], "bookcap": ["課本 P167 圖5-3 流感嗜血桿菌電顯圖"], "html": "<ul><li>1970 年前後，科學家從<b>流感嗜血桿菌</b>中分離出限制酶。</li><li>限制酶像剪刀，能<b>辨認特定的核苷酸序列</b>，並在 DNA 雙股鏈上<b>各產生一個切口</b>，但不破壞核苷酸與鹼基。</li><li>例：限制酶 <i>Eco</i>RI 辨識 GAATTC 序列。</li></ul>", "q": "限制酶打斷的是 DNA 雙股之間的氫鍵嗎？", "a": "不是。限制酶在每一股上切開核苷酸之間（五碳醣與磷酸）的鍵結，各產生一個切口。"}, {"id": "rd-03", "g": "A", "title": "迴文序列與黏端", "src": "課本 P167；簡報第 5–6、9 頁", "mode": "flip", "slides": [5, 6, 9], "book": [], "bookcap": [], "html": "<ul><li>不同限制酶辨識的序列不同，但皆有<b>迴文特性</b>：從一股 5′ 端讀到 3′ 端的鹼基序列，和另一股從 5′ 端讀到 3′ 端的序列<b>相同</b>。</li><li>用<b>相同限制酶</b>分別剪切目標基因與載體的 DNA，若切出<b>黏端</b>，兩 DNA 片段可利用黏端的鹼基互補配對，以<b>氫鍵</b>相連。</li></ul>", "q": "腦力激盪：某限制酶辨識序列的一股為 5′-AAG□□□-3′，依迴文概念補齊。", "a": "5′-AAGCTT-3′；另一股 3′-TTCGAA-5′，從 5′ 端讀起也是 AAGCTT。"}, {"id": "rd-04", "g": "A", "title": "知識補給站：限制酶的切割模式", "src": "課本 P168 知識補給站；簡報第 7–8 頁", "mode": "book", "slides": [7, 8], "book": ["bk_cut"], "bookcap": ["課本 P168 EcoRI 與 HaeIII 的辨認片段與切割處"], "html": "<ul><li>限制酶是一群由細菌產生的<b>核酸內切酶</b>，針對特定序列的 DNA 並將其切斷。</li><li><b><i>Eco</i>RI</b>（大腸桿菌）：辨認 <b>GAATTC</b>，切開 G 與 A 之間的鍵結，形成具有 <b>AATT 的黏端</b>。</li><li><b><i>Hae</i>III</b>（流感嗜血桿菌）：辨認 <b>GGCC</b>，切開 G 與 C 之間的鍵結，產生<b>平端</b>。</li></ul>", "q": "黏端和平端哪一種比較容易讓兩段 DNA 接起來？", "a": "黏端。突出的單股鹼基可以和另一段的黏端互補配對，先以氫鍵相連，再由連接酶接合。"}, {"id": "rd-05", "g": "A", "title": "DNA 連接酶", "src": "課本 P167–168；簡報第 10–11 頁", "mode": "flip", "slides": [10, 11], "book": [], "bookcap": [], "html": "<ul><li>DNA 連接酶的主要功能是以<b>共價鍵</b>連接兩段 DNA 的核苷酸，將兩個 DNA 片段連結起來。</li><li>黏端互補配對時只以<b>氫鍵</b>相連，還需 DNA 連接酶以共價鍵接合，片段才真正連成一條。</li></ul>", "q": "限制酶和 DNA 連接酶作用的鍵結有什麼關係？", "a": "限制酶切斷核苷酸之間的鍵結；DNA 連接酶以共價鍵把核苷酸之間重新接起來，兩者作用的是同一種鍵結。"}, {"id": "rd-06", "g": "B", "title": "載體與重組 DNA", "src": "課本 P168–169 圖5-4；簡報第 12–13 頁", "mode": "book", "slides": [12, 13], "book": ["bk54a", "bk54b"], "bookcap": ["課本 P169 圖5-4（左）以相同限制酶切割、以 DNA 連接酶接合", "課本 P169 圖5-4（右）形成重組 DNA"], "pair": true, "pairwide": true, "html": "<ul><li><b>載體</b>：能攜帶目標基因進入宿主細胞的 DNA，常用<b>細菌的質體</b>或<b>病毒 DNA</b>。</li><li>以同一種限制酶切割載體與目標基因，再以 DNA 連接酶接合形成重組 DNA。</li><li>載體內含數個不同的<b>限制酶切割位點</b>；有些帶有利於<b>篩選</b>的基因，如抗抗生素基因：含重組 DNA 的細菌可在含該抗生素的培養基存活。</li></ul>", "q": "質體上的抗抗生素基因有什麼用途？", "a": "篩選：在含該抗生素的培養基中，只有帶著質體（重組 DNA）的細菌能存活。"}, {"id": "rd-07", "g": "B", "title": "知識補給站：質體", "src": "課本 P169 知識補給站；簡報第 14 頁", "mode": "book", "slides": [14], "book": ["bk_pl"], "bookcap": ["課本 P169 細菌的染色體與質體示意圖"], "html": "<ul><li>有些細菌除了染色體外，細胞質中還有較小型的<b>環狀 DNA</b>，稱為質體。</li><li>質體上的基因<b>並非細菌生存代謝所必需</b>，而是讓細菌增加額外能力，如抵抗某種抗生素。</li><li>質體可以<b>自行複製</b>，也可隨細菌分裂分配到新生成的細菌中。</li><li>科學家常將目標基因與改造過的質體製成重組 DNA，送入細菌中表現。</li></ul>", "q": "為什麼質體適合當載體？", "a": "質體是小型環狀 DNA，可在細菌中自行複製、隨分裂傳給子代，且帶有可供篩選的基因。"}, {"id": "rd-08", "g": "C", "title": "補充：以胰島素基因製作重組 DNA", "src": "簡報第 15–20 頁（補充）", "mode": "flip", "slides": [15, 16, 17, 18, 19, 20], "book": [], "bookcap": [], "html": "<ol><li>以<b>限制酶</b>切下人類細胞的胰島素基因（目標 DNA）。</li><li>用<b>同一種限制酶</b>切開細菌的質體。</li><li>利用 <b>DNA 連接酶</b>將處理過的質體和胰島素基因連接起來，形成<b>重組 DNA</b>。</li></ol>", "q": "為什麼切胰島素基因和切質體要用同一種限制酶？", "a": "同一種限制酶切出的黏端序列互補，兩者才能以黏端配對，再由 DNA 連接酶接合。"}];
 
 const LFCFG={"lfpal": {"ix": 0, "iw": 560, "ih": 323, "tx": 280.0, "ty": 343}, "lf54a": {"ix": 0, "iw": 520, "ih": 569, "tx": 625.0, "ty": 18}, "lf54b": {"ix": 0, "iw": 560, "ih": 461, "tx": 655.0, "ty": 18}};
@@ -1225,7 +1236,9 @@ function lessonTabs(){
   tabs.className = "read-tabs";
   tabs.setAttribute("role", "tablist");
   tabs.setAttribute("aria-label", "右側教學內容");
-  const items = [["教學重點", core], ["想一想・筆記", think]].filter(([name, pane]) => pane.childNodes.length);
+  const ex = document.createElement("div"); ex.className = "read-lesson-pane"; ex.setAttribute("role", "tabpanel");
+  { const _c = LEARN[LI], _h = _c && EXPL[_c.id]; ex.innerHTML = _h ? _h + `<p class="src">依課本內容改寫｜${esc(_c.src)}</p>` : "<p>（此張尚無課文講解）</p>"; }
+  const items = [["教學重點", core], ["課文講解", ex], ["想一想・筆記", think]].filter(([name, pane]) => pane.childNodes.length);
   for (let i = 0; i < items.length; i++) {
     const [name, pane] = items[i];
     const button = document.createElement("button");
@@ -1241,6 +1254,7 @@ function lessonTabs(){
     button.tabIndex = i === 0 ? 0 : -1;
     pane.hidden = i !== 0;
     button.onclick = () => {
+      window.__EXSEL = (name === "課文講解");
       for (const [j, other] of items.entries()) {
         other[1].hidden = j !== i;
         tabs.children[j].setAttribute("aria-selected", String(j === i));
@@ -1261,6 +1275,7 @@ function lessonTabs(){
     tabs.append(button);
   }
   text.replaceChildren(tabs, ...items.map((x) => x[1]));
+  { const _k = items.findIndex((x) => x[0] === "課文講解"); if (window.__EXSEL && _k > 0) tabs.children[_k].click(); }
 }
 
 function readSizes(){

@@ -574,6 +574,16 @@ body:has(#play:not(.hidden)) .tool-btn{height:34px;width:34px;font-size:15px}
  #play .panel.tight2 .q{font-size:18px!important}
 }
 </style>
+<style id="ex-css">
+/* 課文講解分頁 */
+.read-lesson-pane .ex,.reading-body .ex{margin:0 0 12px;padding:2px 0 2px 12px;border-left:3px solid var(--accent);line-height:1.62}
+.read-lesson-pane .ex h4{margin:0 0 3px;font-size:.84em;font-weight:700;letter-spacing:.06em;color:var(--accent)}
+.read-lesson-pane .ex p{margin:0}
+.read-lesson-pane .ex ul{margin:2px 0 0;padding-left:1.15em}
+.read-lesson-pane .ex li{margin:0 0 3px}
+.read-lesson-pane .ex.g{background:var(--surface-2);padding:8px 12px;border-radius:0 8px 8px 0}
+.read-lesson-pane p.src{font-size:12.5px;color:var(--ink-3);margin:8px 0 0}
+</style>
 </head>
 <body>
 <a class="skip-link" href="#main">跳到主要內容</a>
@@ -727,6 +737,7 @@ const MAN = {"1": ["step_001"], "2": ["step_002", "step_003", "step_004"], "3": 
 
 const GROUPS = [{"id": "A", "name": "DNA 複製的模式", "cls": "g1"}, {"id": "B", "name": "DNA 複製的過程", "cls": "g2"}, {"id": "C", "name": "真核生物的 DNA 複製", "cls": "g3"}];
 
+const EXPL={"rp-01": "<div class=\"ex g\"><h4>先提出三種可能<\/h4><p>1953 年華生和克里克發表結構時提到，互補鹼基配對（A–T、G–C）已提供複製方式的可能機制。1950 年代已確認 DNA 是遺傳物質，且能精確自我複製。<\/p><\/div><div class=\"ex\"><h4>讀圖 4－1：三種假說<\/h4><ul><li><b>全保留複製<\/b>：一個 DNA 是原本的雙股，另一個是全新合成的雙股。<\/li><li><b>半保留複製<\/b>（華生、克里克推測）：新 DNA 一股來自舊 DNA，一股是新合成的。<\/li><li><b>分散複製<\/b>：兩個 DNA 都由舊片段與新片段混合鑲嵌而成。<\/li><\/ul><\/div><div class=\"ex\"><h4>推測的理由<\/h4><p>雙股解開後，每一股的鹼基序列都可作為<b>模版股<\/b>，依配對原則合成新股，所以最可能是半保留。<\/p><\/div>", "rp-02": "<div class=\"ex g\"><h4>梅舍生與史塔爾（1958）：用密度看新舊<\/h4><p>先用 ¹⁵N 培養基養大腸桿菌，使 DNA 雙股都帶 ¹⁵N；再移到 ¹⁴N 培養基，每次分裂後取 DNA 離心（圖 4－2）。<\/p><\/div><div class=\"ex\"><h4>條帶位置<\/h4><ul><li>¹⁵N¹⁵N 密度最大，在<b>下方<\/b>。<\/li><li>¹⁴N¹⁴N 密度最小，在<b>上方<\/b>。<\/li><li>¹⁴N¹⁵N 居<b>中間<\/b>。<\/li><\/ul><\/div><div class=\"ex\"><h4>預期與觀察<\/h4><ul><li>全保留：第一次後出現 ¹⁵N¹⁵N 與 ¹⁴N¹⁴N 兩條。<\/li><li>半保留：第一次後只有中間一條；第二次後 ¹⁴N¹⁵N 與 ¹⁴N¹⁴N 兩條，比例 1：1。<\/li><li>分散：每次都只有一條，且位置逐次上移。<\/li><li>實際：第一次一條中間帶，第二次兩條且 1：1，與半保留相符。<\/li><\/ul><\/div><div class=\"ex\"><h4>思考<\/h4><p>第一次的結果排除全保留；要排除分散複製，需要第二次出現兩條帶的結果。<\/p><\/div>", "rp-03": "<div class=\"ex g\"><h4>複製從哪裡、怎麼開始<\/h4><p>DNA 複製由<b>複製起始點<\/b>開始，<b>解旋酶<\/b>把雙股解開，暴露出單股鹼基序列作為模版股。<\/p><\/div><div class=\"ex\"><h4>名詞<\/h4><ul><li>正在被分開的分叉結構稱為<b>複製叉<\/b>。<\/li><li>從複製起始點向<b>兩側<\/b>打開的複製叉形成<b>複製泡<\/b>。<\/li><\/ul><\/div><div class=\"ex\"><h4>提醒<\/h4><p>起始點兩側各有一個複製叉，朝相反方向推進，中間已解開的區域就是複製泡。<\/p><\/div>", "rp-04": "<div class=\"ex g\"><h4>讀圖 4－3a：引子與 DNA 聚合酶<\/h4><p>在複製叉，解旋酶解開雙股後，<b>引子酶<\/b>在模版股上合成一小段 <b>RNA 引子<\/b>。<\/p><\/div><div class=\"ex\"><h4>延長新股<\/h4><ul><li>DNA 聚合酶從引子的 <b>3′ 端<\/b>開始，依互補鹼基配對逐一加入去氧核糖核苷酸。<\/li><li>新股從 <b>5′ 端往 3′ 端<\/b>延長，與模版股方向相反。<\/li><\/ul><\/div><div class=\"ex\"><h4>為什麼需要引子<\/h4><p>DNA 聚合酶只能把核苷酸接在已有的 3′ 端上，不能從零開始，所以要先有一段 RNA 引子提供 3′ 端。<\/p><\/div>", "rp-05": "<div class=\"ex g\"><h4>讀圖 4－3b：兩條新股合成方式不同<\/h4><p>DNA 雙股反向，且 DNA 聚合酶只能 5′→3′ 延伸。<\/p><\/div><div class=\"ex\"><h4>領先股與延遲股<\/h4><ul><li>與雙股解開方向一致的新股可<b>連續合成<\/b>：<b>領先股<\/b>。<\/li><li>另一新股合成方向與解開方向相反，只能不連續合成多個短片段：<b>岡崎片段<\/b>。<\/li><li>之後 RNA 引子被移除並以 DNA 片段替代，再由 <b>DNA 連接酶<\/b>以共價鍵連接各片段，成為完整的<b>延遲股<\/b>。<\/li><\/ul><\/div><div class=\"ex\"><h4>提醒<\/h4><p>延遲股完成得較晚。連接酶負責「接起片段」，聚合酶負責「延長」，兩者功能不同。<\/p><\/div>", "rp-06": "<div class=\"ex g\"><h4>知識補給站：真核生物的 DNA 複製<\/h4><p>真核細胞的 DNA 複製發生在<b>細胞核內<\/b>。<\/p><\/div><div class=\"ex\"><h4>重點<\/h4><ul><li>由<b>多個複製起始點<\/b>同時開始，形成多個相鄰的複製泡。<\/li><li>複製泡擴大並彼此連接，得到完整的 DNA。<\/li><li>多點同時進行，使 DNA 較大的真核生物仍能快速完成複製。<\/li><\/ul><\/div>"};
 const LEARN = [{"id": "rp-01", "g": "A", "title": "三種 DNA 複製模式的假說", "src": "課本 P136–137 圖4-1；簡報第 1–2 頁", "mode": "book", "slides": [1, 2], "book": ["bk41"], "bookcap": ["課本 P137 圖4-1 三種 DNA 複製模式的假說"], "html": "<ul><li>1953 年華生和克里克發表 DNA 結構時提到：DNA 中<b>互補鹼基的配對原則</b>（A 與 T、G 與 C）已提供複製方式的可能機制。</li><li>三種假說：<ol><li><b>全保留複製</b>：一個 DNA 是原本的雙股，另一個是全新合成的雙股。</li><li><b>半保留複製</b>（華生和克里克推測）：新 DNA 一股來自舊 DNA，一股是新合成的。</li><li><b>分散複製</b>：兩個 DNA 分子皆由舊的片段與新合成的片段混合鑲嵌而成。</li></ol></li></ul>", "q": "華生和克里克為什麼推測 DNA 以半保留方式複製？", "a": "DNA 雙股的鹼基互補配對，解開後每一股的鹼基序列都可作為模版，依配對原則合成新股，因此新 DNA 會有一股舊股、一股新股。"}, {"id": "rp-02", "g": "A", "title": "梅舍生與史塔爾的實驗", "src": "課本 P138–139 圖4-2；簡報第 3–6 頁", "mode": "book", "slides": [3, 4, 5, 6], "book": ["bk42a", "bk42b"], "bookcap": ["課本 P138 圖4-2（左）全保留、半保留複製的預期", "課本 P139 圖4-2（右）分散複製的預期與真正的觀察結果"], "pair": true, "pairwide": true, "html": "<ul><li>1958 年，美國的<b>梅舍生與史塔爾</b>以 <b>¹⁵N</b> 培養大腸桿菌後移到 <b>¹⁴N</b> 培養基，每次分裂後取 DNA 離心：¹⁵N¹⁵N 在下、¹⁴N¹⁴N 在上、¹⁴N¹⁵N 居中。</li></ul><table class=\"mini\"><tr><th>假說</th><th>第一次複製後</th><th>第二次複製後</th></tr><tr><td>全保留</td><td>¹⁵N¹⁵N、¹⁴N¹⁴N 兩條</td><td>¹⁵N¹⁵N、¹⁴N¹⁴N 兩條</td></tr><tr><td>半保留</td><td>¹⁴N¹⁵N 一條</td><td>¹⁴N¹⁵N、¹⁴N¹⁴N 各半</td></tr><tr><td>分散</td><td>中間一條</td><td>中間一條（位置上移）</td></tr></table><ul><li>實際觀察與半保留的預期相同 → 證明 DNA 為<b>半保留複製</b>。</li></ul>", "q": "只看第一次複製的結果，可以排除哪一種假說？還需要第二次的結果排除哪一種？", "a": "第一次只有一條中間條帶，可排除全保留複製；第二次出現 ¹⁴N¹⁴N 與 ¹⁴N¹⁵N 兩條，才能排除分散複製（分散複製只會有一條）。"}, {"id": "rp-03", "g": "B", "title": "解旋酶與複製叉", "src": "課本 P140；簡報第 7–8 頁", "mode": "flip", "slides": [7, 8], "book": ["bk43b"], "bookcap": ["課本 P141 圖4-3(b) 兩個新股的合成方式不同"], "html": "<ul><li>DNA 複製從<b>複製起始點</b>開始，由<b>解旋酶</b>將 DNA 雙股解開，暴露出單股的鹼基序列作為複製的<b>模版股</b>。</li><li>正在被分開的分叉結構稱為<b>複製叉</b>；從複製起始點向兩側打開的複製叉形成<b>複製泡</b>。</li></ul>", "q": "複製叉與複製泡有什麼關係？", "a": "複製起始點兩側各有一個複製叉，兩個複製叉向相反方向推進，中間已解開的區域就是複製泡。"}, {"id": "rp-04", "g": "B", "title": "引子與 DNA 聚合酶", "src": "課本 P140 圖4-3(a)；簡報第 9–11 頁", "mode": "book", "slides": [9, 10, 11], "book": ["bk43a"], "bookcap": ["課本 P140 圖4-3(a) 多核苷酸的形成"], "html": "<ul><li>在複製叉，解旋酶解開雙股後，<b>引子酶</b>在模版股上合成一小段 RNA，稱為<b>引子</b>。</li><li><b>DNA 聚合酶</b>從引子的 <b>3′ 端</b>開始，依照<b>互補鹼基配對</b>原則，逐一加入新的去氧核糖核苷酸。</li><li>新的多核苷酸從新股的 <b>5′ 端往 3′ 端延長</b>，與模版股方向相反。</li></ul>", "q": "為什麼 DNA 聚合酶需要引子？", "a": "DNA 聚合酶只能把核苷酸接在已有的 3′ 端上，不能從零開始，所以要先有一段 RNA 引子提供 3′ 端。"}, {"id": "rp-05", "g": "B", "title": "領先股、岡崎片段與延遲股", "src": "課本 P140–141 圖4-3(b)；簡報第 12–15 頁", "mode": "book", "slides": [12, 13, 14, 15], "book": ["bk43b"], "bookcap": ["課本 P141 圖4-3(b) 兩個新股的合成方式不同"], "html": "<ul><li>DNA 雙股反向，且 DNA 聚合酶只能從 5′ 往 3′ 延伸：<ol><li>與雙股解開方向一致的新股可<b>連續合成</b> → <b>領先股</b>。</li><li>另一新股合成方向與解開方向相反，只能以不連續方式合成多個短片段 → <b>岡崎片段</b>。</li></ol></li><li>岡崎片段中的 RNA 引子被移除並以 DNA 片段替代，最後由 <b>DNA 連接酶</b>以共價鍵連接各片段 → 完整的新股，完成時間較晚，稱為<b>延遲股</b>。</li></ul>", "q": "同一個複製叉上，為什麼一股連續、另一股不連續？", "a": "兩條模版股方向相反，而 DNA 聚合酶只能 5′→3′ 合成；一股的合成方向剛好跟著複製叉前進，另一股與複製叉前進方向相反，只能等雙股解開一段後再往回合成一小段。"}, {"id": "rp-06", "g": "C", "title": "知識補給站：真核生物的 DNA 複製", "src": "課本 P141；簡報第 16–17 頁", "mode": "book", "slides": [16, 17], "book": ["bk_euk"], "bookcap": ["課本 P141 知識補給站：真核細胞的 DNA 複製有多個複製起始點同時進行複製"], "html": "<ul><li>真核細胞的 DNA 複製發生於<b>細胞核</b>內。</li><li>DNA 複製時由<b>多個複製起始點</b>同時開始，形成多個相鄰的<b>複製泡</b>，最後連接起來得到完整的 DNA。</li><li>多點同時進行，讓 DNA 較大的真核生物仍能<b>快速完成複製</b>。</li></ul>", "q": "真核生物的 DNA 比原核生物大得多，為什麼複製時間不會長很多？", "a": "真核生物的 DNA 有多個複製起始點同時開始複製，多個複製泡一起擴大再連接起來。"}];
 
 const LFCFG={"lf41": {"ix": 0, "iw": 560, "ih": 383, "tx": 645.0, "ty": 18}, "lf42": {"ix": 44, "iw": 860, "ih": 380, "tx": 474.0, "ty": 400}, "lf43b": {"ix": 0, "iw": 820, "ih": 330, "tx": 410.0, "ty": 350}, "lf_euk": {"ix": 0, "iw": 560, "ih": 440, "tx": 642.0, "ty": 18}};
@@ -1129,7 +1140,9 @@ function lessonTabs(){
   tabs.className = "read-tabs";
   tabs.setAttribute("role", "tablist");
   tabs.setAttribute("aria-label", "右側教學內容");
-  const items = [["教學重點", core], ["想一想・筆記", think]].filter(([name, pane]) => pane.childNodes.length);
+  const ex = document.createElement("div"); ex.className = "read-lesson-pane"; ex.setAttribute("role", "tabpanel");
+  { const _c = LEARN[LI], _h = _c && EXPL[_c.id]; ex.innerHTML = _h ? _h + `<p class="src">依課本內容改寫｜${esc(_c.src)}</p>` : "<p>（此張尚無課文講解）</p>"; }
+  const items = [["教學重點", core], ["課文講解", ex], ["想一想・筆記", think]].filter(([name, pane]) => pane.childNodes.length);
   for (let i = 0; i < items.length; i++) {
     const [name, pane] = items[i];
     const button = document.createElement("button");
@@ -1145,6 +1158,7 @@ function lessonTabs(){
     button.tabIndex = i === 0 ? 0 : -1;
     pane.hidden = i !== 0;
     button.onclick = () => {
+      window.__EXSEL = (name === "課文講解");
       for (const [j, other] of items.entries()) {
         other[1].hidden = j !== i;
         tabs.children[j].setAttribute("aria-selected", String(j === i));
@@ -1165,6 +1179,7 @@ function lessonTabs(){
     tabs.append(button);
   }
   text.replaceChildren(tabs, ...items.map((x) => x[1]));
+  { const _k = items.findIndex((x) => x[0] === "課文講解"); if (window.__EXSEL && _k > 0) tabs.children[_k].click(); }
 }
 
 function readSizes(){
